@@ -2,25 +2,37 @@ import re
 import os
 import json
 from bs4 import BeautifulSoup
-from typing import List, Union, Dict, Optional, Tuple
+from typing import List, Union, Dict, Optional, Tuple, Any
 
-def combat_page_dict_checker(combat_pages: Dict[str, any]) -> bool:
+def combat_page_dict_checker(data: Union[str, List[Dict[str, Any]], Dict[str, Any]]) -> Tuple[bool, Optional[str]]:
     """
-    Checks if every field inside the dictionary is filled, not if it is correct (is this even possible?).
-    As we have no idea of the depth, we shall transverse the dictionary in recursive manner.
-    Args: The combat pages dictionary.
-    Returns: A boolean representing success or failure.
+    Recursively checks a combat page or list of pages to ensure all fields are non-empty.
+    'Effect' is allowed to be None or empty.
+    Returns: (True, None) if all fields are OK, (False, key) for the first bad field.
     """
-    for combat_page in combat_pages:
-        for value in combat_page.values():
-            if isinstance(value, str):
-                if value == "null" or value.strip() == "" or value is None:
-                    return False
-            
+    if isinstance(data, list):
+        for item in data:
+            ok, key = combat_page_dict_checker(item)
+            if not ok:
+                return False, key
+
+    elif isinstance(data, dict):
+        for key, value in data.items():
+            if key in ["Effect", "Obtained"]:
+                continue  # Effect is allowed to be None or empty. Some cards like Pú Láo have no origin.
+
             if isinstance(value, dict):
-                return combat_page_dict_checker(value)
-    
-    return True
+                ok, nested_key = combat_page_dict_checker(value)
+                if not ok:
+                    return False, nested_key
+
+            elif isinstance(value, str) and value.strip().lower() in ["", "null"]:
+                return False, key
+
+            elif value is None:
+                return False, key
+
+    return True, None
 
 def get_contents() -> BeautifulSoup:
     """
@@ -91,7 +103,7 @@ def get_dice_type(part: str, debug=False) -> str:
             if dice_type in image_name.lower():
                 return dice_type
 
-        raise ValueError('No dice type was found!')
+    return None
 
 def get_effects(table_data: BeautifulSoup, debug=False) -> Tuple[Optional[str], Dict[str, str]]:
     """
@@ -102,14 +114,15 @@ def get_effects(table_data: BeautifulSoup, debug=False) -> Tuple[Optional[str], 
     Returns: The card effect (if there is) and a dictionary containing all dices.
     """
     parts = re.split(r"(?=<br/>)", str(table_data)) # separate into linebreaks
+    card_effect = None # most cards have no card effect
     dices = dict()
     for index, part in enumerate(parts):
         part = BeautifulSoup(part, 'html.parser') # we need to return to a beautifulsoup object
-        if index == 0: # first index always contains on-play or on-use effects
+        dice_type = get_dice_type(part, debug=debug)
+        if dice_type is None: # it has no dice; hence, it is the card effect.
             card_effect = part.get_text(separator=" ", strip=True)
         else:
             label = "Dice " + str(index) 
-            dice_type = get_dice_type(part, debug=debug)
             min_max_effect = part.get_text(strip=True)
             dices[label] = f"{dice_type}: {min_max_effect}"
     
@@ -210,12 +223,7 @@ def organize_pages(html_pages: List[BeautifulSoup],
                 attack_range = get_attack_range(table_data)
                 combat_page['Range'] = attack_range
             elif index == 3: # fourth element always contains the dices
-                try:
-                    card_effect, dices = get_effects(table_data, debug=debug)
-                except ValueError:
-                    if log:
-                        not_dice_found_combat_pages.append((page_number, html_page))
-                    continue
+                card_effect, dices = get_effects(table_data, debug=debug)
                 combat_page['Effect'] = card_effect
                 combat_page['Dices'] = dices
             else: # last index corresponds to the origins
@@ -223,22 +231,20 @@ def organize_pages(html_pages: List[BeautifulSoup],
                 combat_page['Obtained'] = origins
 
         combat_pages.append(combat_page)
-    
-    if log:
-        status = export_list_to_txt('errors/dice_not_found.txt', not_dice_found_combat_pages)
-        if not status:
-            print("Export failed.")
 
-    if not log and not debug: # no need to export on testing
-        if combat_page_dict_checker(combat_pages):
+    if not debug: # no need to export on testing
+        success, value = combat_page_dict_checker(combat_pages)
+        if success:
             status = export_dict_to_json('combat_pages/combat_pages.json', combat_pages)
             if not status:
                 print("JSON export failed.")
+        else:
+            raise ValueError(f"The combat pages dictionary contains errors in, at least, {value}.") 
     return combat_pages 
         
 
 if __name__ == '__main__':
     soup = get_contents()
     pages = get_html_pages(soup)
-    #result = organize_pages(pages, log = False, debug = False)
-    result = organize_pages([pages[3], pages[11]], log = False, debug = True)
+    result = organize_pages(pages, log = False, debug = False)
+    #result = organize_pages([pages[3], pages[11]], log = False, debug = True)
