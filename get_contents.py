@@ -147,7 +147,10 @@ def export_list_to_txt(file: str, lst: List[any]) -> bool:
             x = input()
             if x != 'y':
                 return False
-
+        
+        # Create the folder containing the file to avoid issues
+        dir_path = os.path.dirname(file)
+        os.makedirs(dir_path, exist_ok=True)
         with open(file, 'w') as f:
             for line in lst:
                 f.write(f"{line}\n\n")
@@ -168,7 +171,9 @@ def export_dict_to_json(file: str, dct: Dict[any, any]) -> bool:
             x = input()
             if x != 'y':
                 return False
-
+        # Create the folder containing the file to avoid issues
+        dir_path = os.path.dirname(file)
+        os.makedirs(dir_path, exist_ok=True)
         with open(file, 'w') as f:
             json.dump(dct, f, indent=4)
         return True
