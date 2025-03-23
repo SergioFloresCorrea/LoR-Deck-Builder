@@ -1,0 +1,4956 @@
+[
+    {
+        "Rank": "Canard",
+        "Name": "Evade",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~4"
+        },
+        "Obtained": "Default"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Light Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 2~3",
+            "Dice 1": "blunt: 1~4"
+        },
+        "Obtained": "Default"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Light Defense",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~5",
+            "Dice 1": "block: 2~3",
+            "Dice 2": "slash: 1~2"
+        },
+        "Obtained": "Default"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Charge and Cover",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~6",
+            "Dice 1": "block: 2~6"
+        },
+        "Obtained": "Default"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Focused Strikes",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~5",
+            "Dice 1": "slash: 3~5",
+            "Dice 2": "pierce: 1~3"
+        },
+        "Obtained": "Default"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Dodge and Strike",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~4",
+            "Dice 1": "slash: 1~2"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Thrust",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~4",
+            "Dice 1": "pierce: 1~4"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Wallop",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~6",
+            "Dice 1": "blunt: 2~4"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Preemptive Strike",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~5",
+            "Dice 1": "evade: 1~8"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Quickness",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Haste next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 1~4",
+            "Dice 2": "evade: 1~6"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Gut-harvesting",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~6 On Hit Inflict 1 Bleednext Scene",
+            "Dice 1": "slash: 3~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "block: 1~4"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Rats\u2019 Guide to Survival",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 1~6",
+            "Dice 1": "slash: 3~4 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "evade: 1~7"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Dirty Blow",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~7 On Clash Win Inflict 2 Bleednext Scene",
+            "Dice 1": "block: 1~3"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Bite Off",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~4 On Hit Inflict 1 Bleednext Scene",
+            "Dice 1": "blunt: 1~4"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Backstreets Dash",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~8 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Skitter Away",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~6",
+            "Dice 1": "evade: 1~6",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Commandeering",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Give 1 Protection to all allies next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 4~8",
+            "Dice 2": "block: 3~4",
+            "Dice 3": "pierce: 3~4"
+        },
+        "Obtained": "Book of Yun\u2019s Office, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "You\u2019re Too Slow",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~9 On Clash Win Add +2 Power to next die",
+            "Dice 1": "slash: 2~4 On Hit Inflict 2 Fragilenext Scene"
+        },
+        "Obtained": "Book of Yun\u2019s Office, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Struggle",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Protection next Scene",
+        "Dices": {
+            "Dice 1": "block: 2~6",
+            "Dice 2": "block: 2~5",
+            "Dice 3": "blunt: 2~6"
+        },
+        "Obtained": "Book of a Novice Fixer, Book of Finn, Book of Yun\u2019s Office"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Time for a Little Test",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~6 On Clash Win Lower max value of opponent\u2019s next die by 3",
+            "Dice 1": "slash: 2~4",
+            "Dice 2": "slash: 2~3"
+        },
+        "Obtained": "Book of Yun\u2019s Office, Book of Eri"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Feelin\u2019 Good",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~5 On Hit Inflict 1 Fragilenext Scene",
+            "Dice 1": "block: 3~4"
+        },
+        "Obtained": "Book of Yun\u2019s Office, Book of Eri"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Preparation",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 2~3",
+            "Dice 1": "block: 3~4 On Clash Win Restore 1 Light"
+        },
+        "Obtained": "Book of a Grade 9 Fixer, Book of a Novice Fixer, Book of Finn, Book of Yun\u2019s Office, Book of Eri, Book of Yun"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "B-blow It Up!",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "blunt: 2~5"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "File:CardY-youOnlyLiveOnce!Art.png Y-you Only Live Once!",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~12 On Hit Inflict 2 Paralysisnext Scene"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "C-charge Up!",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light; Inflict 1 Paralysis on self next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 2~3"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "E-endure",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~5",
+            "Dice 1": "block: 3~4 On Clash Win Inflict 1 Paralysisnext Scene",
+            "Dice 2": "blunt: 1~3 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "D-dried Up",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Strength next Scene",
+        "Dices": {
+            "Dice 1": "slash: 2~4",
+            "Dice 2": "evade: 3~4"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "C-chop It Off!",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 2~3",
+            "Dice 1": "slash: 1~1",
+            "Dice 2": "slash: 3~3"
+        },
+        "Obtained": "Book of the Brotherhood of Iron, Book of Mo, Book of Consta, Book of Arnold"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Overpower",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 5~6 On Hit Inflict 2 Bleednext Scene",
+            "Dice 1": "slash: 2~3"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Goin\u2019 First",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~7",
+            "Dice 1": "pierce: 2~2 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "pierce: 2~6 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Fend This Off If You Can",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~5 On Clash Win Lower max value of opponent\u2019s next die by 3",
+            "Dice 1": "pierce: 3~4 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Rampage",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~4 On Hit Inflict 1 Bleednext Scene",
+            "Dice 1": "pierce: 3~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 3~5"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Track",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Recover 1 HP",
+        "Dices": {
+            "Dice 1": "slash: 1~4"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Mutilate",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~6 On Hit Recover 1 HP",
+            "Dice 1": "slash: 2~6 On Hit Recover 1 HP"
+        },
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Pound",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~5"
+        },
+        "Obtained": "A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160, A Backstreets Fixer, Vol. \u2161, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Multi-block",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 1~5",
+            "Dice 1": "block: 3~5",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160, A Backstreets Fixer, Vol. \u2161, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Multi-hit",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~6 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 1": "blunt: 1~2 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 2": "blunt: 1~2"
+        },
+        "Obtained": "A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160, A Backstreets Fixer, Vol. \u2161, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Quick Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Haste next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 2~3",
+            "Dice 2": "blunt: 2~3"
+        },
+        "Obtained": "A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160, A Backstreets Fixer, Vol. \u2161, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Strong Strike",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 5~7",
+            "Dice 1": "blunt: 3~4"
+        },
+        "Obtained": "A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160, A Backstreets Fixer, Vol. \u2161, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Keep It Fresh",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~4",
+            "Dice 1": "evade: 1~12"
+        },
+        "Obtained": "Book of Pierre, Book of Jack"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Trim the Ingredients",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "evade: 1~4"
+        },
+        "Obtained": "Book of Pierre, Book of Jack"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "I Can Cook Anything",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~6",
+            "Dice 1": "slash: 4~4 On Hit Recover 4 HP"
+        },
+        "Obtained": "Book of Pierre, Book of Jack"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Cooking Prep",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~5",
+            "Dice 1": "pierce: 3~5 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of Pierre, Book of Jack"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Ingredient Hunt",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6 On Hit Inflict 2 Bindnext Scene",
+            "Dice 1": "blunt: 2~5"
+        },
+        "Obtained": "Book of Pierre, Book of Jack, A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Cruelty",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~6 On Hit Recover HPequal to stacks of Bleedon target",
+            "Dice 1": "block: 2~3"
+        },
+        "Obtained": "Book of Pierre, Book of Jack, A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Appetite",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~4 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Pierre, Book of Jack, A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Deflect",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~4",
+            "Dice 1": "blunt: 1~4 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 2": "slash: 1~4"
+        },
+        "Obtained": "Book of Mars, A Backstreets Fixer, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Prepared Mind",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~4 On Clash Win Gain 1 Endurancenext Scene",
+            "Dice 1": "slash: 2~6"
+        },
+        "Obtained": "Book of Mars, A Backstreets Fixer, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Set Fire",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~5 On Hit Inflict 3 Burn; Deal 3 damage to self",
+            "Dice 1": "blunt: 3~5 On Hit Inflict 3 Burn; Deal 3 damage to self"
+        },
+        "Obtained": "Book of Lulu, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Taste My Flaming Bat!",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~4",
+            "Dice 1": "evade: 1~8 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 2": "blunt: 3~3 On Hit Inflict 2 Burn"
+        },
+        "Obtained": "Book of Lulu, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Nonstop Assault",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~5",
+            "Dice 1": "slash: 2~6",
+            "Dice 2": "slash: 3~6"
+        },
+        "Obtained": "Book of Mars, Book of Lulu, A Backstreets Fixer, Vol. \u2161, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Fleet Footsteps",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~3",
+            "Dice 1": "evade: 1~6 On Defense Recover 2 HP",
+            "Dice 2": "evade: 1~4 On Defense Recover 2 HP"
+        },
+        "Obtained": "Book of Mars, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Gather Intel",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6"
+        },
+        "Obtained": "Book of Mars, Book of Lulu, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Prepared Mind",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 1~6 On Clash Win Gain 1 Endurancenext Scene",
+            "Dice 1": "blunt: 4~5"
+        },
+        "Obtained": "Book of Lulu, Streetlight Office"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Diversion",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~3",
+            "Dice 1": "blunt: 1~4"
+        },
+        "Obtained": "Dark Alleys of the Backstreets, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Sharp Swipe",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~6"
+        },
+        "Obtained": "Dark Alleys of the Backstreets, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Back Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~8",
+            "Dice 1": "blunt: 2~3",
+            "Dice 2": "slash: 1~4"
+        },
+        "Obtained": "Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Standoff",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~6 On Hit Recover 2 HP",
+            "Dice 1": "blunt: 2~3"
+        },
+        "Obtained": "Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Outburst",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Discard a page with the lowest Cost and restore 2 Light",
+        "Dices": {
+            "Dice 1": "blunt: 3~5",
+            "Dice 2": "pierce: 3~4"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika, Dark Alleys of the Backstreets, Vol. \u2161"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Handling Work",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 1": "slash: 3~4 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 2": "block: 2~6"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Silent Night",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Endurance next Scene",
+        "Dices": {
+            "Dice 1": "evade: 1~6",
+            "Dice 2": "slash: 1~4",
+            "Dice 3": "pierce: 1~4"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Fence",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Give 1 Protection to all allies next Scene",
+        "Dices": {
+            "Dice 1": "evade: 1~6",
+            "Dice 2": "slash: 1~6",
+            "Dice 3": "block: 3~4"
+        },
+        "Obtained": "Zwei South Section 6, Vol. \u2161, Book of Julia"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Your Shield",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~4 On Clash Win Deal 2 damage to opponent",
+            "Dice 1": "slash: 2~5",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Combat Preparation",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Give 2 Endurance to all allies next Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~4",
+            "Dice 2": "block: 2~4",
+            "Dice 3": "evade: 1~8"
+        },
+        "Obtained": "Zwei South Section 6, Vol. \u2161, Book of Isadora"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Blade Whirl",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "slash: 2~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 1~2"
+        },
+        "Obtained": "Zwei South Section 6, Vol. \u2161, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Guardian",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Give 1 Endurance to all allies next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 1~5",
+            "Dice 2": "slash: 1~6"
+        },
+        "Obtained": "Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Suppress",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 5~7",
+            "Dice 1": "pierce: 2~4"
+        },
+        "Obtained": "Zwei South Section 6, Vol. \u2161, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Avert",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~4",
+            "Dice 1": "slash: 3~5 On Hit Inflict 2 Bindnext Scene"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San, Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Retaliate",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~10 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 1": "pierce: 4~5",
+            "Dice 2": "pierce: 3~4"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San, Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Law and Order",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6 On Clash Win Deal 2 damage to opponent"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San, Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Fierce Onslaught",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Discard a page with the lowest Cost",
+        "Dices": {
+            "Dice 1": "pierce: 2~3",
+            "Dice 2": "slash: 2~3",
+            "Dice 3": "pierce: 1~6"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Wait Up!",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 2~3"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Gamble",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Discard a page with the lowest Cost",
+        "Dices": {
+            "Dice 1": "slash: 3~6",
+            "Dice 2": "blunt: 3~6"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Daring Decision",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Discard all pages",
+        "Dices": {
+            "Dice 1": "slash: 4~8",
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "blunt: 3~5"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Stay Calm",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Draw a page upon discarding this page",
+        "Dices": {
+            "Dice 1": "slash: 2~4",
+            "Dice 2": "pierce: 2~3",
+            "Dice 3": "blunt: 2~3"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "The Art of Rapid Steps",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~8",
+            "Dice 1": "slash: 2~8"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Slice",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~3",
+            "Dice 1": "slash: 1~4",
+            "Dice 2": "pierce: 1~3"
+        },
+        "Obtained": "Book of Molar Office, Book of Olga, Book of Rain, Book of Mika"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Scratch That!",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use All dice on this page lose 2 Power",
+        "Dices": {
+            "Dice 1": "blunt: 5~10",
+            "Dice 2": "slash: 5~10",
+            "Dice 3": "blunt: 5~10"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Brawl",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Replace all dice on this page with ones on a random page in hand whose original Cost is 4 or lower. (Excluding Counter dice)",
+        "Dices": {
+            "Dice 1": "blunt: 3~6 On Hit Restore 1 Light",
+            "Dice 2": "slash: 2~8",
+            "Dice 3": "slash: 3~5",
+            "Dice 4": "slash: 3~6"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "I\u2019ll End You",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "slash: 3~5 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Startin\u2019 Out Lightly",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~4",
+            "Dice 1": "slash: 2~6"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Shocking Blow",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~12"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Destructive Impact",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~15"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Cut In",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~6",
+            "Dice 1": "evade: 1~6",
+            "Dice 2": "pierce: 3~4"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu, Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Crush",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~6 On Hit Inflict 2 Bleednext Scene",
+            "Dice 1": "blunt: 3~5"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu, Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Loosen Up",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~6 On Hit Restore 1 Light"
+        },
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu, Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Tailoring",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 6~10 On Hit Inflict 3 Bleednext Scene",
+            "Dice 1": "pierce: 6~10 On Hit Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Feast",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 5~7",
+            "Dice 1": "slash: 3~4 On Hit Recover 2 HP",
+            "Dice 2": "pierce: 1~7 On Hit Recover 2 HP"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Will Make Fine Silk",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~6",
+            "Dice 1": "blunt: 1~3 Add \u2018Fascinating Fabric\u2019 to each other\u2019s hands",
+            "Dice 2": "blunt: 1~2 Gain +1 Power for each page in hand"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Will Be Tasty?",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~5 On Hit Recover 1 HP",
+            "Dice 1": "evade: 1~6",
+            "Dice 2": "slash: 2~4 On Hit Recover 1 HP"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "As the Prescript Orders",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~6 On Clash Win Restore 1 Light",
+            "Dice 1": "pierce: 1~4"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Bizarre Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 2~5",
+            "Dice 1": "slash: 1~4 On Hit Deal 5 Stagger damage to target"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Fascinating Fabric",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Only up to 3 of this page can be held at once",
+        "Dices": {
+            "Dice 1": "block: 8~8",
+            "Dice 2": "evade: 6~8"
+        },
+        "Obtained": "Will Make Fine Silk"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Going for Bullseye",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 6~20 On Hit Inflict 2 Fragilenext Scene"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Tamaki"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Return Fire",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 1~8 On Hit Inflict 1 Feeblenext Scene",
+            "Dice 2": "block: 3~5"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Tamaki"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Indiscriminate Shots",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 1~8 On Clash Lose Add +2 Power to next die",
+            "Dice 2": "pierce: 1~8 On Clash Lose Add +2 Power to next die",
+            "Dice 3": "blunt: 1~8"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Stephan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "I Hate CQC",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 2~6 On Hit Inflict 1 Feeblenext Scene",
+            "Dice 2": "pierce: 2~6",
+            "Dice 3": "evade: 3~8"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Stephan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Not Another Step",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 4~7",
+            "Dice 2": "pierce: 4~7 On Hit Inflict 1 Feeblenext Scene",
+            "Dice 3": "block: 3~8"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Stephan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Take the Shot",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "blunt: 2~6",
+            "Dice 2": "blunt: 2~6",
+            "Dice 3": "pierce: 1~5"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Liwei, Book of Stephan, Book of Tamaki"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Headshot",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 5~12 On Hit Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Liwei, Book of Stephan, Book of Tamaki"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Target Spotted",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 2~6",
+            "Dice 2": "pierce: 2~6 On Hit Inflict 1 Feeblenext Scene"
+        },
+        "Obtained": "Book of Full-Stop Office, Book of Liwei, Book of Stephan, Book of Tamaki"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Full-Stop to Life",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~7",
+            "Dice 1": "slash: 3~7 On Hit Inflict 1 Feeblenext Scene"
+        },
+        "Obtained": "Book of Liwei"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Beyond the Shadow",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 3~7",
+            "Dice 1": "slash: 2~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 2~5 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of Liwei"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Crack of Dawn",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Give 2 Protection to two random other allies next Scene",
+        "Dices": {
+            "Dice 1": "block: 3~8",
+            "Dice 2": "slash: 7~18 On Hit Inflict 3 Burn"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Flash of Sunup",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 1~5",
+            "Dice 2": "evade: 1~4 On Clash Win Reduce Power of opponent\u2019s next die by 2",
+            "Dice 3": "slash: 1~6 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Butterfly Slash",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~7",
+            "Dice 1": "block: 3~5",
+            "Dice 2": "slash: 2~6 On Hit Inflict 2 Burn"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Eject",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~5 Reduce Power of target\u2019s current die by 1",
+            "Dice 1": "pierce: 3~5 Reduce Power of target\u2019s current die by 1",
+            "Dice 2": "block: 2~4"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Sunset Blade",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~6 On Hit Inflict 1 Burn",
+            "Dice 1": "slash: 1~5 On Hit Inflict 1 Burn",
+            "Dice 2": "blunt: 2~7 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book ofDawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Handle Request",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~6 On Hit Inflict 1 Burn",
+            "Dice 1": "block: 3~4"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Stigmatize",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Negative Emotion Point",
+        "Dices": {
+            "Dice 1": "pierce: 3~6 On Hit Inflict 1 Burn",
+            "Dice 2": "pierce: 3~7 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Unstable Book of the Crying Children"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Observe",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Strength next Scene",
+        "Dices": {
+            "Dice 1": "block: 2~6",
+            "Dice 2": "blunt: 2~4 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 3": "blunt: 1~5"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Opportunity Spotted",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~5",
+            "Dice 1": "blunt: 1~2 Add +1 Power if target has Paralysis",
+            "Dice 2": "blunt: 1~2 Add +1 Power if target has Paralysis",
+            "Dice 3": "slash: 1~2 Add +1 Power if target has Paralysis"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Binding Arms",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Lower this page\u2019s Cost by 1 (Up to 2 times)",
+        "Dices": {
+            "Dice 1": "blunt: 5~15 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "You\u2019re a Hindrance",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~5 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "pierce: 2~4",
+            "Dice 2": "evade: 1~7"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Zzzzzap",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~7 On Clash Win Inflict 1 Paralysisnext Scene",
+            "Dice 1": "block: 1~7 On Clash Win Inflict 1 Paralysisnext Scene",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Electric Shock",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 2~8 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "pierce: 2~7 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Structural Analysis",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 2~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 1": "pierce: 3~5",
+            "Dice 2": "block: 2~7"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Unavoidable Gaze",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 1~7",
+            "Dice 1": "pierce: 1~6 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Gaze Office, Book of Alloc, Book of Dalloc, Book of Bono"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Faint Memories",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If HP is at 25% or lower, all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "evade: 2~8",
+            "Dice 2": "slash: 2~6",
+            "Dice 3": "blunt: 2~6"
+        },
+        "Obtained": "Book of Tomerry"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Wrath of Torment",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Deal 7 damage to self; all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "blunt: 2~8",
+            "Dice 2": "blunt: 2~8",
+            "Dice 3": "slash: 2~7"
+        },
+        "Obtained": "Book of Tomerry"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Ink Over",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 1~6 Gain +1 Power for each page in hand",
+            "Dice 1": "block: 2~8",
+            "Dice 2": "slash: 3~10 On Hit Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Sharpened Blade",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Slash dice Power by +2 for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 1~3",
+            "Dice 2": "slash: 1~3 On Hit Inflict 2 Bleednext Scene",
+            "Dice 3": "block: 4~5"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Cumulus Wall",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 2~7",
+            "Dice 1": "block: 2~4",
+            "Dice 2": "slash: 2~5 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Sky-Clearing Cut",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~5 On Clash Lose Add +2 Power to next die",
+            "Dice 1": "slash: 3~9 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Scattering Slash",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Gain 3 Protection",
+        "Dices": {
+            "Dice 1": "evade: 1~9",
+            "Dice 2": "slash: 2~7",
+            "Dice 3": "block: 2~5"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Silent Mist",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Protection next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 2~7 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 2~7",
+            "Dice 3": "block: 2~3"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Rules of the Backstreets",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~8 On Hit Draw 1 page"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Clean Up",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "slash: 2~7 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Dark Cloud",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Upon each successful Slash attack this Scene, inflict 1 Bleed next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 2~6",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Heavy Peaks",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Inflict 1 Feeble to two random enemies",
+        "Dices": {
+            "Dice 1": "blunt: 5~18"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Unforgettable Melody",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength to two random allies",
+        "Dices": {
+            "Dice 1": "slash: 3~5",
+            "Dice 2": "block: 2~3",
+            "Dice 3": "blunt: 2~6"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Hard Rehearsal",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "evade: 1~5",
+            "Dice 2": "blunt: 3~8",
+            "Dice 3": "slash: 3~7"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Shrine to Music",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Inflict 1 Feeble to a random enemy",
+        "Dices": {
+            "Dice 1": "blunt: 2~4",
+            "Dice 2": "blunt: 3~9",
+            "Dice 3": "block: 1~2"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Upbeat Performance",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~7",
+            "Dice 1": "slash: 2~6"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Tendon Chords",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~5 On Hit Give 1 Strengthto two random allies next Scene",
+            "Dice 1": "slash: 3~5 On Hit Recover 3 HPof two random allies"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "The Red Notes",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength to a random ally",
+        "Dices": {
+            "Dice 1": "blunt: 1~5",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Transpierce",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 6~18 On Hit Deal 5 damage to target",
+            "Dice 1": "block: 2~7"
+        },
+        "Obtained": "Book of Wedge Office, Book of Oscar, Book of Pameli, Book of Pamela"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Sparking Spear",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "pierce: 3~7",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of Wedge Office, Book of Oscar, Book of Pameli, Book of Pamela"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Collision",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 4~8 On Clash Win Restore 1 Light",
+            "Dice 1": "pierce: 4~8 On Clash Win Restore 1 Light"
+        },
+        "Obtained": "Book of Wedge Office, Book of Oscar, Book of Pameli, Book of Pamela"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Speared Sweep",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 4~7 On Clash Win Deal 2 damage to opponent",
+            "Dice 1": "pierce: 3~5"
+        },
+        "Obtained": "Book of Wedge Office, Book of Oscar, Book of Pameli, Book of Pamela"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "High-speed Stabbing",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 2~4",
+            "Dice 1": "pierce: 1~5",
+            "Dice 2": "pierce: 1~5"
+        },
+        "Obtained": "Book of Wedge Office, Book of Oscar, Book of Pameli, Book of Pamela"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Searing Sword",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~7 On Hit Inflict 2 Burn",
+            "Dice 1": "pierce: 3~7 On Hit Inflict 2 Burn"
+        },
+        "Obtained": "Unstable Book of the Crying Children"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Feather Shield",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~7 On Clash Win Inflict 2 Burn",
+            "Dice 1": "block: 3~7 On Clash Win Inflict 2 Burn",
+            "Dice 2": "slash: 2~4"
+        },
+        "Obtained": "Unstable Book of the Crying Children"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Want a Taste of this Chain?",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Inflict 1 Bleed to self next Scene; restore 1 Light",
+        "Dices": {
+            "Dice 1": "slash: 3~5 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Jikan, Book of a Rusted Chainlink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "You\u2019re Soft",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Inflict 1 Bleed to self next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 3~6 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "block: 3~5"
+        },
+        "Obtained": "Book of Jikan, Book of a Rusted Chainlink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Frontal Dodge",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 3~7",
+            "Dice 1": "block: 2~7"
+        },
+        "Obtained": "Book of Jikan, Book of a Rusted Chainlink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Flank Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Inflict 1 Bleed to self next Scene",
+        "Dices": {
+            "Dice 1": "block: 1~5",
+            "Dice 2": "slash: 4~7 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Jikan, Book of a Rusted Chainlink"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Here\u2019s My Chance",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Inflict 3 Bleed to self this Scene; all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "slash: 3~7 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "blunt: 3~6 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Jikan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Head-to-Head",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Inflict 1 Bleed to self next Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~7 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 4~7 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Jikan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Now Die",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Inflict 5 Bleed to self this Scene; all dice on this page gain +3 Power",
+        "Dices": {
+            "Dice 1": "blunt: 1~8 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "block: 2~7",
+            "Dice 3": "slash: 3~8 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of Jikan"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Mend Weapon",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Pierce dice Power by +1 for this Scene On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 1~7"
+        },
+        "Obtained": "Book of a Workshop-affiliated Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Stab and Detonate",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 3~7 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 1": "pierce: 3~6"
+        },
+        "Obtained": "Book of a Workshop-affiliated Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Whet",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~5 On Clash Win Restore 1 Light",
+            "Dice 1": "pierce: 2~8 On Clash Win Gain 1 Strengthnext Scene"
+        },
+        "Obtained": "Book of a Workshop-affiliated Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Refine",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Pierce dice Power by +2 for this Scene",
+        "Dices": {
+            "Dice 1": "pierce: 3~5 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 2": "slash: 2~4 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 3": "pierce: 2~4"
+        },
+        "Obtained": "Book of a Workshop-affiliated Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Low at Night, High at Day",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "When discarded, gain 1 Haste",
+        "Dices": {
+            "Dice 1": "pierce: 2~6"
+        },
+        "Obtained": "Book of Hanafuda, Book of a Jeong\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Relay",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Draw a page upon discarding this page",
+        "Dices": {
+            "Dice 1": "blunt: 2~5 On Hit Inflict 1 Fragilenext Scene",
+            "Dice 2": "evade: 1~8"
+        },
+        "Obtained": "Book of Hanafuda, Book of a Jeong\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Flip the Table",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "When discarded, give 1 Haste to all allies next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 3~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 2": "blunt: 2~6 On Clash Win Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Hanafuda, Book of a Jeong\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Shuffle Hands",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Discard a page with the lowest Cost; Draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 3~6",
+            "Dice 2": "blunt: 3~7"
+        },
+        "Obtained": "Book of Hanafuda, Book of a Jeong\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Sakura",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use If 4+ pages are in hand, discard 4 random pages and boost the min value of Offensive dice on this page by +3",
+        "Dices": {
+            "Dice 1": "evade: 2~6",
+            "Dice 2": "slash: 2~6",
+            "Dice 3": "blunt: 2~5"
+        },
+        "Obtained": "Book of Hanafuda"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Extreme Edge",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 6~12 On Hit Inflict 1 Disarmnext Scene"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Valentin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Flashing Strike",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If Speed is 6 or higher, all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "slash: 3~6",
+            "Dice 3": "evade: 2~5"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Flying Sword",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Haste next Scene",
+        "Dices": {
+            "Dice 1": "slash: 2~6",
+            "Dice 2": "slash: 3~7"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Valentin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Endless Battle",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If HP is at 25% or lower, all dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 1": "block: 4~7",
+            "Dice 2": "blunt: 3~6",
+            "Dice 3": "slash: 3~7"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Valentin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Desperate Struggle",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Start of Clash Deal 5 damage to self; all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "slash: 3~5",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Valentin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "To Overcome Crisis",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 2~7 On Hit If HP is at 25% or lower, restore 1 Light"
+        },
+        "Obtained": "Book of Shi Association, Book of Yujin, Book of Valentin, Book of Tenma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Automated Movement",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Haste next Scene",
+        "Dices": {
+            "Dice 1": "evade: 2~9 On Clash Win Add +2 Power to next die",
+            "Dice 2": "blunt: 3~8",
+            "Dice 3": "blunt: 4~7",
+            "Dice 4": "evadecounter: 3~8"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Manikin",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~8",
+            "Dice 1": "evade: 3~9",
+            "Dice 2": "blunt: 4~8 On Hit Inflict 1 Disarmnext Scene"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Repressed Flesh",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 4~7",
+            "Dice 2": "blunt: 4~9 Reduce Power of target\u2019s current Defensive die by 3",
+            "Dice 3": "blunt: 4~9 On Hit Deal 3 Stagger damage to target",
+            "Dice 4": "bluntcounter: 3~7"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Forceful Gesture",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 4~8",
+            "Dice 2": "blunt: 5~16 On Hit Inflict 1 Feeble,Disarm, and Bindnext Scene"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Gigigig",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "block: 3~6",
+            "Dice 2": "blunt: 3~6"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Creak",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 5~8",
+            "Dice 1": "blunt: 3~7",
+            "Dice 2": "block: 4~6"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Puppet Blockade",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "block: 2~7",
+            "Dice 2": "blunt: 2~4"
+        },
+        "Obtained": "Book of a Puppet, Book of a Weighty Puppet"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sharp Nails",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~8",
+            "Dice 1": "blunt: 5~8",
+            "Dice 2": "pierce: 4~9 On Hit Recover 5 Stagger Resist",
+            "Dice 3": "slashcounter: 3~7"
+        },
+        "Obtained": "Book of Emma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Circus Knives",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 3~7 On Hit Inflict 2 Bleednext Scene",
+            "Dice 1": "slash: 2~6"
+        },
+        "Obtained": "Book of Emma"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Juggling",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "blunt: 6~11 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Emma, Book of Noah"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Wild Card",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "pierce: 4~8 On Hit Recover 2 HP",
+            "Dice 2": "blunt: 3~8"
+        },
+        "Obtained": "Book of Emma, Book of Noah"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "333\u2026 1973",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Gain \u2019Persistence\u2019 for 4 Scenes.",
+        "Dices": {
+            "Dice 2": "pierce: 3~8",
+            "Dice 3": "block: 3~7"
+        },
+        "Obtained": "Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sweep the Backstreets",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 4~7 On Hit Inflict 2 Paralysisnext Scene",
+            "Dice 1": "block: 2~6",
+            "Dice 2": "slash: 3~7 On Hit Recover 3 HP"
+        },
+        "Obtained": "Book of a Sweeper, Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "For the Family",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Protection to two random allies",
+        "Dices": {
+            "Dice 1": "pierce: 4~7 On Hit Inflict 2 Bleednext Scene",
+            "Dice 2": "evade: 3~7",
+            "Dice 3": "blunt: 3~7"
+        },
+        "Obtained": "Book of a Sweeper, Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Extract Fuel",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "pierce: 3~7 On Hit Recover 2 HP",
+            "Dice 2": "block: 2~6"
+        },
+        "Obtained": "Book of a Sweeper, Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Night in the Backstreets",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start All dice the user plays lose 2 Power for this Scene",
+        "Dices": {
+            "Dice 1": "blunt: 6~9 On Hit Recover 3 HP",
+            "Dice 2": "pierce: 5~9 On Hit Recover 2 HP"
+        },
+        "Obtained": "Book of a Sweeper, Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "To Where the Prescript Points",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If Singleton , all dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 1": "pierce: 4~7 On Hit Inflict 1 Fragilenext Scene",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Undertake Prescript",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If Singleton , all dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 1": "blunt: 3~6",
+            "Dice 2": "blunt: 3~5",
+            "Dice 3": "pierce: 1~4"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Execute",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~5 If Singleton, add +4 Power",
+            "Dice 1": "slash: 3~6"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Will of the Prescript",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use If Singleton , draw 3 pages",
+        "Dices": {
+            "Dice 1": "evade: 3~8",
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "pierce: 4~7"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Faith",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 3~8",
+            "Dice 2": "slash: 2~6"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sense Quarry",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use If there are 7 or more pages in hand, all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "block: 2~5",
+            "Dice 2": "block: 2~5",
+            "Dice 3": "pierce: 3~7 On Hit Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Proselyte\u2019s Blade",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start All dice the user plays lose 3 Power for this Scene",
+        "Dices": {
+            "Dice 1": "blunt: 7~11",
+            "Dice 2": "pierce: 7~10"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Dimensional Rift",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 6 Charge",
+        "Dices": {
+            "Dice 1": "slash: 4~8",
+            "Dice 2": "slash: 3~8"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti, Book of WARP Cleanup Crew"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ripple",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Spend 3 Charge to boost Power of all dice on this page by +3",
+        "Dices": {
+            "Dice 1": "evade: 2~5 On Clash Lose Add +2 Power to next die",
+            "Dice 2": "blunt: 5~17 On Hit Inflict 2 Bindnext Scene"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti, Book of WARP Cleanup Crew"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Overcharge",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 10 Charge and become Immobilized next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 5~13",
+            "Dice 2": "slash: 4~12",
+            "Dice 3": "pierce: 5~11",
+            "Dice 4": "blockcounter: 2~6"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti, Book of WARP Cleanup Crew"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Rewind",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 4 Charge",
+        "Dices": {
+            "Dice 1": "evade: 2~9",
+            "Dice 2": "block: 2~5",
+            "Dice 3": "pierce: 2~6 On Hit Recover 3 HP"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti, Book of WARP Cleanup Crew"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Leap",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Haste next Scene; spend 3 Charge to draw 2 pages",
+        "Dices": {
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "blunt: 3~5"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Energy Cycle",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Charge",
+        "Dices": {
+            "Dice 1": "pierce: 2~7 On Hit Restore 1 Light",
+            "Dice 2": "blunt: 2~4"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti, Book of WARP Cleanup Crew"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Deep Drag",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "blunt: 6~19 On Hit Inflict 7 Smoke",
+            "Dice 2": "evade: 1~9"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Flesh Fillet",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Use 2 Smoke to boost Power of all dice on this page by +2",
+        "Dices": {
+            "Dice 1": "slash: 4~8 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 3~7 On Hit Inflict 1 Bleednext Scene per 2 stacks of Smokeon target"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Inhale Smoke",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Smoke",
+        "Dices": {
+            "Dice 1": "block: 2~8",
+            "Dice 2": "blunt: 3~8 On Hit Gain 4 Smoke"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Trace of Fumes",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~8 On Hit Inflict 1 Smoke",
+            "Dice 1": "blunt: 3~7 On Hit Inflict 2 Smoke",
+            "Dice 2": "block: 3~5"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Hidden Blade",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Use 2 Smoke to boost Power of all dice on this page by +2",
+        "Dices": {
+            "Dice 1": "evade: 2~9",
+            "Dice 2": "slash: 4~8 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Smoking Pipe",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Smoke . Restore 1 Light",
+        "Dices": {
+            "Dice 1": "block: 3~8",
+            "Dice 2": "evade: 1~6"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Loss of Senses",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 5~8",
+            "Dice 1": "blunt: 5~9 On Hit If target has 7 or more Smoke, inflict 2 Paralysisand 1 Feeble",
+            "Dice 2": "slash: 4~9 On Hit If target has 3 or more Smoke, draw 2 pages"
+        },
+        "Obtained": "Book of Wang, Book of Jin, Book of Mi, Book of the Smiling Faces"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fierce Charge",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 7~12 On Hit Inflict 3 Burn"
+        },
+        "Obtained": "Unstable Book of the Crying Children"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Engagement",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Add \u2019En Garde\u2019 to user\u2019s hand",
+        "Dices": {
+            "Dice 1": "slash: 1~8"
+        },
+        "Obtained": "Book of Dante, Book of a Seven Association Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Riposte",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~7 On Clash Win Add +1 Power to next die",
+            "Dice 1": "slash: 4~8"
+        },
+        "Obtained": "Book of Dante, Book of a Seven Association Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fl\u00e8che",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 5~13 On Clash Win Deal 4 Stagger damage; inflict 1 Fragilenext Scene"
+        },
+        "Obtained": "Book of Dante, Book of a Seven Association Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Moulinet",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 5~9 On Clash Win Boost max roll value of last die by +2",
+            "Dice 1": "blunt: 5~9 On Clash Win Boost max roll value of last die by +2",
+            "Dice 2": "slash: 3~8 On Clash Win Inflict 2 Fragilenext Scene"
+        },
+        "Obtained": "Book of Dante"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "En Garde",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Give 1 Strength to target and self next Scene",
+        "Dices": {
+            "Dice 2": "slash: 6~10"
+        },
+        "Obtained": "Engagement"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Draw of the Sword",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "slash: 3~6"
+        },
+        "Obtained": "Book of Bamboo-hatted Kim, Book of a Blade Lineage Cutthroat, Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Acupuncture",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Slash dice Power by +1 for this Scene",
+        "Dices": {
+            "Dice 1": "pierce: 3~7 On Hit Boost next die\u2019s max value by +2",
+            "Dice 2": "slash: 2~4 On Clash Win Restore 1 Light"
+        },
+        "Obtained": "Book of Bamboo-hatted Kim, Book of a Blade Lineage Cutthroat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Overthrow",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Slash dice Power by +3 for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~6",
+            "Dice 2": "block: 2~8"
+        },
+        "Obtained": "Book of Bamboo-hatted Kim, Book of a Blade Lineage Cutthroat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Slay",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~8 On Clash Win Gain 1 Strengthnext Scene",
+            "Dice 1": "slash: 3~6 On Hit Restore 1 Light"
+        },
+        "Obtained": "Book of Bamboo-hatted Kim, Book of a Blade Lineage Cutthroat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Mangle",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~6 On Hit Inflict 1 Bleednext Scene",
+            "Dice 1": "slash: 3~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "block: 3~7"
+        },
+        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Shoving Stab",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "pierce: 7~12 On Clash Win Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "A Critical Moment",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "evade: 3~6",
+            "Dice 2": "slash: 7~15 On Clash Win Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Disgorge Innards",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Damage increases by the amount of Bleed on target",
+        "Dices": {
+            "Dice 1": "pierce: 5~8",
+            "Dice 2": "blunt: 6~15"
+        },
+        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Emotional Turbulence",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use All dice on this page gain +1 Power for every 2 Emotion Levels",
+        "Dices": {
+            "Dice 1": "block: 4~8",
+            "Dice 2": "pierce: 5~9 On Hit Inflict 2 Burn",
+            "Dice 3": "slash: 4~9 On Hit Inflict 1 Burn",
+            "Dice 4": "blockcounter: 3~7"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Inner Ardor",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Positive Emotion Point",
+        "Dices": {
+            "Dice 1": "block: 4~9",
+            "Dice 2": "slash: 6~10"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Book of Lowell"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Flow of the Sword",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Costs 1 less at Emotion Level 3 or higher",
+        "Dices": {
+            "Dice 1": "slash: 4~8 On Hit Inflict 2 Burn",
+            "Dice 2": "slash: 3~8 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Book of Lowell"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sturdy Defense",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "evade: 3~10",
+            "Dice 2": "block: 8~17 On Clash Win Draw 1 page",
+            "Dice 3": "pierce: 3~6 On Hit Inflict 2 Burn"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fleet Edge",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 2~6",
+            "Dice 1": "pierce: 4~8 On Hit Gain 1 Hastenext Scene",
+            "Dice 2": "pierce: 3~8 On Hit Gain 1 Hastenext Scene"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Rush Down",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Offensive dice deal +1 damage for this Scene",
+        "Dices": {
+            "Dice 1": "blunt: 3~7 Reduce Power of target\u2019s current Defensive die by 2",
+            "Dice 2": "pierce: 3~7 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Book of Lowell"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Frontal Assault",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 2~7",
+            "Dice 2": "pierce: 1~2"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Gale Kick",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 7~13 On Hit Draw 1 page",
+            "Dice 1": "piercecounter: 2~6"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2161, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "High Kick",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 5~10 On Hit Draw 1 page"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2161, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Iron Wall",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Endurance next Scene. At Emotion Level 3 or higher, gain 2 Endurance instead.",
+        "Dices": {
+            "Dice 1": "block: 5~8",
+            "Dice 2": "block: 4~8",
+            "Dice 3": "pierce: 2~6"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2161, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "All-out War",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Positive Emotion Point",
+        "Dices": {
+            "Dice 1": "block: 4~9",
+            "Dice 2": "slash: 4~8"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2161, Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ferrous Guard",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~8",
+            "Dice 1": "block: 3~7",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Book of Boris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Steel Knuckles",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "blunt: 4~8",
+            "Dice 2": "blunt: 3~7",
+            "Dice 3": "slashcounter: 2~6"
+        },
+        "Obtained": "Book of Boris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Le Regole",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use All allies deal +2 damage with their Offensive dice next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 5~11",
+            "Dice 2": "slash: 5~10",
+            "Dice 3": "blockcounter: 3~8"
+        },
+        "Obtained": "Book of Kalo"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Class and Respect",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "slash: 4~8 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel, Book of Boris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Absorb Impact",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 6 Charge",
+        "Dices": {
+            "Dice 1": "block: 7~9",
+            "Dice 2": "slash: 5~8"
+        },
+        "Obtained": "Book of Cane Office, Book of Nemo, Book of Martina, Book of Bada"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "A Golden Opportunity!",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 5 Charge",
+        "Dices": {
+            "Dice 1": "evade: 2~9 On Clash Win Gain 2 Charge",
+            "Dice 2": "block: 3~7",
+            "Dice 3": "blunt: 4~7"
+        },
+        "Obtained": "Book of Cane Office, Book of Nemo, Book of Martina, Book of Bada"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ready Up!",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Spend 2 Charge to give 1 Protection to all allies this Scene and next Scene",
+        "Dices": {
+            "Dice 1": "block: 4~8",
+            "Dice 2": "pierce: 5~8",
+            "Dice 3": "evade: 3~8"
+        },
+        "Obtained": "Book of Cane Office, Book of Nemo, Book of Martina, Book of Bada"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Energy Shield",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Charge",
+        "Dices": {
+            "Dice 1": "block: 3~4 On Clash Lose Gain 1 Charge",
+            "Dice 2": "block: 3~7",
+            "Dice 3": "pierce: 3~5"
+        },
+        "Obtained": "Book of Cane Office, Book of Nemo, Book of Martina, Book of Bada"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Energy Conversion",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Spend 4 Charge to restore 3 Light",
+        "Dices": {
+            "Dice 1": "blunt: 3~7 On Hit Draw 1 page",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Book of Cane Office, Book of Nemo, Book of Martina, Book of Bada"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Vapour",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 4 Smoke and draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 9~19 On Hit Inflict 3 Smoke"
+        },
+        "Obtained": "Book of a Church of Gears Worshipper"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Defense Order",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 4 Smoke",
+        "Dices": {
+            "Dice 1": "block: 7~10",
+            "Dice 2": "slash: 4~8"
+        },
+        "Obtained": "Book of a Church of Gears Worshipper"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Autonomous Rush",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Smoke",
+        "Dices": {
+            "Dice 1": "slash: 5~9 On Hit Inflict 2 Smoke",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of a Church of Gears Worshipper"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Assault Order",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If target has 2 or more Smoke , all Offensive dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 1": "evade: 2~6",
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "slash: 3~8"
+        },
+        "Obtained": "Book of a Church of Gears Worshipper"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Guidance of the Gears",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Smoke . Restore 2 Light",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "pierce: 4~6"
+        },
+        "Obtained": "Book of a Church of Gears Worshipper"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Somber Procuration",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 3~7",
+            "Dice 1": "pierce: 3~5 If Singleton, add +4 Power",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Eliminate",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On kill, give 1 Strength to all allies next Scene",
+        "Dices": {
+            "Dice 1": "slash: 5~10 Add +1 Power if target\u2019s HP is at 50% or lower",
+            "Dice 2": "slash: 5~10 Add +1 Power if target\u2019s HP is at 50% or lower"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Binding Chains",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Start of Clash If Singleton , reduce Power of all target\u2019s dice by 1",
+        "Dices": {
+            "Dice 1": "blunt: 4~8 On Clash Win If Singleton, reduce Power of opponent\u2019s next die by 2",
+            "Dice 2": "pierce: 3~8"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Multislash",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 Page. If Singleton , restore 2 Light as well",
+        "Dices": {
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Unlock-\u2160",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Add \u2019Unlock-\u2161\u2019 to hand",
+        "Dices": {
+            "Dice 2": "slash: 2~6"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Unlock-\u2161",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Add \u2019Unlock-\u2162\u2019 to hand",
+        "Dices": {
+            "Dice 2": "slash: 2~6",
+            "Dice 3": "pierce: 1~3"
+        },
+        "Obtained": "Unlock-\u2160"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Unlock-\u2162",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light and draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "pierce: 2~4"
+        },
+        "Obtained": "Unlock-\u2161"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fervid Emotions",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "On Use All dice on this page gain +1 Power for every 2 Emotion Levels",
+        "Dices": {
+            "Dice 1": "slash: 7~11 On Hit Inflict 1 Burn 2 times",
+            "Dice 2": "blunt: 6~11 On Hit Inflict 1 Burn 2 times",
+            "Dice 3": "slashcounter: 3~8"
+        },
+        "Obtained": "Book of Liu Association Section 1, Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fiery Waltz",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 5~9",
+            "Dice 1": "slash: 6~9 On Hit If target has 4 or more Burn, inflict 1 Burnto all enemies",
+            "Dice 2": "blunt: 5~9 On Hit If target has 4 or more Burn, inflict 1 Burnto all enemies"
+        },
+        "Obtained": "Book of Liu Association Section 1, Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Violent Flame",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start When inflicting Burn using Combat Pages this Scene, inflict 1 additional stack",
+        "Dices": {
+            "Dice 1": "slash: 3~8 On Hit Inflict 1 Burn",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of Liu Association Section 1, Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Single-Point Stab",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use At the start of the next Scene, draw all copies of \u2019Single-Point Stab\u2019 from the deck",
+        "Dices": {
+            "Dice 1": "pierce: 3~9 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Liu Association Section 1, Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Burning Flash",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use If \u2019Burning Flash\u2019 is in hand, discard it and draw a page, then add the Offensive dice on the discarded page to this",
+        "Dices": {
+            "Dice 1": "slash: 6~10 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Liu Association Section 1, Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Concentrated Fire",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "Single-use\n On Use If Speed is 6 or higher, all dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 2": "pierce: 6~8",
+            "Dice 3": "pierce: 5~7",
+            "Dice 4": "block: 3~7"
+        },
+        "Obtained": "Book of the Rabbit Team, Book of Myo, Complete Book of Myo"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Pinpoint Shot",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "Single-use\n On Use If Speed is 6 or higher, all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 2": "blunt: 8~21 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of the Rabbit Team, Book of Myo, Complete Book of Myo"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Energy Strike",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Deal 4 Stagger damage to self",
+        "Dices": {
+            "Dice 1": "block: 4~7",
+            "Dice 2": "blunt: 4~8",
+            "Dice 3": "slash: 4~8 On Hit Spend 3 Chargeto deal 8 Stagger damage"
+        },
+        "Obtained": "Book of the Reindeer Team, Book of Rudolph, Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Bulky Impact",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 5 Charge",
+        "Dices": {
+            "Dice 1": "block: 4~7",
+            "Dice 2": "blunt: 6~12"
+        },
+        "Obtained": "Book of the Rhino Team, Book of Maxim, Complete Book of Maxim"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Rapid Gashes",
+        "Cost": "5",
+        "Range": "melee",
+        "Effect": "This page\u2019s Cost is lowered by the number of other \u2019Rapid Gashes\u2019 in hand",
+        "Dices": {
+            "Dice 1": "slash: 4~10",
+            "Dice 2": "slash: 4~9",
+            "Dice 3": "pierce: 4~9",
+            "Dice 4": "block: 6~10"
+        },
+        "Obtained": "Book of Nikolai, Complete Book of Nikolai"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Quick Suppression",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 5 Charge",
+        "Dices": {
+            "Dice 1": "evade: 3~8",
+            "Dice 2": "blunt: 4~8 On Hit Inflict 2 Bleednext Scene",
+            "Dice 3": "slash: 3~8 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of the Rabbit Team, Book of Myo, Complete Book of Myo"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Graze the Grass",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light and gain 3 Charge",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "pierce: 3~4"
+        },
+        "Obtained": "Book of the Rabbit Team, Book of the Rhino Team, Book of the Reindeer Team, Book of Nikolai, Book of Myo, Book of Maxim, Book of Rudolph, Complete Book of Myo, Complete Book of Nikolai, Complete Book of Maxim, Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Concentration",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 8 Charge",
+        "Dices": {
+            "Dice 1": "block: 7~10",
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "slash: 4~6"
+        },
+        "Obtained": "Book of the Rhino Team, Book of the Reindeer Team, Book of Nikolai, Book of Maxim, Book of Rudolph, Complete Book of Nikolai, Complete Book of Maxim, Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Clone",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Copy the most expensive page in hand and add that to hand.",
+        "Dices": {
+            "Dice 2": "block: 2~7",
+            "Dice 3": "slash: 2~5"
+        },
+        "Obtained": "Complete Book of Myo, Complete Book of Nikolai, Complete Book of Maxim, Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Serpent Sword Technique",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 3~6",
+            "Dice 2": "slash: 2~4"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Violet Blade",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 5~15 Power affects this die x 2",
+            "Dice 1": "slashcounter: 3~7"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Snake Slit",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Slash dice Power by +2 for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 2~4 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "slash: 2~4",
+            "Dice 3": "evade: 4~8"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Snake\u2019s Prey",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start When inflicting Bleed using Combat Pages this Scene, inflict 1 additional stack",
+        "Dices": {
+            "Dice 1": "pierce: 3~5",
+            "Dice 2": "pierce: 3~7 On Hit Inflict 1 Bleednext Scene"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Laceration",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 5~9 On Hit Inflict 3 Bleednext Scene and the Scene after",
+            "Dice 1": "pierce: 5~8 On Hit Inflict 1 Feeblenext Scene",
+            "Dice 2": "block: 6~8",
+            "Dice 3": "piercecounter: 3~6 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Venomous Fangs",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 4~8 On Hit Inflict 3 Bleednext Scene",
+            "Dice 1": "pierce: 3~7 On Hit Inflict 1 Fragilenext Scene and the Scene after",
+            "Dice 2": "block: 3~8"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Strike Down",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 8~13 On Hit Recover 3 Stagger Resist",
+            "Dice 1": "block: 5~6"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Great Serpent\u2019s Impact",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Deal 2 bonus Stagger damage on Blunt hits for this Scene",
+        "Dices": {
+            "Dice 1": "block: 2~6",
+            "Dice 2": "blunt: 5~7 On Hit Recover 3 Stagger Resist",
+            "Dice 3": "blunt: 3~6"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Duel",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 8~17 On Clash Win Reduce Power of opponent\u2019s next die by 2",
+            "Dice 1": "block: 5~9 On Clash Win Reduce Power of opponent\u2019s next die by 2",
+            "Dice 2": "block: 4~8 On Clash Win Reduce Power of opponent\u2019s next die by 2",
+            "Dice 3": "bluntcounter: 3~7"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Serpentine Barrier",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "This page prompts no action because it has no non-Counter dice.",
+        "Dices": {
+            "Dice 1": "blockcounter: 5~10",
+            "Dice 2": "blockcounter: 4~10",
+            "Dice 3": "blockcounter: 4~9"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Parry",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "This page prompts no action because it has no non-Counter dice.",
+        "Dices": {
+            "Dice 1": "evadecounter: 4~10",
+            "Dice 2": "bluntcounter: 3~7"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Identify Weakpoint",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Types of Offensive dice on this page change to the types the target is weakest to",
+        "Dices": {
+            "Dice 1": "block: 6~9",
+            "Dice 2": "slash: 5~9",
+            "Dice 3": "slash: 5~9"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "B\u00ec \u00c0n",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 2 pages",
+        "Dices": {
+            "Dice 1": "block: 6~9",
+            "Dice 2": "block: 5~8",
+            "Dice 3": "blockcounter: 3~8"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ji\u0101o T\u00fa",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "This page prompts no action because it has no non-Counter dice.",
+        "Dices": {
+            "Dice 1": "blockcounter: 6~9",
+            "Dice 2": "slashcounter: 3~8 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "B\u00ec X\u00ec",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 7~10 On Hit Gain 2 Strengthnext Scene",
+            "Dice 1": "block: 4~8"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ch\u012b W\u011bn",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Take 10 less damage from Burn for this Scene On Use If user has Burn , recover 4 HP and gain 2 Protection next Scene",
+        "Dices": {
+            "Dice 1": "slash: 5~9 On Hit Inflict 3 Burnto each other",
+            "Dice 2": "block: 6~8",
+            "Dice 3": "blunt: 5~9 On Hit Inflict 3 Burnto each other"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fiery Dragon Slash",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 5~8 On Hit Inflict 2 Burn",
+            "Dice 1": "pierce: 3~7",
+            "Dice 2": "block: 4~7",
+            "Dice 3": "slashcounter: 3~7 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Xiao, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Coordinated Assault",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength , 2 Protection , and 2 Stagger Protection to a random other ally",
+        "Dices": {
+            "Dice 1": "blunt: 5~8",
+            "Dice 2": "block: 5~9",
+            "Dice 3": "pierce: 4~7"
+        },
+        "Obtained": "Book of Xiao, Book of Miris"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Ominous Power",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "On Play Restore 3 Light; lose as much Light next Scene\n ",
+        "Dices": {},
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sword of Volition",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "The Cost of this page equals the user\u2019s Max Light. On Use All dice on this page gain Power equal to Emotion Level; restore all Light",
+        "Dices": {
+            "Dice 1": "blunt: 3~7",
+            "Dice 2": "slash: 3~7",
+            "Dice 3": "pierce: 2~5"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Blind Faith",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light; all dice on this page lose 2 Power",
+        "Dices": {
+            "Dice 1": "block: 6~9",
+            "Dice 2": "slash: 6~10",
+            "Dice 3": "slash: 6~10"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "The Will of the City",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Restore 3 Light; draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "slash: 3~7"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Gap Attack",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Haste next Scene",
+        "Dices": {
+            "Dice 1": "block: 4~6",
+            "Dice 2": "pierce: 3~8 On Clash Win Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen, Book of a Night Awl"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Dagger Press",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Haste next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 2~7",
+            "Dice 2": "block: 4~6",
+            "Dice 3": "pierce: 3~7 On Hit Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen, Book of a Night Awl"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Feint",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~7",
+            "Dice 1": "blunt: 3~7",
+            "Dice 2": "pierce: 3~7 On Hit Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen, Book of a Night Awl"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Seize ya Chance",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Endurance next Scene",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "block: 3~7",
+            "Dice 3": "pierce: 3~8 On Hit Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen, Book of a Night Awl"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Prod the Weakness",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~8",
+            "Dice 1": "pierce: 9~21 On Clash Win Inflict 1 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen, Book of a Night Awl"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Harpe",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 1~2",
+            "Dice 1": "blunt: 2~7 On Hit Gain 1 Protectionnext Scene"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sand Split",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~9",
+            "Dice 1": "slash: 3~9 On Clash Win Gain 1 Protectionnext Scene"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Sand Strike",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~8 On Clash Win Gain 1 Endurancenext Scene",
+            "Dice 1": "block: 4~8"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Fur\u016bsiyya",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 5~8",
+            "Dice 1": "blunt: 3~7 On Clash Win Gain 2 Endurancenext Scene",
+            "Dice 2": "block: 3~7"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Jamadhar",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "If the natural roll of the Defensive die is Max, add a Pierce die (Roll: 4-5) to the dice queue",
+        "Dices": {
+            "Dice 1": "pierce: 4~8",
+            "Dice 2": "block: 2~9",
+            "Dice 3": "pierce: 3~8"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Switcheroo",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "Draw a page upon discarding this page",
+        "Dices": {
+            "Dice 1": "blunt: 3~6 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 2": "slash: 3~5"
+        },
+        "Obtained": "Book of Irina, Book of a Mirae Life Insurer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Insurance Coverage",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Restore 1 Light upon discarding this page",
+        "Dices": {
+            "Dice 1": "slash: 3~8",
+            "Dice 2": "blunt: 3~7 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Irina, Book of a Mirae Life Insurer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Equivalent Exchange",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Discard a random page from hand; Restore 1 Light",
+        "Dices": {
+            "Dice 1": "evade: 4~7",
+            "Dice 2": "blunt: 4~8 On Clash Win Inflict 2 Bleednext Scene",
+            "Dice 3": "blunt: 3~8 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Book of Irina, Book of a Mirae Life Insurer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Final Stroke",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Boost damage by +1 for each page in hand; Discard all pages from hand",
+        "Dices": {
+            "Dice 1": "blunt: 6~7",
+            "Dice 2": "block: 4~10",
+            "Dice 3": "blunt: 8~21 On Clash Win Inflict 5 Bleed"
+        },
+        "Obtained": "Book of Irina, Book of a Mirae Life Insurer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Test Run",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Smoke",
+        "Dices": {
+            "Dice 1": "blunt: 2~6",
+            "Dice 2": "slash: 2~3"
+        },
+        "Obtained": "Book of Yae, Book of a Leaflet Workshop Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Smoke Blow",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 3 Smoke",
+        "Dices": {
+            "Dice 1": "block: 4~8",
+            "Dice 2": "blunt: 5~8 On Hit Restore 1 Light; Inflict 3 Smoke"
+        },
+        "Obtained": "Book of Yae, Book of a Leaflet Workshop Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Smoke Smash",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use If user has 9+ Smoke , all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "evade: 4~8",
+            "Dice 2": "slash: 6~9 On Hit Inflict 2 Smoke"
+        },
+        "Obtained": "Book of Yae, Book of a Leaflet Workshop Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Smoke Prick",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Gain 2 Smoke",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "blunt: 3~8 On Hit Inflict 3 Smoke",
+            "Dice 3": "pierce: 4~8 On Hit Inflict 2 Smoke; Gain 1 Smoke"
+        },
+        "Obtained": "Book of Yae, Book of a Leaflet Workshop Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Field Mods",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Single-use; On Use Lower Cost of all pages in hand by 1",
+        "Dices": {
+            "Dice 1": "blunt: 7~12"
+        },
+        "Obtained": "Book of Yae"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Wedging Thorn",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 3~6",
+            "Dice 2": "pierce: 1~3 On Hit Inflict 1 Fragilenext Scene"
+        },
+        "Obtained": "Book of Bayard, Book of a Bayard\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Cleave Across",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~8",
+            "Dice 1": "slash: 4~6 On Hit Inflict 1 Paralysisnext Scene"
+        },
+        "Obtained": "Book of Bayard, Book of a Bayard\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Faultless Strike",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~8",
+            "Dice 1": "blunt: 5~7 On Hit Inflict 2 Fragilenext Scene"
+        },
+        "Obtained": "Book of Bayard, Book of a Bayard\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Knock Back",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~7",
+            "Dice 1": "block: 4~8",
+            "Dice 2": "pierce: 4~8 On Hit Inflict 2 Fragilenext Scene"
+        },
+        "Obtained": "Book of Bayard, Book of a Bayard\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Great Swing",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~8",
+            "Dice 1": "blunt: 4~8 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 2": "evade: 4~8"
+        },
+        "Obtained": "Book of Bayard, Book of a Bayard\u2019s Office Fixer"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Impugnatio Ultima",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "On Use Discard all pages from hand; all dice on this page gain +2 Power",
+        "Dices": {
+            "Dice 1": "slash: 5~9",
+            "Dice 2": "pierce: 5~9",
+            "Dice 3": "blunt: 5~8",
+            "Dice 4": "bluntcounter: 4~7"
+        },
+        "Obtained": "Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Double-edged Rencounter",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 7~10 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 1": "blunt: 6~8 On Clash Win Boost next die\u2019s max value by +3",
+            "Dice 2": "slash: 5~8"
+        },
+        "Obtained": "Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Divinatory Impact",
+        "Cost": "5",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 7~10",
+            "Dice 1": "block: 6~10",
+            "Dice 2": "blunt: 6~10",
+            "Dice 3": "pierce: 6~9",
+            "Dice 4": "evade: 5~9"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Augury Kick",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Strength next Scene",
+        "Dices": {
+            "Dice 1": "blunt: 7~12 On Hit Gain 2 Strengthnext Scene",
+            "Dice 2": "block: 6~8"
+        },
+        "Obtained": "Book of Mirinae, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Celestial Spear",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "pierce: 9~20 On Hit Deal 5 damage to target",
+            "Dice 2": "blockcounter: 4~8"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Godspeed",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Gain 1 Haste next Scene; If Speed is 7 or higher, all dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 1": "slash: 3~8",
+            "Dice 2": "pierce: 3~7"
+        },
+        "Obtained": "Book of Hana Association, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unyielding Strike",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "slash: 5~9",
+            "Dice 2": "blunt: 4~8",
+            "Dice 3": "block: 4~8"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Afterimage",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Halve the amount of status ailments on self (Rounded up)",
+        "Dices": {
+            "Dice 1": "evade: 4~10",
+            "Dice 2": "pierce: 5~9"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Confrontation",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Give 1 Protection to all allies next Scene",
+        "Dices": {
+            "Dice 1": "block: 3~6",
+            "Dice 2": "pierce: 5~8 On Hit Recover 3 Stagger Resist",
+            "Dice 3": "slash: 3~7"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Forward March",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "blunt: 3~6",
+            "Dice 2": "slash: 2~5"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Brace Up",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Discard a random page; draw 2 pages at the start of the next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 3~8"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Mince",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 5~8 On Hit Inflict 3 Bleednext Scene",
+            "Dice 1": "blunt: 4~8 On Hit Inflict 2 Bleednext Scene"
+        },
+        "Obtained": "Greta"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ever-spinning Gearwheel",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "On Use Gain 7 Smoke",
+        "Dices": {
+            "Dice 1": "slash: 7~10 On Hit Inflict 4 Smoke",
+            "Dice 2": "slash: 7~10 On Hit Inflict 3 Smoke",
+            "Dice 3": "block: 4~5"
+        },
+        "Obtained": "Eileen"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Suspicious Contract",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Restore 1 Light upon discarding this page",
+        "Dices": {
+            "Dice 1": "block: 3~5",
+            "Dice 2": "block: 3~4",
+            "Dice 3": "block: 2~4"
+        },
+        "Obtained": "Pluto"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Let\u2019s Have Some Fun~",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Restore 4 Light",
+        "Dices": {
+            "Dice 1": "block: 4~7",
+            "Dice 2": "pierce: 3~8"
+        },
+        "Obtained": "Oswald"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ghghgh",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "block: 4~5",
+            "Dice 1": "blunt: 5~8",
+            "Dice 2": "blunt: 5~6"
+        },
+        "Obtained": "Jae-heon"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Chorus",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength to all other allies; the page loses this ability afterwards",
+        "Dices": {
+            "Dice 1": "slash: 5~9",
+            "Dice 2": "blunt: 5~9",
+            "Dice 3": "blunt: 5~9"
+        },
+        "Obtained": "Bremen"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Crimson Claws",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 4~7 On Hit Recover 2 HP",
+            "Dice 1": "slash: 3~8 On Hit Recover 2 HP",
+            "Dice 2": "slash: 3~7 On Hit Recover 2 HP"
+        },
+        "Obtained": "Elena"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Overspeed",
+        "Cost": "5",
+        "Range": "melee",
+        "Effect": "On Use If Speed is higher than the target\u2019s, all dice on this page gain +6 Power",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "blunt: 3~6 On Hit Gain 1 Hastenext Scene",
+            "Dice 3": "blunt: 3~6 On Hit Gain 1 Hastenext Scene"
+        },
+        "Obtained": "Tanya"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Rooster\u2019s Crow",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength to two random allies",
+        "Dices": {
+            "Dice 1": "slash: 4~7",
+            "Dice 2": "block: 3~6",
+            "Dice 3": "blunt: 3~7"
+        },
+        "Obtained": "Bremen"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unity: Bolster",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain +1 Power for all dice (Cannot be stacked)",
+        "Dices": {
+            "Dice 2": "blunt: 3~8",
+            "Dice 3": "slash: 3~7"
+        },
+        "Obtained": "True Ending"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unity: Coordination",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain a Slash die (4-8) on the page (Cannot be stacked)",
+        "Dices": {
+            "Dice 2": "pierce: 5~8",
+            "Dice 3": "slash: 4~8"
+        },
+        "Obtained": "True Ending"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unity: Bulwark",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain a Block die (6-9) that comes first (Cannot be stacked)",
+        "Dices": {
+            "Dice 2": "block: 6~9",
+            "Dice 3": "pierce: 5~8"
+        },
+        "Obtained": "True Ending"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Taste Test",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "pierce: 3~8 On Hit If user has 2 or less Resilience, gain 1 Resilience"
+        },
+        "Obtained": "True Ending"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Shaded Strike",
+        "Cost": "7",
+        "Range": "melee",
+        "Effect": "While this page is in hand, its Cost is decreased for each clash lost against an Offensive die\n Combat Start Boost Offensive dice Power by +1 for this Scene On Use Draw 1 page",
+        "Dices": {
+            "Dice 2": "slash: 4~8",
+            "Dice 3": "pierce: 3~8"
+        },
+        "Obtained": "True Ending"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Armor-piercing Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust Dice clashing against user\u2019s Ranged Combat Pages lose 1 Power for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Frost Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 1 Paralysis and Disarm next Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Flame Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 2 Burn",
+        "Dices": {
+            "Dice 1": "blunt: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Slashing Stance",
+        "Cost": "1",
+        "Range": "Instant",
+        "Effect": "On Play Change to Slashing Stance and boost Slash dice Power by +1 for this Scene. Stance can be changed every 2 Scenes\n ",
+        "Dices": {},
+        "Obtained": "Changing Stances"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Piercing Stance",
+        "Cost": "1",
+        "Range": "Instant",
+        "Effect": "On Play Change to Piercing Stance and boost Pierce dice Power by +1 for this Scene. Stance can be changed every 2 Scenes\n ",
+        "Dices": {},
+        "Obtained": "Changing Stances"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Blunting Stance",
+        "Cost": "1",
+        "Range": "Instant",
+        "Effect": "On Play Change to Blunting Stance and boost Blunt dice Power by +1. Stance can be changed every 2 Scenes\n ",
+        "Dices": {},
+        "Obtained": "Changing Stances"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Guarding Stance",
+        "Cost": "1",
+        "Range": "Instant",
+        "Effect": "On Play Change to Guarding Stance and boost Defensive dice Power by +1. Stance can be changed every 2 Scenes\n ",
+        "Dices": {},
+        "Obtained": "Changing Stances"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Prescript-\u2160",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Give 1 Strength\n ",
+        "Dices": {},
+        "Obtained": "The Messenger"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Prescript-\u2161",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Give 1 Protection and Stagger Protection\n ",
+        "Dices": {},
+        "Obtained": "The Messenger"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Prescript-\u2162",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target draws 1 page\n ",
+        "Dices": {},
+        "Obtained": "The Messenger"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Prescript-\u2163",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target restores 1 Light\n ",
+        "Dices": {},
+        "Obtained": "The Messenger"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Life Insurance",
+        "Cost": "4",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual\n Single-use",
+        "Dices": {
+            "Dice 2": "slash: 7~10 On Hit Inflict 2 Disarm,Bind, and Feeble; Recover 2 HP"
+        },
+        "Obtained": "Life Insurance"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Geon of Four Trigrams",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Gain 1 Strength , and deal 2 more damage and Stagger damage with attacks this Scene\n ",
+        "Dices": {},
+        "Obtained": "Four Trigrams"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Gon of Four Trigrams",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Gain 1 Endurance , and take 30% less damage and Stagger damage from attacks this Scene\n ",
+        "Dices": {},
+        "Obtained": "Four Trigrams"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Gam of Four Trigrams",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Restore 1 Light\n ",
+        "Dices": {},
+        "Obtained": "Four Trigrams"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ri of Four Trigrams",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Draw 1 page\n ",
+        "Dices": {},
+        "Obtained": "Four Trigrams"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Puppet Strings",
+        "Cost": "0",
+        "Range": "instant",
+        "Effect": "Single-use\n On Play; Target Ally Give \u2019Puppeteer\u2019s Strings\u2019 to target\n ",
+        "Dices": {},
+        "Obtained": "Puppet Strings"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unsigned Contract: Liberty",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Contractual Obligation: Liberty\n Conditions Use a page whose Cost is modified\n Terms Randomize Costs of pages in hand; using pages with a certain Cost has a penalty\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
+        "Dices": {},
+        "Obtained": "Contracts"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unsigned Contract: Amplification",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Contractual Obligation: Amplification\n Conditions Have a 1-, 2-, and 3-Cost page in hand at the end of a Scene\n Terms Pages of a certain Cost gain Power; others lose Power\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
+        "Dices": {},
+        "Obtained": "Contracts"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unsigned Contract: Swiftness",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Contractual Obligation: Swiftness\n Conditions Win 4 clashes using Defensive dice\n Terms Gain Haste ; must engage in clashes\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
+        "Dices": {},
+        "Obtained": "Contracts"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unsigned Contract: Might",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Contractual Obligation: Might\n Conditions Have any amount of Strength at the end of a Scene\n Terms Gain Strength every Scene; must use pages with one Offensive die\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
+        "Dices": {},
+        "Obtained": "Contracts"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Unsigned Contract: Light",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Contractual Obligation: Light\n Conditions Be at Emotion Level 2 at the end of a Scene\n Terms Fully restore Light every Scene; must use all of it\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
+        "Dices": {},
+        "Obtained": "Contracts"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Boundary of Death",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "pierce: 1~4 If the natural roll is Max, and is 4 or higher, add +45 power"
+        },
+        "Obtained": "Book of Yujin"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Trash Disposal",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use All Offensive dice of this page gain \u2019 On Hit Recover 2 HP \u2019",
+        "Dices": {
+            "Dice 1": "block: 2~7",
+            "Dice 2": "blunt: 3~8",
+            "Dice 3": "block: 2~4",
+            "Dice 4": "pierce: 2~3 On Hit If the natural die rolls a 3, recycle this die (Up to 6 times)"
+        },
+        "Obtained": "Book of a Sweeper, Book of Anton, Book of Lyla, Book of Valerie"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Rip Space",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Exclusive Page , On Use Spend all Charge ; has a ( Charge x 9.9)% chance to succeed. Success All dice on this page gain +8 Power; Failure Deal 20 damage to self",
+        "Dices": {
+            "Dice 1": "pierce: 2~4 On Clash Win Draw 2 pages",
+            "Dice 2": "slash: 3~6 If 10 Chargewas spent at once, add +2 Power"
+        },
+        "Obtained": "Book of Rose, Book of Sen, Book of Lesti"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Blazing Strike",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Exclusive Page\n Can only be used at Emotion Level 3 and above",
+        "Dices": {
+            "Dice 2": "blunt: 13~28 On Hit Inflict 10 Burn"
+        },
+        "Obtained": "Unstable Book of the Crying Children"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Yield My Flesh",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Exclusive Page",
+        "Dices": {
+            "Dice 1": "slash: 5~10 On Clash Lose Add \u2018To Claim Their Bones\u2019 to user\u2019s hand"
+        },
+        "Obtained": "Book of Bamboo-hatted Kim"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "To Claim Their Bones",
+        "Cost": "5",
+        "Range": "melee",
+        "Effect": "Single-use",
+        "Dices": {
+            "Dice 1": "slashcounter: 14~23 On Hit Inflict 5 Paralysisand 3 Bleednext Scene"
+        },
+        "Obtained": "Yield My Flesh"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Forming Storm",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Single-use\n On Use Remove all dice from this page. Add a Mass Attack page to hand that can only be used next Scene.",
+        "Dices": {
+            "Dice 2": "slash: 8~20 On Hit Inflict 3 Burn"
+        },
+        "Obtained": "Book of Lowell"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Raging Storm: Harm",
+        "Cost": "1",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual\n Can only be used this Scene",
+        "Dices": {
+            "Dice 2": "slash: 8~20 On Hit Inflict 3 Burn"
+        },
+        "Obtained": "Forming Storm"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ti\u011bsh\u0101nk\u00e0o",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Cecil and Mei's Exclusive Page",
+        "Dices": {
+            "Dice 1": "pierce: 5~6",
+            "Dice 2": "blunt: 8~21 On Hit Inflict 1 + (Personal Emotion Level) amount of Burn",
+            "Dice 3": "piercecounter: 3~7"
+        },
+        "Obtained": "Book of Cecil, Book of Mei"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Energy Beam",
+        "Cost": "4",
+        "Range": "ranged",
+        "Effect": "Nemo's Exclusive Page\n Dice abilities on this page only activate if the opponent has Offensive dice",
+        "Dices": {
+            "Dice 2": "pierce: 13~21 On Clash Win Spend 2 Chargeto destroy opponent\u2019s next Offensive die"
+        },
+        "Obtained": "Book of Nemo"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Devastating Thrash",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Bada's Exclusive Page\n On Use Spend 4 Charge to boost Power of all dice on this page by +2",
+        "Dices": {
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "blunt: 4~8",
+            "Dice 4": "blunt: 5~9"
+        },
+        "Obtained": "Book of Cane Office, Book of Bada"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Uncanny Strike",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Martina's Exclusive Page",
+        "Dices": {
+            "Dice 1": "pierce: 7~13 On Hit Spend 2 Chargeto deal 6 Stagger damage, up to three times",
+            "Dice 2": "block: 4~7"
+        },
+        "Obtained": "Book of Martina"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Eradication",
+        "Cost": "5",
+        "Range": "Mass (summation)",
+        "Effect": "Gloria's Exclusive Page\n Mass-Summation\n Only usable in the \u2019 Blade Unlocked \u2019 state",
+        "Dices": {
+            "Dice 3": "blunt: 12~23 On Hit Inflict 1 Feeblethis Scene"
+        },
+        "Obtained": "Book of Gloria"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Castigation",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Esther's Exclusive Page\n Only usable in the \u2019 Blade Unlocked \u2019 state Reduce Power of all opponent\u2019s dice clashing against this by 12",
+        "Dices": {
+            "Dice 2": "pierce: 1~5 On Hit Deal bonus damage and Stagger damage by 7 x the natural roll",
+            "Dice 3": "piercecounter: 2~7"
+        },
+        "Obtained": "Book of Esther"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Decapitation",
+        "Cost": "4",
+        "Range": "ranged",
+        "Effect": "Hubert's Exclusive Page\n Only usable in the \u2019 Blade Unlocked \u2019 state",
+        "Dices": {
+            "Dice 2": "slash: 13~25 On Hit Inflict 1 Feebleand 8 Bleednext Scene"
+        },
+        "Obtained": "Book of Hubert"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Mind Crush",
+        "Cost": "6",
+        "Range": "Mass (individual)",
+        "Effect": "Rudolph's Exclusive Page\n Mass-Individual\n Only usable at 20+ Charge+ .",
+        "Dices": {
+            "Dice 3": "pierce: 4~8 On Hit Deal 6 Stagger damage",
+            "Dice 4": "blunt: 4~8 On Hit Deal 6 Stagger damage",
+            "Dice 5": "blunt: 5~10 On Hit Deal 6 Stagger damage"
+        },
+        "Obtained": "Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ground Crash",
+        "Cost": "6",
+        "Range": "Mass (summation)",
+        "Effect": "Maxim's Exclusive Page\n Mass-Summation\n Only usable at 20+ Charge+ . On Use Spend 20 Charge+ to boost Power of all dice on this page by +10",
+        "Dices": {
+            "Dice 3": "blunt: 13~22"
+        },
+        "Obtained": "Complete Book of Maxim"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Disposal",
+        "Cost": "5",
+        "Range": "melee",
+        "Effect": "Nikolai's Exclusive Page\n Single-use\n Only usable at 20+ Charge+ . Upon defeating an enemy with this page, add a copy of \u2019Disposal\u2019 to hand and lower its Cost by 1. If target\u2019s HP is at 50% or lower, deal twice as much damage.",
+        "Dices": {
+            "Dice 3": "slash: 15~30 On Clash Win Destroy all of opponent\u2019s dice On Clash Lose Destroy the next die on this page",
+            "Dice 4": "slash: 10~20 If target has \u2018Mark\u2019, increase damage and Stagger damage by the natural roll"
+        },
+        "Obtained": "Complete Book of Nikolai"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Mind Whip",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "The Reindeer Team's Exclusive Page\n On Use Deal 4 Stagger damage to self",
+        "Dices": {
+            "Dice 2": "blunt: 9~23 On Hit Spend 3 Chargeto deal 8 Stagger damage"
+        },
+        "Obtained": "Book of the Reindeer Team, Book of Rudolph, Complete Book of Rudolph"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Rhino Ram",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "The Rhino Team's Exclusive Page\n Combat Start Gain 2 Protection this Scene",
+        "Dices": {
+            "Dice 2": "blunt: 12~25 On Hit Gain 8 Charge",
+            "Dice 3": "block: 4~8"
+        },
+        "Obtained": "Book of the Rhino Team, Book of Maxim, Complete Book of Maxim"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Battle Command",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "Nikolai's Exclusive Page\n Combat Start Give 1 Strength to 2 other allies",
+        "Dices": {
+            "Dice 2": "block: 5~10",
+            "Dice 3": "slash: 5~9",
+            "Dice 4": "blunt: 5~8"
+        },
+        "Obtained": "Book of Nikolai, Complete Book of Nikolai"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Savage Mode",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Myo's Exclusive Page\n Single-use\n On Use Convert all Ranged pages in the deck into Melee pages. Add a copy of \u2019Feral Knives\u2019 to hand. Starting with the next Scene, all dice this character plays gain +1 Power.",
+        "Dices": {
+            "Dice 3": "block: 2~7",
+            "Dice 4": "slash: 3~7"
+        },
+        "Obtained": "Complete Book of Myo"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Feral Knives",
+        "Cost": "6",
+        "Range": "Mass (individual)",
+        "Effect": "Myo's Exclusive Page\n Mass-Individual\n Only usable at 20+ Charge+ . On Hit Inflict 3 Bleed next Scene",
+        "Dices": {
+            "Dice 3": "pierce: 4~9",
+            "Dice 4": "slash: 4~9",
+            "Dice 5": "slash: 6~10 On Hit Deal 15 bonus damage against the manually selected target"
+        },
+        "Obtained": "Savage Mode"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Mirage Storm",
+        "Cost": "7",
+        "Range": "Mass (individual)",
+        "Effect": "The Purple Tear's Exclusive Page\n Mass-Individual",
+        "Dices": {
+            "Dice 2": "slash: 4~9 On Hit Deal 5 damage",
+            "Dice 3": "blunt: 4~9 On Hit Deal 5 Stagger damage",
+            "Dice 4": "pierce: 4~8 On Hit Inflict 3 Bleedand 1 Fragilethis Scene and next Scene"
+        },
+        "Obtained": "Book of the Purple Tear"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Flaming Dragon Fist",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Chun and Miris' Exclusive Page",
+        "Dices": {
+            "Dice 1": "block: 3~8",
+            "Dice 2": "blunt: 13~28 On Hit Inflict 6 Burn"
+        },
+        "Obtained": "Book of Chun, Book of Miris"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Raging Storm: Love",
+        "Cost": "5",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual\n Single-use",
+        "Dices": {
+            "Dice 2": "slash: 3~7 On Hit Inflict 2 Burn",
+            "Dice 3": "slash: 8~20 On Hit Inflict 2 Burn"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "J\u012bn N\u00ed",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Xiao's Exclusive Page",
+        "Dices": {
+            "Dice 1": "pierce: 15~28 On Hit Inflict 2 Burnto all enemies"
+        },
+        "Obtained": "Book of Xiao"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "P\u00fa L\u00e1o",
+        "Cost": "2",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual",
+        "Dices": {
+            "Dice 1": "blunt: 6~9 On Hit Inflict 1 Feebleand Disarmnext Scene"
+        },
+        "Obtained": ""
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Y\u00e1 Z\u00ec",
+        "Cost": "4",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual\n On Use Gain 2 Strength and Endurance next Scene",
+        "Dices": {
+            "Dice 2": "blunt: 5~10 On Hit Inflict 1 Burn",
+            "Dice 3": "blunt: 4~9 On Hit Inflict 1 Burn"
+        },
+        "Obtained": ""
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "T\u0101o Ti\u00e8",
+        "Cost": "5",
+        "Range": "Mass (summation)",
+        "Effect": "Mass-Summation",
+        "Dices": {
+            "Dice 1": "slash: 25~30 On Hit Inflict 8 Burn"
+        },
+        "Obtained": ""
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Distorted Blade",
+        "Cost": "7",
+        "Range": "Mass (summation)",
+        "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page\n Mass-Summation",
+        "Dices": {
+            "Dice 2": "slash: 18~33 On Hit Inflict 2 Erosion"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Baleful Brand",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page",
+        "Dices": {
+            "Dice 1": "slash: 4~8",
+            "Dice 2": "pierce: 6~10 On Hit Inflict 2 Erosion",
+            "Dice 3": "block: 5~9"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Lock",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page",
+        "Dices": {
+            "Dice 1": "block: 7~9",
+            "Dice 2": "blunt: 12~19 On Clash Win Destroy opponent\u2019s next die"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Stiletto",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Allen's Exclusive Page\n On Use Boost damage by sum of user\u2019s Haste and target\u2019s Bind",
+        "Dices": {
+            "Dice 2": "evade: 4~10",
+            "Dice 3": "pierce: 11~25 On Hit Inflict 2 Bindnext Scene"
+        },
+        "Obtained": "Book of Allen"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "The Udjat",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "The Udjat's Exclusive Page",
+        "Dices": {
+            "Dice 1": "block: 5~6",
+            "Dice 2": "blunt: 3~7",
+            "Dice 3": "blunt: 8~14 On Hit Give 2 Protectionto all allies next Scene"
+        },
+        "Obtained": "Book of an Udjat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Multi-party Compensation",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Irina's Exclusive Page\n When discarded, all other allies restore 1 Light",
+        "Dices": {
+            "Dice 2": "slash: 5~10 On Hit Inflict 1 Disarmnext Scene",
+            "Dice 3": "block: 4~8"
+        },
+        "Obtained": "Book of Irina"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Exhale Smoke",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Yae's Exclusive Page\n On Use Gain 8 Smoke",
+        "Dices": {
+            "Dice 2": "blunt: 7~12 On Hit Inflict 3 Smoke; If target has 5+Smoke, inflict 3 Paralysisnext Scene",
+            "Dice 3": "block: 4~8",
+            "Dice 4": "slash: 7~11"
+        },
+        "Obtained": "Book of Yae"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Ready Position",
+        "Cost": "3",
+        "Range": "Instant",
+        "Effect": "Bayard's Exclusive Page\n On Play Become Immobilized this Scene.\n Gain 3 Strength next Scene.\n Add a copy of \u2019Pinpoint Breakthrough\u2019 to hand.",
+        "Dices": {
+            "Dice 4": "slash: 1~1"
+        },
+        "Obtained": "Book of Bayard"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Pinpoint Breakthrough",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Single-use\n Only one copy of this page can be held at a time",
+        "Dices": {
+            "Dice 2": "blunt: 5~10 On Hit Inflict 1 Paralysisnext Scene",
+            "Dice 3": "pierce: 15~24 On Hit Spend all Stagger Resist to deal Stagger damage equal to what\u2019s spent"
+        },
+        "Obtained": "Ready Position"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "True Trigram Formation",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Mirinae, Harold, and Olivier's Exclusive Page\n Gains additional effects depending on the Four Trigrams page (\u2019 Geon \u2019, \u2019 Gon \u2019, \u2019 Gam \u2019, and \u2019 Ri \u2019) used during the Scene",
+        "Dices": {
+            "Dice 2": "pierce: 7~10",
+            "Dice 3": "slash: 8~11 On Hit Deal 5 damage to target",
+            "Dice 4": "block: 6~9"
+        },
+        "Obtained": "Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Reload",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "The Thumb's Exclusive Page\n On Use Add a random Ammunition to hand; draw 1 page",
+        "Dices": {
+            "Dice 2": "pierce: 3~7",
+            "Dice 3": "blunt: 2~7"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Bayonet Combat",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "The Thumb's Exclusive Page\n On Use Add 2 random Ammunition to hand",
+        "Dices": {
+            "Dice 2": "block: 3~7",
+            "Dice 3": "blunt: 5~7",
+            "Dice 4": "pierce: 4~6"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Suppressing Shot",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "The Thumb's Exclusive Page\n On Use Discard a page with the lowest Cost If an Ammunition was discarded, all Offensive dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 2": "pierce: 4~8 On Hit Inflict 1 Bleednext Scene",
+            "Dice 3": "blunt: 4~7"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Shock Round",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "The Thumb's Exclusive Page\n On Use Discard 2 pages with the lowest Cost from hand, and draw a page All dice on this page gain +1 Power for each Ammunition discarded",
+        "Dices": {
+            "Dice 2": "blunt: 5~10 On Hit Deal 3 Stagger damage to target",
+            "Dice 3": "pierce: 5~7"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Focus Fire",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "The Thumb's Exclusive Page\n On Use Discard up to four 0-Cost pages from hand Offensive dice on this page gain +1 Power for each Ammunition discarded this way",
+        "Dices": {
+            "Dice 2": "pierce: 7~17 On Hit Inflict 1 Fragilenext Scene",
+            "Dice 3": "pierce: 4~8"
+        },
+        "Obtained": "Book of the Thumb, Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Summary Judgment",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Kalo, Katriel, and Denis's Exclusive Page\n On Use Discard a page with the lowest Cost If an Ammunition was discarded, all Offensive dice on this page gain +1 Power",
+        "Dices": {
+            "Dice 2": "evade: 3~7",
+            "Dice 3": "slash: 3~6",
+            "Dice 4": "pierce: 5~10"
+        },
+        "Obtained": "Book of Kalo, Book of Denis, Book of Katriel"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Discipline",
+        "Cost": "4",
+        "Range": "melee",
+        "Effect": "Boris\u2019 Exclusive Page\n Dice on this page and the page clashing with it are unaffected by Power gain or loss",
+        "Dices": {
+            "Dice 2": "block: 2~6",
+            "Dice 3": "block: 4~8",
+            "Dice 4": "slash: 3~5",
+            "Dice 5": "blunt: 3~7 This die is rolled 3 times"
+        },
+        "Obtained": "Book of Boris"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Armor-piercing Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust Dice clashing against user\u2019s Ranged Combat Pages lose 1 Power for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Frost Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 1 Paralysis and Disarm next Scene",
+        "Dices": {
+            "Dice 1": "slash: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Flame Ammunition",
+        "Cost": "0",
+        "Range": "ranged",
+        "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 2 Burn",
+        "Dices": {
+            "Dice 1": "blunt: 3~7"
+        },
+        "Obtained": "Ammo Supply, Reload, Bayonet Combat"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Degraded Lock",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "blunt: 9~20 On Hit Increase Cost of target\u2019s pages whose original Cost is 4 or higher by 2 for the next Scene",
+            "Dice 2": "block: 5~9"
+        },
+        "Obtained": "Binah"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Degraded Fairy",
+        "Cost": "1",
+        "Range": "ranged",
+        "Effect": "On Use Restore 2 Light",
+        "Dices": {
+            "Dice 1": "slash: 4~7 On Hit Inflict 1 Fairy",
+            "Dice 2": "slash: 3~7 On Hit Inflict 1 Fairy"
+        },
+        "Obtained": "Binah"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Degraded Shockwave",
+        "Cost": "5",
+        "Range": "Mass (individual)",
+        "Effect": "Mass-Individual\n On Use Give 3 Protection to all allies this Scene",
+        "Dices": {
+            "Dice 2": "blunt: 3~8",
+            "Dice 3": "blunt: 3~8",
+            "Dice 4": "blunt: 4~9 On Hit Inflict 1 Feeblethis Scene"
+        },
+        "Obtained": "Binah"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Degraded Pillar",
+        "Cost": "3",
+        "Range": "ranged",
+        "Effect": "On Hit Inflict 3 Fairy to target",
+        "Dices": {
+            "Dice 1": "slash: 7~11 Target\u2019s current die cannot be recycled",
+            "Dice 2": "slash: 6~9",
+            "Dice 3": "block: 5~9"
+        },
+        "Obtained": "Binah"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Degraded Chain",
+        "Cost": "2",
+        "Range": "ranged",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "blunt: 8~14 On Hit Seal a Speed die of target for the next Scene"
+        },
+        "Obtained": "Binah"
+    }
+]

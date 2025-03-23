@@ -1,5 +1,6 @@
 import json
 import re
+from collections import Counter
 from combat_page_styler import load_json
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable
 
@@ -58,7 +59,7 @@ def get_number_of_dice(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> in
     dices = combat_page['Dices']
     return len(dices)
 
-def generate_empty_statisics_dict() -> Dict[str, Union[int, Dict[str, int]]]:
+def generate_empty_statisics_dict() -> Dict[str, Union[int, Counter[str]]]:
     """
     Generates an empty dictionary for the function `count_deck_attribute_statistics`.
     """
@@ -68,7 +69,7 @@ def generate_empty_statisics_dict() -> Dict[str, Union[int, Dict[str, int]]]:
     dice_types = ["slash", "blunt", "pierce", "evade", "block", 
                   "slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
                   "blockcounter"]
-    statistics[keys] = dict.fromkeys(dice_types, 0)
+    statistics['total_dice_types'] = Counter(dict.fromkeys(dice_types, 0))
     return statistics 
 
 def total_light_regen(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> int:
@@ -135,8 +136,69 @@ def total_drawn_cards(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> int
 
     return total_draw - total_discard
 
+def get_mean_dice_values(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> float:
+    """
+    Gets the mean value of all dices, doesn't distinguish between attack or defense dice. 
+    Args: combat_page: A dictionary describing a combat page.
+    Returns: A integer with the mean value.
+    """
+    pattern = r"\b(\d+)~(\d+)\b"
+    num_dices = get_number_of_dice(combat_page)
+    dices = combat_page['Dices']
+    mean_values = [None] * num_dices
+    for index, dice_description in enumerate(dices.values()):
+        matched = re.search(pattern, dice_description)
+        if matched:
+            min_value = int(matched.group(1))
+            max_value = int(matched.group(2))
+            mean_values[index] = (min_value + max_value) / 2
+        else:
+            raise ValueError(f"One dice does not contain in {combat_page['Name']} does not contain a valid range (e.g., 3~6). Just what have gone wrong?")
+    return sum(mean_values) / num_dices
 
-def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], deploy = False) -> Dict[str, Union[int, Dict[str, int]]]:
+def get_dice_types(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> Counter[str]:
+    """
+    Counts the number of slash, blunt, pierce, block and evade dice there are, as well as their counter- counterparts. 
+    Args: combat_page: A dictionary describing a combat page.
+    Returns: A dictionary containing this counts.
+    """
+    dice_types = ["slash", "blunt", "pierce", "evade", "block", 
+                  "slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
+                  "blockcounter"]
+    attributes = dict.fromkeys(dice_types, 0)
+    dices = combat_page['Dices']
+    for dice_description in dices.values():
+        dice_type = dice_description.split(":")[0] # We made the description so that it is of the form "dice_type: XYZ"
+        if dice_type not in dice_types: # still, not bad to check
+            raise ValueError(f"{dice_type} is not a valid dice type, what have we done...")
+        attributes[dice_type] += 1
+    
+    return Counter(attributes)
+
+def get_attack_defense_ratio(attributes: Counter[str]) -> float:
+    """
+    Calculates the attack to defense dices ratio.
+    Args: attributes: a Counter object containing the dice types.
+    Returns: a float containing the ratio
+    """
+    attack_types = ["slash", "blunt", "pierce", "slashcounter", "bluntcounter", "piercecounter"]
+    defense_types = ["evade", "block", "evadecounter", "blockcounter"]
+    attack_dices = 0
+    defense_dices = 0
+    for dice_type in attributes.elements():
+        if dice_type in attack_types:
+            attack_dices += attributes[dice_type]
+        elif dice_type in defense_types:
+            defense_dices += attributes[dice_type]
+        else:
+            raise ValueError(f"{dice_type} is not a valid dice type!")
+    
+    if defense_dices == 0:
+        return float("inf")
+    else:
+        return round(attack_dices / defense_dices, 2)
+
+def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], deploy = False) -> Dict[str, Union[float, Counter[str]]]:
     """
     Gets statistics such as: 
     - average cost
@@ -144,7 +206,8 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
     - total light regen for all 9 cards. This is optimist as it assumes you always win the clash.
     - total draw of all 9 cards. This is optimist as it assumes you always win the clash.
     - average dice value. Does not consider buffs or card effects. 
-    - weighted average dice value (the weight is the cost)
+    - weighted average dice value (the weight is inverse to the cost. If the card is more costly, you would use it less)
+    - total number of dices.
     - average dices per card. 
     - Attack to Defense ratio. 
     Sadly, this implementation does not take into account real-time effects such as "Burning Flash" or "Clone". 
@@ -160,8 +223,19 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
     for combat_page in combat_pages:
         if combat_page['Name'] == 'Single-Point Stab':
             single_point_stab_count += 1
-        statistics['average_cost'] += int(combat_page['Cost'])
-        statistics['average_dice_per_card'] += get_number_of_dice(combat_page)
+        card_cost = int(combat_page['Cost'])
+        weight = (7 - card_cost + 1) / 8 # Cards go from cost 0 to 7 
+        mean_dice_values = get_mean_dice_values(combat_page)
+        statistics['average_cost'] += card_cost / number_of_cards
+        statistics['total_dice_counts'] += get_number_of_dice(combat_page)
+        statistics['average_dice_per_card'] += get_number_of_dice(combat_page) / number_of_cards
+        statistics['total_light_regen'] += total_light_regen(combat_page) 
+        statistics['total_drawn_cards'] += total_drawn_cards(combat_page)
+        statistics['average_dice_value'] += mean_dice_values / number_of_cards
+        statistics['weighted_average_dice_value'] += weight * mean_dice_values / number_of_cards
+        statistics['total_dice_types'] += get_dice_types(combat_page)
+
+    statistics['attack_to_defense_ratio'] += get_attack_defense_ratio(statistics['total_dice_types'])
     
     statistics['total_drawn_cards'] += single_point_stab_count
     return statistics
@@ -170,4 +244,6 @@ if __name__ == '__main__':
     keywords = ['Discard', 'Urban Legend']
     combat_pages = load_json('combat_pages/combat_pages.json') 
     filtered_combat_pages = apply_filters(keywords, combat_pages)
-    num_dices = get_number_of_dice(filtered_combat_pages[-1])
+    statistics = count_deck_attribute_statistics(filtered_combat_pages)
+    print(f"combat_pages: {filtered_combat_pages}")
+    print(f"statistics: {statistics}")

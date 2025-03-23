@@ -89,9 +89,8 @@ def get_dice_type(part: str, debug=False) -> str:
           debug: A boolean flag that helps with debugging, in other words, prints.
     Returns: the dice type.
     """
-    dice_types = ["slash", "blunt", "pierce", "evade", "block", 
-                  "slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
-                  "blockcounter"]
+    dice_types =  ["slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
+                  "blockcounter", "slash", "blunt", "pierce", "evade", "block"]
     image_names = list()
     image_objects = part.find_all('img') # some lines may have more than one img
     for image in image_objects:
@@ -114,14 +113,15 @@ def get_effects(table_data: BeautifulSoup, debug=False) -> Tuple[Optional[str], 
     Returns: The card effect (if there is) and a dictionary containing all dices.
     """
     parts = re.split(r"(?=<br/>)", str(table_data)) # separate into linebreaks
-    card_effect = None # most cards have no card effect
+    card_effect = "" # most cards have no card effect
     dices = dict()
     for index, part in enumerate(parts):
         part = BeautifulSoup(part, 'html.parser') # we need to return to a beautifulsoup object
         dice_type = get_dice_type(part, debug=debug)
-        if dice_type is None: # it has no dice; hence, it is the card effect.
-            card_effect = part.get_text(separator=" ", strip=True)
+        if dice_type is None: # it has no dice; hence, it is the card effect. The card effect may have more than one line. 
+            card_effect += part.get_text(separator=" ", strip=True) + "\n "
         else:
+            card_effect = card_effect.rstrip()
             label = "Dice " + str(index) 
             min_max_effect = part.get_text(strip=True)
             dices[label] = f"{dice_type}: {min_max_effect}"
