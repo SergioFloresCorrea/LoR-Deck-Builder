@@ -64,7 +64,8 @@ def generate_empty_statisics_dict() -> Dict[str, Union[int, Counter[str]]]:
     Generates an empty dictionary for the function `count_deck_attribute_statistics`.
     """
     keys = ['average_cost', 'total_light_regen', 'total_drawn_cards', 'average_dice_value', 
-            'weighted_average_dice_value', 'average_dice_per_card', 'attack_to_defense_ratio', 'total_dice_counts']
+            'weighted_average_dice_value', 'average_dice_per_card', 'weighted_average_dice_per_card', 
+            'attack_to_defense_ratio', 'total_dice_counts']
     statistics = dict.fromkeys(keys, 0)
     dice_types = ["slash", "blunt", "pierce", "evade", "block", 
                   "slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
@@ -110,6 +111,8 @@ def total_drawn_cards(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> int
     effect_text = combat_page["Effect"]
     if effect_text:
         text = effect_text.lower()
+        if "single-use" in text: # single use cards are exhausted, so we consider them as if they are discarded. 
+            total_discard += 1
 
         draw_match = re.search(draw_pattern, text)
         if draw_match:
@@ -198,6 +201,20 @@ def get_attack_defense_ratio(attributes: Counter[str]) -> float:
     else:
         return round(attack_dices / defense_dices, 2)
 
+def get_deck_max_cost(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]]) -> int:
+    """
+    Gets the max cost of all the combat pages in a deck. Avoids skewing in the weighting process.
+    Args: combat_pages: A list of combat pages.
+    Returns: The maximum cost.
+    """
+    max_cost = float("-inf")
+    for combat_page in combat_pages:
+        cost = combat_page['Cost']
+        if cost > max_cost:
+            max_cost = cost
+    
+    return max_cost
+
 def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], deploy = False) -> Dict[str, Union[float, Counter[str]]]:
     """
     Gets statistics such as: 
@@ -215,6 +232,7 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
     Returns: A dictionary containing all of the above. 
     """
     number_of_cards = len(combat_pages) 
+    max_cost = get_deck_max_cost(combat_pages)
     statistics = generate_empty_statisics_dict()
     single_point_stab_count = 0 # this will be added to the draw count as per its effects. May not fully represent what it does, but not too shabby.
     if deploy:
@@ -224,11 +242,13 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
         if combat_page['Name'] == 'Single-Point Stab':
             single_point_stab_count += 1
         card_cost = int(combat_page['Cost'])
-        weight = (7 - card_cost + 1) / 8 # Cards go from cost 0 to 7 
+        weight = (max_cost - card_cost + 1) / (max_cost + 1) # Cards go from cost 0 to max cost, avoid skewing. 
         mean_dice_values = get_mean_dice_values(combat_page)
+        num_dices = get_number_of_dice(combat_page)
         statistics['average_cost'] += card_cost / number_of_cards
-        statistics['total_dice_counts'] += get_number_of_dice(combat_page)
-        statistics['average_dice_per_card'] += get_number_of_dice(combat_page) / number_of_cards
+        statistics['total_dice_counts'] += num_dices
+        statistics['average_dice_per_card'] += num_dices / number_of_cards
+        statistics['weighted_average_dice_per_card'] += weight * num_dices / number_of_cards
         statistics['total_light_regen'] += total_light_regen(combat_page) 
         statistics['total_drawn_cards'] += total_drawn_cards(combat_page)
         statistics['average_dice_value'] += mean_dice_values / number_of_cards
