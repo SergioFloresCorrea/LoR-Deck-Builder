@@ -1,0 +1,106 @@
+[
+    {
+        "Rank": "Urban Legend",
+        "Name": "Law and Order",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6 On Clash Win Deal 2 damage to opponent"
+        },
+        "Obtained": "Streetlight Office, Vol. \u2161, Book of San, Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Shoving Stab",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "pierce: 7~12 On Clash Win Inflict 3 Bleednext Scene"
+        },
+        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "The Will of the City",
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Restore 3 Light; draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "slash: 3~7"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Prescript-\u2163",
+        "Cost": "0",
+        "Range": "Instant",
+        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target restores 1 Light\n ",
+        "Dices": {},
+        "Obtained": "The Messenger"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Flash of Sunup",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 page",
+        "Dices": {
+            "Dice 1": "slash: 1~5",
+            "Dice 2": "evade: 1~4 On Clash Win Reduce Power of opponent\u2019s next die by 2",
+            "Dice 3": "slash: 1~6 On Hit Inflict 1 Burn"
+        },
+        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "Bizarre Attack",
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "evade: 2~5",
+            "Dice 1": "slash: 1~4 On Hit Deal 5 Stagger damage to target"
+        },
+        "Obtained": "Book of The Carnival"
+    },
+    {
+        "Rank": "Stars of the City",
+        "Name": "Brace Up",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Discard a random page; draw 2 pages at the start of the next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 3~8"
+        },
+        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+    },
+    {
+        "Rank": "Canard",
+        "Name": "Gut-harvesting",
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 3~6 On Hit Inflict 1 Bleednext Scene",
+            "Dice 1": "slash: 3~5 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "block: 1~4"
+        },
+        "Obtained": "Book of Rats"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Frontal Assault",
+        "Cost": "0",
+        "Range": "melee",
+        "Effect": "On Use Restore 1 Light",
+        "Dices": {
+            "Dice 1": "pierce: 2~7",
+            "Dice 2": "pierce: 1~2"
+        },
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell, Book of Cecil, Book of Mei"
+    }
+]

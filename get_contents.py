@@ -68,11 +68,10 @@ def check_new_rank(ranks: List[str], html_page: BeautifulSoup) -> bool:
     """
     th = html_page.find('th')
     try:
-        all_text = list(th.stripped_strings)
+        all_text = th.get_text(strip=True)
     except AttributeError: 
         return False
-    result = [text for text in all_text if text not in ('Collapse',)]
-    return any(rank in result[0] for rank in ranks)
+    return any(rank in all_text for rank in ranks)
 
 def get_attack_range(table_data: BeautifulSoup) -> str:
     """
@@ -193,7 +192,7 @@ def organize_pages(html_pages: List[BeautifulSoup],
     Returns: a dictionary with the above key-value pairs.
     """
     ranks = ["Canard", "Urban Myth", "Urban Legend", "Urban Plague", "Urban Nightmare", 
-             "Stars of the City", "Impuritas Civitatis"]
+             "Star of the City", "Impuritas Civitatis", "Passive Ability"]
     combat_pages = list()
     not_dice_found_combat_pages = list()
     count = -1 # We are on the first rank

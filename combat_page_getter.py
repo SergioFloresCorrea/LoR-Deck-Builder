@@ -4,6 +4,17 @@ from collections import Counter
 from combat_page_styler import load_json
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable
 
+def remove_passive_cards(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]]) -> List[Dict[str, Union[str, Dict[str, str]]]]:
+    """
+    Removes cards that can only be obtained via passive abilities.
+    """
+    filtered_combat_pages = []
+    for combat_page in combat_pages:
+        rank = combat_page['Rank']
+        if rank != "Passive Ability":
+            filtered_combat_pages.append(combat_page)
+
+    return filtered_combat_pages
 
 def apply_filter(keywords: List[str], exclusive: bool = True) -> Callable[[Dict[str, Union[str, Dict[str, str]]]], bool]:
     """
@@ -45,7 +56,7 @@ def apply_filters(keywords: List[str], combat_pages: List[Dict[str, Union[str, D
           exclusive: Whether the combat page must contain all the keywords or at least one of them
     Returns: Filtered combat pages.
     """
-    keywords_filter = apply_filter(keywords)
+    keywords_filter = apply_filter(keywords, exclusive = exclusive)
 
     filtered_combat_pages = filter(keywords_filter, combat_pages)
     return list(filtered_combat_pages)
@@ -147,6 +158,8 @@ def get_mean_dice_values(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> 
     """
     pattern = r"\b(\d+)~(\d+)\b"
     num_dices = get_number_of_dice(combat_page)
+    if num_dices == 0: # If it has no dice, we skip it
+        return 0 
     dices = combat_page['Dices']
     mean_values = [None] * num_dices
     for index, dice_description in enumerate(dices.values()):
@@ -188,7 +201,7 @@ def get_attack_defense_ratio(attributes: Counter[str]) -> float:
     defense_types = ["evade", "block", "evadecounter", "blockcounter"]
     attack_dices = 0
     defense_dices = 0
-    for dice_type in attributes.elements():
+    for dice_type in attributes.keys():
         if dice_type in attack_types:
             attack_dices += attributes[dice_type]
         elif dice_type in defense_types:
@@ -209,7 +222,7 @@ def get_deck_max_cost(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]])
     """
     max_cost = float("-inf")
     for combat_page in combat_pages:
-        cost = combat_page['Cost']
+        cost = int(combat_page['Cost'])
         if cost > max_cost:
             max_cost = cost
     
