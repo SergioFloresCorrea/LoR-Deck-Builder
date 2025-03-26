@@ -1,13 +1,19 @@
 import math
 import numpy as np
-from scipy.special import softmax
 from copy import deepcopy
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable, Iterator
-from combat_page_getter import count_deck_attribute_statistics, apply_filters
+from combat_page_getter import count_deck_attribute_statistics, apply_filters, remove_passive_cards, total_status_effects
 from combat_page_styler import load_json
 from get_contents import export_dict_to_json
 from data_checkpoint import DeckCheckpoint
 from collections import Counter
+
+def softmax(x, temp):
+    """
+    Compute softmax values for each sets of scores in x. 
+    Courtesy of https://github.com/sascha-kirch/ML_Notebooks/blob/main/Softmax_Temperature.ipynb.
+    """
+    return np.exp(np.divide(x,temp)) / np.sum(np.exp(np.divide(x,temp)), axis=0)
 
 def normalize_values(min_val: float, max_val: float) -> Callable[[float], float]:
     """
@@ -17,7 +23,7 @@ def normalize_values(min_val: float, max_val: float) -> Callable[[float], float]
     Returns: A Callable object that will normalize the values.
     """
     def normalizer(x: float):
-        k = 0.99 * ( 1 / (max_val - min_val) + 1)
+        k = 0.99 * ( 1 / (max_val - min_val) + 1) # assures normalizer(max_val) = 0.99
         try: 
             return k * (x - min_val) / (1 + x - min_val)
         except ZeroDivisionError:
@@ -56,47 +62,131 @@ def calculate_normalized_entropy(attributes: Counter) -> float:
     return 1 - (entropy / max_entropy) if max_entropy > 0 else 1.0
 
 
-def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List[Dict[str, Union[str, Dict[str, str]]]]]) -> float:
+def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List[Dict[str, Union[str, Dict[str, str]]]]], 
+                 effect: Optional[str] = "strength", debug: bool = False) -> float:
     """
     Assigns a single number as a score to a list(or single) of combat pages with respect to its attributes.
     We want to maximize the avg dice value and minimize the dice spreadness.  
     I am not sure how to merge the weighted avg dice value and the avg dice value, so the implementation is lazy. 
+    Keyword Args: effects: A string containing the status effect that wants to be included in the deck. 
+                           If no effect is passed, then strength it is. If you really want none, parse "no_effects" 
     """
     if isinstance(combat_pages, dict):
         combat_pages = [combat_pages]
     elif not isinstance(combat_pages, list):
         raise ValueError("A score can only be assigned to a list of combat pages.")
-
-    statistics = count_deck_attribute_statistics(combat_pages)
-    light_regen = statistics['total_light_regen']
-    light_regen_normalizer = normalize_values(0, 8)
-    cards_drawn = statistics['total_drawn_cards']
-    cards_drawn_normalizer = normalize_values(0, 6)
-    average_cost = statistics['average_cost']
-    average_cost_normalizer = normalize_values(0, 3)
-    dice_skewness = calculate_normalized_entropy(statistics['total_dice_types'])
-    avg_dice_value = statistics['average_dice_value']
-    weighted_avg_dice_value = statistics['weighted_average_dice_value']
-    dice_value_normalizer = normalize_values(2, 10)
     
-    fulfilling_metrics = light_regen_normalizer(light_regen) + cards_drawn_normalizer(cards_drawn) - average_cost_normalizer(average_cost)
-    optimizing_metric = dice_value_normalizer(0.4 * avg_dice_value + 0.6 * weighted_avg_dice_value)
-    return dice_skewness + fulfilling_metrics 
+    if not isinstance(effect, str):
+        raise ValueError(f"{effect} must be a string!")
+    effect = effect.lower()
 
-def sample_top_cards(cards_score: List[float], combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], B: int = 4) -> Iterator[Tuple[float, List[Dict]]]:
+    if effect == "no_effects":
+        multiplier = 0 # let's see what we do with this
+    else:
+        multiplier = 0.20
+    
+    stats = count_deck_attribute_statistics(combat_pages)
+    status_effects = stats['status_effects']
+    num_cards = len(combat_pages)
+
+    # Normalizers
+    norm = normalize_values
+    n_effects = norm(0, 5)(status_effects[effect]) # Lazy as hell
+    if debug:
+        print(f"number of effects: {n_effects}\n Multiplier: {multiplier}")
+    n_draw = norm(0, 6)(stats['total_drawn_cards'])
+    n_dice_val = norm(2, 10)(stats['weighted_average_dice_value'])
+    n_total_dice = norm(0, 30)(stats['average_dice_per_card'] * num_cards)
+    skewness = calculate_normalized_entropy(stats['total_dice_types'])
+
+    # New sustainability metric
+    light_regen = stats['total_light_regen']
+    avg_cost = stats['average_cost']
+    margin = light_regen - (6.38 * avg_cost - 6.88)
+    sustain_score = (margin / (1 + abs(margin)) + 1) / 2
+
+    # Weighted score
+    score = (
+        (0.20 - 1/3 * multiplier) * sustain_score +
+        (0.25 - 1/3 * multiplier) * n_dice_val +
+        (0.20 - 1/3 * multiplier) * n_draw +
+        0.15 * n_total_dice +
+        0.20 * skewness + 
+        multiplier * n_effects
+    )
+
+    return score
+
+def update_counter(counter: Counter, obj: Any, value: int = 1) -> Counter:
     """
-    Samples a list of combat pages using softmax probability.
+    Updates a counter with a given object
     """
-    n_combat_pages = len(combat_pages)
-    indices = np.arange(0, n_combat_pages)
-    indices_sampled = np.random.choice(indices, p=softmax(cards_score), size=B, replace=False)
+    if obj in counter:
+        counter[obj] += value
+    else:
+        counter[obj] = value
+
+def count_cards(selected_decks: List[List[Dict[str, Union[str, Dict[str, str]]]]]) -> List[Counter]:
+    """
+    Counts the number of cards in the selected decks.
+    """
+    n_selected_decks = len(selected_decks)
+    counters = [Counter() for _ in range(n_selected_decks)]
+    for index, counter in enumerate(counters):
+        deck = selected_decks[index]
+        if isinstance(deck, list):
+            for combat_page in deck:
+                name = combat_page['Name']
+                update_counter(counter, name)
+
+        elif isinstance(deck, dict):
+            name = deck['Name']
+            update_counter(counter, name)
+    
+    return counters
+
+
+def sample_top_cards(cards_score: List[float], decks: List[List[Dict[str, Union[str, Dict[str, str]]]]], 
+                     B: int = 4, temp: float = 1.0) -> Iterator[Tuple[float, List[Dict]]]:
+    """
+    Samples a list of decks using softmax probability. It also tracks how many of each card is being added.
+    """
+    n_decks = len(decks)
+    indices = np.arange(0, n_decks)
+    indices_sampled = np.random.choice(indices, p=softmax(cards_score, temp), size=B, replace=False)
     
     selected_scores = [cards_score[index] for index in indices_sampled]
-    selected_combat_pages = [combat_pages[index] for index in indices_sampled]
-    return zip(selected_scores, selected_combat_pages)
+    selected_decks = [deepcopy(decks[index]) for index in indices_sampled]
+    counters = count_cards(selected_decks)
+    return zip(selected_scores, selected_decks, counters)
+
+def is_singleton(deck: List[Dict[str, Union[str, Dict[str, str]]]]) -> bool:
+    """
+    Checks if it contains a Singleton card.
+    """
+    all_text_parts = []
+    for card in deck:
+        all_text_parts.append(card.get("Effect", ""))
+        all_text_parts.extend(card.get("Dices", {}).values())
+    
+    all_text = "\n".join(all_text_parts)
+    all_text = all_text.lower()
+
+    return "singleton" in all_text
+
+def change_card_limit(deck: List[Dict[str, Union[str, Dict[str, str]]]]) -> bool:
+    """
+    Changes the card limit of all cards in the deck to 1.
+    """
+    new_deck = deepcopy(deck)
+    for card in new_deck:
+        card["Card Limit"] = 1
+    
+    return new_deck
 
 def deck_beam_search(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], B: int = 4, flags: Dict[str, bool] = None,
-                     max_deck_size: int = 9, seed: int = 42) -> List[Dict[str, Union[str, Dict[str, str]]]]:
+                     max_deck_size: int = 9, temp: float = 1.0, seed: Optional[int] = None, effect: str = "Strength", 
+                     debug: bool = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Performs beam search algorithm on a list of combat pages and returns a deck consisting of 9 cards.
     Keyword args: B: Beam search parameter.
@@ -104,29 +194,33 @@ def deck_beam_search(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], 
     if seed:
         np.random.seed(seed)
     checkpoint = DeckCheckpoint() 
-    cards_score = [assign_score(combat_page) for combat_page in combat_pages]
+    cards_score = [assign_score(combat_page, effect=effect) for combat_page in combat_pages]
     scored_cards = [(cards_score[index], combat_pages[index]) for index in range(len(combat_pages))]
-    beam = sample_top_cards(cards_score, combat_pages, B = B)
+    beam = sample_top_cards(cards_score, combat_pages, B = B, temp = temp)
 
     checkpoints = [6, 7, 8]
-    counter = Counter()
+
     for current_card in range(1, max_deck_size):
         print(f"We are looking for the {current_card + 1}-th card.")
         new_beam = []
-        for score, deck in beam:
-            if isinstance(deck, dict):
+        for score, deck, counter in beam:
+            if isinstance(deck, dict): # This is the first pass
                 deck = [deck]
-            remaining = [card for _, card in scored_cards if card not in deck]
+                if is_singleton(deck):
+                    deck = change_card_limit(deck)
+            remaining = [card for _, card in scored_cards if counter[card['Name']] < card['Card Limit']] # allows repeated cards
             for card in remaining:
-                new_deck = deck + [card]
+                new_deck = deepcopy(deck) + [deepcopy(card)]
+                if is_singleton(new_deck):
+                    new_deck = change_card_limit(new_deck)
                 scale = len(new_deck) / 9
 
                 is_valid, reason = check_deck(new_deck, flags=flags, scale=scale)
                 if not is_valid:
-                    checkpoint.update(new_deck, assign_score(new_deck), reason=reason)
+                    checkpoint.update(new_deck, assign_score(new_deck, effect=effect), reason=reason)
                     continue  # prune this deck early
 
-                new_score = assign_score(new_deck)
+                new_score = assign_score(new_deck, effect=effect)
                 new_beam.append((new_score, new_deck))
 
         if new_beam:
@@ -137,7 +231,9 @@ def deck_beam_search(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], 
         beam = sample_top_cards(new_scores, new_decks, B=B)
 
     try:
-        best_score, best_deck = next(beam)
+        _, best_deck, counter = next(beam)
+        if debug:
+            print(counter)
         return best_deck
     except StopIteration:
         print("No valid decks found. Closest attempt:\n")
@@ -214,7 +310,9 @@ def check_deck(deck: List[Dict[str, Union[str, Dict[str, str]]]], flags: Dict[st
         return True, None
 
 
-def build_deck(may_keywords: List[str], must_include: List[str] = None, flags: Dict[str, bool] = None, B = 10) -> List[Dict[str, Union[str, Dict[str, str]]]]:
+def build_deck(may_keywords: List[str], combat_pages: List[Dict[str, Union[str, Dict[str, str]]]] = None, 
+               must_include: List[str] = None, flags: Dict[str, bool] = None, B: int = 10, temp: float = 1.0,
+               effect: str = "Strength", seed: Optional[int] = None, debug: bool = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Builds a deck according to a set of keywords.
     Args: may_keywords: A list of keywords that the combat pages may or may not contain. For example, 
@@ -223,17 +321,19 @@ def build_deck(may_keywords: List[str], must_include: List[str] = None, flags: D
                   flags: a dictionary containing some flags... 
                   B: The beam search parameter. Attempts to use it, if it cannot, use the maximum available according the the length of the 
                   resulting combat pages after filtering.
+                  temp: A temperature parameter controlling how randomized the selecting process is.
     Returns: A list of 9 combat pages.
     """
     if not flags: # We assume it is for a prolonged battle
         flags = {'prolonged': True, 'short': False}
 
     # load all combat pages there exist
-    try:
-        combat_pages = load_json('combat_pages/combat_pages.json') 
-    except FileNotFoundError:
-        print("No json file in 'combat_pages/combat_pages.json' was found. We couldn't build a deck.")
-        return None
+    if not combat_pages:
+        try:
+            combat_pages = load_json('combat_pages/combat_pages.json') 
+        except FileNotFoundError:
+            print("No json file in 'combat_pages/combat_pages.json' was found. We couldn't build a deck.")
+            return None
 
     if may_keywords: # Only apply the filters if it is not an empty list
         combat_pages = apply_filters(may_keywords, combat_pages, exclusive = False)
@@ -241,6 +341,13 @@ def build_deck(may_keywords: List[str], must_include: List[str] = None, flags: D
     if must_include:
         combat_pages = apply_filter(must_keywords, combat_pages)
     
+    # if we aren't building for Charge or Smoke, let's not include them in the available cards.
+    if effect != "Charge": 
+        combat_pages = apply_filters(["Charge"], combat_pages, complement=True)
+    
+    if effect != "Smoke":
+        combat_pages = apply_filters(["Smoke"], combat_pages, complement=True)
+
     filtered_length = len(combat_pages)
     if filtered_length < 9: # a deck must have 9 cards
         print(f"Your conditions are too restrictive, we couldn't form a deck. Current length: {filtered_length}")
@@ -253,18 +360,33 @@ def build_deck(may_keywords: List[str], must_include: List[str] = None, flags: D
             return None
     
     B = min(B, filtered_length - 9)
-    deck = deck_beam_search(combat_pages, B = B, flags=flags)
+    deck = deck_beam_search(combat_pages, B = B, flags=flags, temp=temp, debug=debug, effect=effect)
     if deck:
         return deck
     else:
         print("No good deck could be built with the conditions imposed.")
         return None
      
-
+def test_card_reference_integrity(deck1, deck2):
+    """
+    Courtesy of GPT 4.0
+    """
+    for card1 in deck1:
+        for card2 in deck2:
+            if card1['Name'] == card2['Name']:
+                if card1 is card2:
+                    print(f"[Shared Reference] Card '{card1['Name']}' is the same object in memory.")
+                else:
+                    print(f"[Safe Copy] Card '{card1['Name']}' is a separate object.")
 
 if __name__ == '__main__':
     combat_pages = load_json('combat_pages/combat_pages.json') 
+    combat_pages = remove_passive_cards(combat_pages)
+
     deck = build_deck(may_keywords = ["Canard", "Urban Myth", "Urban Legend", "Urban Plague", "Urban Nightmare", 
-             "Stars of the City"], B = 15)
+             "Star of the City"], B = 5, combat_pages = combat_pages, temp = 0.4, effect = "Bleed", debug=True)
+    score = assign_score(deck, debug = True, effect="Bleed")
     export_dict_to_json('decks/first_built_deck.json', deck)
-    print(deck)
+    stats = count_deck_attribute_statistics(deck)
+    print(f"This is the deck: \n{deck}")
+    print(f"This are the stats: \n{stats}")

@@ -4,24 +4,36 @@ from collections import Counter
 from combat_page_styler import load_json
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable
 
+def update_counter(counter: Counter, obj: Any, value: int = 1) -> Counter:
+    """
+    Updates a counter with a given object
+    """
+    if obj in counter:
+        counter[obj] += value
+    else:
+        counter[obj] = value
+
 def remove_passive_cards(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]]) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Removes cards that can only be obtained via passive abilities.
+    Also removed "Brawl" as its effects are real-time dependent.
     """
     filtered_combat_pages = []
     for combat_page in combat_pages:
         rank = combat_page['Rank']
-        if rank != "Passive Ability":
+        name = combat_page['Name']
+        if rank != "Passive Ability" and name != "Brawl":
             filtered_combat_pages.append(combat_page)
 
     return filtered_combat_pages
 
-def apply_filter(keywords: List[str], exclusive: bool = True) -> Callable[[Dict[str, Union[str, Dict[str, str]]]], bool]:
+def apply_filter(keywords: List[str], exclusive: bool = True, complement: bool = False) -> Callable[[Dict[str, Union[str, Dict[str, str]]]], bool]:
     """
     Determines whether any of the keywords are in the combat page's description or within its dices.
     Args: keywords: A list of keywords.
           combat_page: A single dictionary describing a combat page.
           exclusive: Whether the combat page must contain all the keywords or at least one of them
+          complement: Whether to get the complement of the filter.
     Returns: A boolean value showing if any of the keywords is within the combat page.
     """
     if isinstance(keywords, str):
@@ -42,23 +54,31 @@ def apply_filter(keywords: List[str], exclusive: bool = True) -> Callable[[Dict[
 
         matched = search(combat_page, set())
         if exclusive:
-            return len(matched) == len(keywords)
+            if not complement:
+                return len(matched) == len(keywords)
+            else:
+                return len(matched) != len(keywords)
         else:
-            return bool(matched)
+            if not complement:
+                return bool(matched)
+            else:
+                return not bool(matched)
 
     return apply_keywords_filter
 
-def apply_filters(keywords: List[str], combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], exclusive: bool = True) -> List[Dict[str, Union[str, Dict[str, str]]]]:
+def apply_filters(keywords: List[str], combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], 
+                  exclusive: bool = True, complement: bool = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Filters the combat pages with respect to the selected keywords. 
     Args: keywords: A list of keywords.
           combat_pages: A list of combat pages.
           exclusive: Whether the combat page must contain all the keywords or at least one of them
+          complement: Whether to get the complement of the filter.
     Returns: Filtered combat pages.
     """
-    keywords_filter = apply_filter(keywords, exclusive = exclusive)
-
+    keywords_filter = apply_filter(keywords, exclusive = exclusive, complement=complement)
     filtered_combat_pages = filter(keywords_filter, combat_pages)
+
     return list(filtered_combat_pages)
 
 def get_number_of_dice(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> int:
@@ -70,13 +90,61 @@ def get_number_of_dice(combat_page: Dict[str, Union[str, Dict[str, str]]]) -> in
     dices = combat_page['Dices']
     return len(dices)
 
+def total_status_effects(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]]) -> Counter[str]:
+    """
+    Generates the total amount of status effects inflicted by the combat pages. Returns a dictionary.
+    """
+    status_effects = ["burn", "paralysis", "bleed", "fairy", 
+                      "protection", "stagger protection", "fragile", 
+                      "strength", "feeble", "endurance", "disarm",
+                      "haste", "bind", "nullify Power", "immobilized", 
+                      "charge", "smoke", "persistence", "erosion"]
+    counter = Counter(dict.fromkeys(status_effects, 0))
+
+    pattern_a = r"inflict\s+(\d+)\s+(\w+)" # Burn, Bleed, Paralysis
+    pattern_b = r"gain\s+(\d+)\s+(\w+)" # Protection, Stagger Protection, Strength, Endurance, Haste
+    pattern_c = r"give\s+(\d+)\s+(\w+)"
+    pattern_d = r"use\s+(\d+)\s+(\w+)" # Smoke
+    pattern_e = r"spend\s+(\d+)\s+(\w+)" # Charge
+    patterns = [pattern_a, pattern_b, pattern_c, pattern_d, pattern_e]
+
+    all_text_parts = []
+    for card in combat_pages:
+        all_text_parts.append(card.get("Effect", ""))
+        all_text_parts.extend(card.get("Dices", {}).values())
+
+    all_text = "\n".join(all_text_parts)
+    all_text = all_text.lower()
+
+    # Run regex
+    for index, pattern in enumerate(patterns):
+        for value, effect in re.findall(pattern, all_text):
+            if index >= 3: # These correspond to using or spending
+                value = "-" + value
+            if effect in status_effects:
+                update_counter(counter, effect, value=int(value))
+            elif effect.endswith("next"): # This is bad parsing on my end
+                effect = effect[:-len("next")]
+                if effect in status_effects:
+                    update_counter(counter, effect, value=int(value))
+            elif effect.endswith("to"): # This is also bad parsing on my end
+                effect = effect[:-len("to")]
+                if effect in status_effects:
+                    update_counter(counter, effect, value=int(value))
+            elif effect.endswith("this"): # And then is heard no more
+                effect = effect[:-len("this")]
+                if effect in status_effects:
+                    update_counter(counter, effect, value=int(value))
+    
+    return counter
+    
 def generate_empty_statisics_dict() -> Dict[str, Union[int, Counter[str]]]:
     """
     Generates an empty dictionary for the function `count_deck_attribute_statistics`.
     """
     keys = ['average_cost', 'total_light_regen', 'total_drawn_cards', 'average_dice_value', 
             'weighted_average_dice_value', 'average_dice_per_card', 'weighted_average_dice_per_card', 
-            'attack_to_defense_ratio', 'total_dice_counts']
+            'attack_to_defense_ratio', 'total_dice_counts', 'status_effects']
     statistics = dict.fromkeys(keys, 0)
     dice_types = ["slash", "blunt", "pierce", "evade", "block", 
                   "slashcounter", "bluntcounter", "piercecounter", "evadecounter", 
@@ -269,14 +337,14 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
         statistics['total_dice_types'] += get_dice_types(combat_page)
 
     statistics['attack_to_defense_ratio'] += get_attack_defense_ratio(statistics['total_dice_types'])
-    
+    statistics['status_effects'] = total_status_effects(combat_pages)
     statistics['total_drawn_cards'] += single_point_stab_count
     return statistics
 
 if __name__ == '__main__':
-    keywords = ['Discard', 'Urban Legend']
+    keywords = ["Bleed", "Urban Nightmare"]
     combat_pages = load_json('combat_pages/combat_pages.json') 
     filtered_combat_pages = apply_filters(keywords, combat_pages)
-    statistics = count_deck_attribute_statistics(filtered_combat_pages)
+    counter = total_status_effects(filtered_combat_pages)
     print(f"combat_pages: {filtered_combat_pages}")
-    print(f"statistics: {statistics}")
+    print(f"counter: {counter}")

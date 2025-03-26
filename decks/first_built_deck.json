@@ -1,29 +1,22 @@
 [
     {
-        "Rank": "Urban Legend",
-        "Name": "Law and Order",
-        "Cost": "0",
+        "Rank": "Urban Myth",
+        "Name": "Nonstop Assault",
+        "Card Limit": 5,
+        "Cost": "3",
         "Range": "melee",
         "Effect": "",
         "Dices": {
-            "Dice 0": "slash: 2~6 On Clash Win Deal 2 damage to opponent"
+            "Dice 0": "blunt: 1~5",
+            "Dice 1": "slash: 2~6",
+            "Dice 2": "slash: 3~6"
         },
-        "Obtained": "Streetlight Office, Vol. \u2161, Book of San, Zwei South Section 6, Zwei South Section 6, Vol. \u2161, Book of Julia, Book of Isadora, Book of Walter"
+        "Obtained": "Book of Mars, Book of Lulu, A Backstreets Fixer, Vol. \u2161, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
     },
     {
-        "Rank": "Urban Nightmare",
-        "Name": "Shoving Stab",
-        "Cost": "2",
-        "Range": "melee",
-        "Effect": "On Use Draw 1 page",
-        "Dices": {
-            "Dice 1": "pierce: 7~12 On Clash Win Inflict 3 Bleednext Scene"
-        },
-        "Obtained": "Book of Dong-hwan the Grade 1 Fixer"
-    },
-    {
-        "Rank": "Urban Nightmare",
+        "Rank": "Star of the City",
         "Name": "The Will of the City",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Restore 3 Light; draw 1 page",
@@ -34,73 +27,95 @@
         "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
     },
     {
-        "Rank": "Stars of the City",
-        "Name": "Prescript-\u2163",
-        "Cost": "0",
-        "Range": "Instant",
-        "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target restores 1 Light\n ",
-        "Dices": {},
-        "Obtained": "The Messenger"
-    },
-    {
-        "Rank": "Urban Plague",
-        "Name": "Flash of Sunup",
-        "Cost": "1",
-        "Range": "melee",
-        "Effect": "On Use Draw 1 page",
-        "Dices": {
-            "Dice 1": "slash: 1~5",
-            "Dice 2": "evade: 1~4 On Clash Win Reduce Power of opponent\u2019s next die by 2",
-            "Dice 3": "slash: 1~6 On Hit Inflict 1 Burn"
-        },
-        "Obtained": "Book of Dawn Office, Book of Salvador, Book of Yuna"
-    },
-    {
-        "Rank": "Urban Plague",
-        "Name": "Bizarre Attack",
-        "Cost": "1",
-        "Range": "melee",
-        "Effect": "",
-        "Dices": {
-            "Dice 0": "evade: 2~5",
-            "Dice 1": "slash: 1~4 On Hit Deal 5 Stagger damage to target"
-        },
-        "Obtained": "Book of The Carnival"
-    },
-    {
-        "Rank": "Stars of the City",
-        "Name": "Brace Up",
+        "Rank": "Star of the City",
+        "Name": "Unlock-\u2162",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
-        "Effect": "On Use Discard a random page; draw 2 pages at the start of the next Scene",
+        "Effect": "On Use Restore 1 Light and draw 1 page",
         "Dices": {
-            "Dice 1": "pierce: 3~8"
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "pierce: 2~4"
         },
-        "Obtained": "Book of Hana Association, Book of Mirinae, Book of Harold, Book of Olivier"
+        "Obtained": "Unlock-\u2161"
     },
     {
         "Rank": "Canard",
-        "Name": "Gut-harvesting",
-        "Cost": "3",
+        "Name": "Fend This Off If You Can",
+        "Card Limit": 4,
+        "Cost": "2",
         "Range": "melee",
         "Effect": "",
         "Dices": {
-            "Dice 0": "slash: 3~6 On Hit Inflict 1 Bleednext Scene",
-            "Dice 1": "slash: 3~5 On Hit Inflict 1 Bleednext Scene",
-            "Dice 2": "block: 1~4"
+            "Dice 0": "blunt: 3~5 On Clash Win Lower max value of opponent\u2019s next die by 3",
+            "Dice 1": "pierce: 3~4 On Hit Inflict 2 Bleednext Scene"
         },
-        "Obtained": "Book of Rats"
+        "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
     },
     {
-        "Rank": "Urban Nightmare",
-        "Name": "Frontal Assault",
+        "Rank": "Star of the City",
+        "Name": "The Will of the City",
+        "Card Limit": 5,
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "On Use Restore 3 Light; draw 1 page",
+        "Dices": {
+            "Dice 1": "block: 3~7",
+            "Dice 2": "slash: 3~7"
+        },
+        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+    },
+    {
+        "Rank": "Star of the City",
+        "Name": "Unlock-\u2162",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
-        "Effect": "On Use Restore 1 Light",
+        "Effect": "On Use Restore 1 Light and draw 1 page",
         "Dices": {
-            "Dice 1": "pierce: 2~7",
-            "Dice 2": "pierce: 1~2"
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "pierce: 2~4"
         },
-        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell, Book of Cecil, Book of Mei"
+        "Obtained": "Unlock-\u2161"
+    },
+    {
+        "Rank": "Star of the City",
+        "Name": "Le Regole",
+        "Card Limit": 1,
+        "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use All allies deal +2 damage with their Offensive dice next Scene",
+        "Dices": {
+            "Dice 1": "pierce: 5~11",
+            "Dice 2": "slash: 5~10",
+            "Dice 3": "blockcounter: 3~8"
+        },
+        "Obtained": "Book of Kalo"
+    },
+    {
+        "Rank": "Urban Plague",
+        "Name": "The Red Notes",
+        "Card Limit": 4,
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "Combat Start Give 1 Strength to a random ally",
+        "Dices": {
+            "Dice 1": "blunt: 1~5",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
+    },
+    {
+        "Rank": "Urban Myth",
+        "Name": "Ingredient Hunt",
+        "Card Limit": 5,
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "",
+        "Dices": {
+            "Dice 0": "slash: 2~6 On Hit Inflict 2 Bindnext Scene",
+            "Dice 1": "blunt: 2~5"
+        },
+        "Obtained": "Book of Pierre, Book of Jack, A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160"
     }
 ]

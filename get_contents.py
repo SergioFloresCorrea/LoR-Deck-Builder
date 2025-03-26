@@ -181,11 +181,23 @@ def export_dict_to_json(file: str, dct: Dict[any, any]) -> bool:
         print(f"[Error] Failed to export JSON to file: {file}\n{e}")
         return False
 
+def get_color(string: str) -> str:
+    """
+    Extracts the hex color from a simple string
+    """
+    matched = re.search(r'#([A-Fa-f0-9]{6})', string)
+
+    if matched:
+        hex_color = '#' + matched.group(1)
+        return hex_color
+    else:
+        raise ValueError(f"{string} does not contain a hex color!")
+
 def organize_pages(html_pages: List[BeautifulSoup], 
                    log = True, debug = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Organizes the html pages in a dictionary having the following keys:
-    {'Name', 'Rank', 'Cost', 'Range', 'Effect', 'Dices', 'Obtained'}
+    {'Name', 'Rank', 'Cost', 'Range', 'Effect', 'Dices', 'Obtained', 'Card Limit'}
     Args: html_pages: A list containing the combat pages in html format.
           log: Helps with logging.
           debug: Helps with debugging (printing statements).
@@ -193,6 +205,7 @@ def organize_pages(html_pages: List[BeautifulSoup],
     """
     ranks = ["Canard", "Urban Myth", "Urban Legend", "Urban Plague", "Urban Nightmare", 
              "Star of the City", "Impuritas Civitatis", "Passive Ability"]
+    card_limit = {"#A3E09B": 5, "#8944F3": 3, "#6291EC": 4, "#FFDF00": 1, "#80223e": 1}
     combat_pages = list()
     not_dice_found_combat_pages = list()
     count = -1 # We are on the first rank
@@ -216,7 +229,10 @@ def organize_pages(html_pages: List[BeautifulSoup],
         for index, table_data in enumerate(html_page.find_all('td')):
             if index == 0: # first element always contains the name
                 name = table_data.get_text(separator=" ", strip=True)
+                style = table_data.find('span').get('style')
+                color = get_color(style)
                 combat_page['Name'] = name
+                combat_page['Card Limit'] = card_limit[color]
                 if debug:
                     print(f"first td = {table_data}")
                     print(f"name = {name}")

@@ -2,6 +2,7 @@
     {
         "Rank": "Canard",
         "Name": "Evade",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -13,6 +14,7 @@
     {
         "Rank": "Canard",
         "Name": "Light Attack",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -25,6 +27,7 @@
     {
         "Rank": "Canard",
         "Name": "Light Defense",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -38,6 +41,7 @@
     {
         "Rank": "Canard",
         "Name": "Charge and Cover",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -50,6 +54,7 @@
     {
         "Rank": "Canard",
         "Name": "Focused Strikes",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -63,6 +68,7 @@
     {
         "Rank": "Canard",
         "Name": "Dodge and Strike",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -75,6 +81,7 @@
     {
         "Rank": "Canard",
         "Name": "Thrust",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -87,6 +94,7 @@
     {
         "Rank": "Canard",
         "Name": "Wallop",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -99,6 +107,7 @@
     {
         "Rank": "Canard",
         "Name": "Preemptive Strike",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -111,6 +120,7 @@
     {
         "Rank": "Canard",
         "Name": "Quickness",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 1 Haste next Scene",
@@ -123,6 +133,7 @@
     {
         "Rank": "Canard",
         "Name": "Gut-harvesting",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -136,6 +147,7 @@
     {
         "Rank": "Canard",
         "Name": "Rats\u2019 Guide to Survival",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -149,6 +161,7 @@
     {
         "Rank": "Canard",
         "Name": "Dirty Blow",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -161,6 +174,7 @@
     {
         "Rank": "Canard",
         "Name": "Bite Off",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -173,6 +187,7 @@
     {
         "Rank": "Canard",
         "Name": "Backstreets Dash",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -184,6 +199,7 @@
     {
         "Rank": "Canard",
         "Name": "Skitter Away",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -197,6 +213,7 @@
     {
         "Rank": "Canard",
         "Name": "Commandeering",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Give 1 Protection to all allies next Scene",
@@ -210,6 +227,7 @@
     {
         "Rank": "Canard",
         "Name": "You\u2019re Too Slow",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -222,6 +240,7 @@
     {
         "Rank": "Canard",
         "Name": "Struggle",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 2 Protection next Scene",
@@ -235,6 +254,7 @@
     {
         "Rank": "Canard",
         "Name": "Time for a Little Test",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -248,6 +268,7 @@
     {
         "Rank": "Canard",
         "Name": "Feelin\u2019 Good",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -260,6 +281,7 @@
     {
         "Rank": "Canard",
         "Name": "Preparation",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -272,6 +294,7 @@
     {
         "Rank": "Canard",
         "Name": "B-blow It Up!",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -284,6 +307,7 @@
     {
         "Rank": "Canard",
         "Name": "File:CardY-youOnlyLiveOnce!Art.png Y-you Only Live Once!",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -295,6 +319,7 @@
     {
         "Rank": "Canard",
         "Name": "C-charge Up!",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light; Inflict 1 Paralysis on self next Scene",
@@ -306,6 +331,7 @@
     {
         "Rank": "Canard",
         "Name": "E-endure",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -319,6 +345,7 @@
     {
         "Rank": "Canard",
         "Name": "D-dried Up",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 2 Strength next Scene",
@@ -331,6 +358,7 @@
     {
         "Rank": "Canard",
         "Name": "C-chop It Off!",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -344,6 +372,7 @@
     {
         "Rank": "Canard",
         "Name": "Overpower",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -356,6 +385,7 @@
     {
         "Rank": "Canard",
         "Name": "Goin\u2019 First",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -369,6 +399,7 @@
     {
         "Rank": "Canard",
         "Name": "Fend This Off If You Can",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -381,6 +412,7 @@
     {
         "Rank": "Canard",
         "Name": "Rampage",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -394,6 +426,7 @@
     {
         "Rank": "Canard",
         "Name": "Track",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Recover 1 HP",
@@ -405,6 +438,7 @@
     {
         "Rank": "Canard",
         "Name": "Mutilate",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -417,6 +451,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Pound",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -428,6 +463,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Multi-block",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -441,6 +477,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Multi-hit",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -454,6 +491,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Quick Attack",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 2 Haste next Scene",
@@ -466,6 +504,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Strong Strike",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -478,6 +517,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Keep It Fresh",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -490,6 +530,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Trim the Ingredients",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -502,6 +543,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "I Can Cook Anything",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -514,6 +556,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Cooking Prep",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -526,6 +569,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Ingredient Hunt",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -538,6 +582,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Cruelty",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -550,6 +595,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Appetite",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -561,6 +607,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Deflect",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -574,6 +621,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Prepared Mind",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -586,6 +634,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Set Fire",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -598,6 +647,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Taste My Flaming Bat!",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -611,6 +661,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Nonstop Assault",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -624,6 +675,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Fleet Footsteps",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -637,6 +689,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Gather Intel",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -648,6 +701,7 @@
     {
         "Rank": "Urban Myth",
         "Name": "Prepared Mind",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -660,6 +714,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Diversion",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -672,6 +727,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Sharp Swipe",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -683,6 +739,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Back Attack",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -696,6 +753,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Standoff",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -708,6 +766,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Outburst",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Discard a page with the lowest Cost and restore 2 Light",
@@ -720,6 +779,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Handling Work",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -733,6 +793,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Silent Night",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 2 Endurance next Scene",
@@ -746,6 +807,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Fence",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Give 1 Protection to all allies next Scene",
@@ -759,6 +821,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Your Shield",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -772,6 +835,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Combat Preparation",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Give 2 Endurance to all allies next Scene",
@@ -785,6 +849,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Blade Whirl",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -798,6 +863,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Guardian",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Give 1 Endurance to all allies next Scene",
@@ -810,6 +876,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Suppress",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -822,6 +889,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Avert",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -834,6 +902,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Retaliate",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -847,6 +916,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Law and Order",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -858,6 +928,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Fierce Onslaught",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Discard a page with the lowest Cost",
@@ -871,6 +942,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Wait Up!",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -882,6 +954,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Gamble",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Discard a page with the lowest Cost",
@@ -894,6 +967,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Daring Decision",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Discard all pages",
@@ -907,6 +981,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Stay Calm",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Draw a page upon discarding this page",
@@ -920,6 +995,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "The Art of Rapid Steps",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -932,6 +1008,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Slice",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -945,6 +1022,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Scratch That!",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use All dice on this page lose 2 Power",
@@ -958,6 +1036,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Brawl",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Replace all dice on this page with ones on a random page in hand whose original Cost is 4 or lower. (Excluding Counter dice)",
@@ -972,6 +1051,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "I\u2019ll End You",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -984,6 +1064,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Startin\u2019 Out Lightly",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -996,6 +1077,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Shocking Blow",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1007,6 +1089,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Destructive Impact",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1018,6 +1101,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Cut In",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1031,6 +1115,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Crush",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1043,6 +1128,7 @@
     {
         "Rank": "Urban Legend",
         "Name": "Loosen Up",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -1054,6 +1140,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Tailoring",
+        "Card Limit": 3,
         "Cost": "4",
         "Range": "melee",
         "Effect": "",
@@ -1066,6 +1153,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Feast",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1079,6 +1167,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Will Make Fine Silk",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1092,6 +1181,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Will Be Tasty?",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1105,6 +1195,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "As the Prescript Orders",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1117,6 +1208,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Bizarre Attack",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1129,6 +1221,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Fascinating Fabric",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Only up to 3 of this page can be held at once",
@@ -1141,6 +1234,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Going for Bullseye",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1152,6 +1246,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Return Fire",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1164,6 +1259,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Indiscriminate Shots",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1177,6 +1273,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "I Hate CQC",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1190,6 +1287,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Not Another Step",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1203,6 +1301,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Take the Shot",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1216,6 +1315,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Headshot",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1227,6 +1327,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Target Spotted",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -1239,6 +1340,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Full-Stop to Life",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1251,6 +1353,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Beyond the Shadow",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1264,6 +1367,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Crack of Dawn",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Give 2 Protection to two random other allies next Scene",
@@ -1276,6 +1380,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Flash of Sunup",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -1289,6 +1394,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Butterfly Slash",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1302,6 +1408,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Eject",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1315,6 +1422,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Sunset Blade",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1328,6 +1436,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Handle Request",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -1340,6 +1449,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Stigmatize",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 1 Negative Emotion Point",
@@ -1352,6 +1462,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Observe",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 3 Strength next Scene",
@@ -1365,6 +1476,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Opportunity Spotted",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1379,6 +1491,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Binding Arms",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Lower this page\u2019s Cost by 1 (Up to 2 times)",
@@ -1390,6 +1503,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "You\u2019re a Hindrance",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1403,6 +1517,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Zzzzzap",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1416,6 +1531,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Electric Shock",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1428,6 +1544,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Structural Analysis",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1441,6 +1558,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Unavoidable Gaze",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1453,6 +1571,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Faint Memories",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If HP is at 25% or lower, all dice on this page gain +2 Power",
@@ -1466,6 +1585,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Wrath of Torment",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Deal 7 damage to self; all dice on this page gain +2 Power",
@@ -1479,6 +1599,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Ink Over",
+        "Card Limit": 3,
         "Cost": "4",
         "Range": "melee",
         "Effect": "",
@@ -1492,6 +1613,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Sharpened Blade",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Boost Slash dice Power by +2 for this Scene",
@@ -1505,6 +1627,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Cumulus Wall",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1518,6 +1641,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Sky-Clearing Cut",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1530,6 +1654,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Scattering Slash",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Gain 3 Protection",
@@ -1543,6 +1668,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Silent Mist",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 3 Protection next Scene",
@@ -1556,6 +1682,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Rules of the Backstreets",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -1567,6 +1694,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Clean Up",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -1578,6 +1706,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Dark Cloud",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start Upon each successful Slash attack this Scene, inflict 1 Bleed next Scene",
@@ -1590,6 +1719,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Heavy Peaks",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Inflict 1 Feeble to two random enemies",
@@ -1601,6 +1731,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Unforgettable Melody",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Strength to two random allies",
@@ -1614,6 +1745,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Hard Rehearsal",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -1627,6 +1759,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Shrine to Music",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Inflict 1 Feeble to a random enemy",
@@ -1640,6 +1773,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Upbeat Performance",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1652,6 +1786,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Tendon Chords",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1664,6 +1799,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "The Red Notes",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Strength to a random ally",
@@ -1676,6 +1812,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Transpierce",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -1688,6 +1825,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Sparking Spear",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -1700,6 +1838,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Collision",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -1712,6 +1851,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Speared Sweep",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1724,6 +1864,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "High-speed Stabbing",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -1737,6 +1878,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Searing Sword",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1749,6 +1891,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Feather Shield",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1762,6 +1905,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Want a Taste of this Chain?",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Inflict 1 Bleed to self next Scene; restore 1 Light",
@@ -1773,6 +1917,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "You\u2019re Soft",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Inflict 1 Bleed to self next Scene",
@@ -1785,6 +1930,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Frontal Dodge",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -1797,6 +1943,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Flank Attack",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Inflict 1 Bleed to self next Scene",
@@ -1809,6 +1956,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Here\u2019s My Chance",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Inflict 3 Bleed to self this Scene; all dice on this page gain +2 Power",
@@ -1821,6 +1969,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Head-to-Head",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Inflict 1 Bleed to self next Scene",
@@ -1833,6 +1982,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Now Die",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Inflict 5 Bleed to self this Scene; all dice on this page gain +3 Power",
@@ -1846,6 +1996,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Mend Weapon",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start Boost Pierce dice Power by +1 for this Scene On Use Restore 1 Light",
@@ -1857,6 +2008,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Stab and Detonate",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1869,6 +2021,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Whet",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1881,6 +2034,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Refine",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Boost Pierce dice Power by +2 for this Scene",
@@ -1894,6 +2048,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Low at Night, High at Day",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "When discarded, gain 1 Haste",
@@ -1905,6 +2060,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Relay",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Draw a page upon discarding this page",
@@ -1917,6 +2073,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Flip the Table",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "When discarded, give 1 Haste to all allies next Scene",
@@ -1929,6 +2086,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Shuffle Hands",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Discard a page with the lowest Cost; Draw 1 page",
@@ -1941,6 +2099,7 @@
     {
         "Rank": "Urban Plague",
         "Name": "Sakura",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use If 4+ pages are in hand, discard 4 random pages and boost the min value of Offensive dice on this page by +3",
@@ -1954,6 +2113,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Extreme Edge",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -1965,6 +2125,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Flashing Strike",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If Speed is 6 or higher, all dice on this page gain +2 Power",
@@ -1978,6 +2139,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Flying Sword",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 2 Haste next Scene",
@@ -1990,6 +2152,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Endless Battle",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If HP is at 25% or lower, all dice on this page gain +1 Power",
@@ -2003,6 +2166,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Desperate Struggle",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Start of Clash Deal 5 damage to self; all dice on this page gain +2 Power",
@@ -2015,6 +2179,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "To Overcome Crisis",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2026,6 +2191,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Automated Movement",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 2 Haste next Scene",
@@ -2040,6 +2206,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Manikin",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2053,6 +2220,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Repressed Flesh",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2067,6 +2235,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Forceful Gesture",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2079,6 +2248,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Gigigig",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -2091,6 +2261,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Creak",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2104,6 +2275,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Puppet Blockade",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -2116,6 +2288,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Sharp Nails",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -2130,6 +2303,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Circus Knives",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -2142,6 +2316,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Juggling",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -2153,6 +2328,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Wild Card",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "Single-use",
@@ -2165,6 +2341,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "333\u2026 1973",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Single-use\n On Use Gain \u2019Persistence\u2019 for 4 Scenes.",
@@ -2177,6 +2354,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Sweep the Backstreets",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2190,6 +2368,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "For the Family",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Protection to two random allies",
@@ -2203,6 +2382,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Extract Fuel",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -2215,6 +2395,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Night in the Backstreets",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start All dice the user plays lose 2 Power for this Scene",
@@ -2227,6 +2408,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "To Where the Prescript Points",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If Singleton , all dice on this page gain +1 Power",
@@ -2239,6 +2421,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Undertake Prescript",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If Singleton , all dice on this page gain +1 Power",
@@ -2252,6 +2435,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Execute",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2264,6 +2448,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Will of the Prescript",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use If Singleton , draw 3 pages",
@@ -2277,6 +2462,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Faith",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -2289,6 +2475,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Sense Quarry",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use If there are 7 or more pages in hand, all dice on this page gain +2 Power",
@@ -2302,6 +2489,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Proselyte\u2019s Blade",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start All dice the user plays lose 3 Power for this Scene",
@@ -2314,6 +2502,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Dimensional Rift",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 6 Charge",
@@ -2326,6 +2515,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Ripple",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Spend 3 Charge to boost Power of all dice on this page by +3",
@@ -2338,6 +2528,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Overcharge",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 10 Charge and become Immobilized next Scene",
@@ -2352,6 +2543,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Rewind",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 4 Charge",
@@ -2365,6 +2557,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Leap",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 1 Haste next Scene; spend 3 Charge to draw 2 pages",
@@ -2377,6 +2570,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Energy Cycle",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Gain 3 Charge",
@@ -2389,6 +2583,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Deep Drag",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2401,6 +2596,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Flesh Fillet",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Use 2 Smoke to boost Power of all dice on this page by +2",
@@ -2413,6 +2609,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Inhale Smoke",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 3 Smoke",
@@ -2425,6 +2622,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Trace of Fumes",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2438,6 +2636,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Hidden Blade",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Use 2 Smoke to boost Power of all dice on this page by +2",
@@ -2450,6 +2649,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Smoking Pipe",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Gain 2 Smoke . Restore 1 Light",
@@ -2462,6 +2662,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Loss of Senses",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -2475,6 +2676,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Fierce Charge",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2486,6 +2688,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Engagement",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Add \u2019En Garde\u2019 to user\u2019s hand",
@@ -2497,6 +2700,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Riposte",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -2509,6 +2713,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Fl\u00e8che",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2520,6 +2725,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Moulinet",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -2533,6 +2739,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "En Garde",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Single-use\n On Use Give 1 Strength to target and self next Scene",
@@ -2544,6 +2751,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Draw of the Sword",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -2555,6 +2763,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Acupuncture",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start Boost Slash dice Power by +1 for this Scene",
@@ -2567,6 +2776,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Overthrow",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Boost Slash dice Power by +3 for this Scene",
@@ -2579,6 +2789,7 @@
     {
         "Rank": "Urban Nightmare",
         "Name": "Slay",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2591,6 +2802,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Mangle",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -2604,6 +2816,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Shoving Stab",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2615,6 +2828,7 @@
     {
         "Rank": "Star of the City",
         "Name": "A Critical Moment",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2627,6 +2841,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Disgorge Innards",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Damage increases by the amount of Bleed on target",
@@ -2639,6 +2854,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Emotional Turbulence",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use All dice on this page gain +1 Power for every 2 Emotion Levels",
@@ -2653,6 +2869,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Inner Ardor",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 1 Positive Emotion Point",
@@ -2665,6 +2882,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Flow of the Sword",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Costs 1 less at Emotion Level 3 or higher",
@@ -2677,6 +2895,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Sturdy Defense",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2690,6 +2909,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Fleet Edge",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2703,6 +2923,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Rush Down",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start Offensive dice deal +1 damage for this Scene",
@@ -2715,6 +2936,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Frontal Assault",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -2727,6 +2949,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Gale Kick",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2739,6 +2962,7 @@
     {
         "Rank": "Star of the City",
         "Name": "High Kick",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -2750,6 +2974,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Iron Wall",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 1 Endurance next Scene. At Emotion Level 3 or higher, gain 2 Endurance instead.",
@@ -2763,6 +2988,7 @@
     {
         "Rank": "Star of the City",
         "Name": "All-out War",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 1 Positive Emotion Point",
@@ -2775,6 +3001,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Ferrous Guard",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -2788,6 +3015,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Steel Knuckles",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -2801,6 +3029,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Le Regole",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use All allies deal +2 damage with their Offensive dice next Scene",
@@ -2814,6 +3043,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Class and Respect",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -2825,6 +3055,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Absorb Impact",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 6 Charge",
@@ -2837,6 +3068,7 @@
     {
         "Rank": "Star of the City",
         "Name": "A Golden Opportunity!",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 5 Charge",
@@ -2850,6 +3082,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Ready Up!",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Spend 2 Charge to give 1 Protection to all allies this Scene and next Scene",
@@ -2863,6 +3096,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Energy Shield",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 3 Charge",
@@ -2876,6 +3110,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Energy Conversion",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Spend 4 Charge to restore 3 Light",
@@ -2888,6 +3123,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Vapour",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 4 Smoke and draw 1 page",
@@ -2899,6 +3135,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Defense Order",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 4 Smoke",
@@ -2911,6 +3148,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Autonomous Rush",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 2 Smoke",
@@ -2923,6 +3161,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Assault Order",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If target has 2 or more Smoke , all Offensive dice on this page gain +1 Power",
@@ -2936,6 +3175,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Guidance of the Gears",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 2 Smoke . Restore 2 Light",
@@ -2948,6 +3188,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Somber Procuration",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -2961,6 +3202,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Eliminate",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On kill, give 1 Strength to all allies next Scene",
@@ -2973,6 +3215,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Binding Chains",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Start of Clash If Singleton , reduce Power of all target\u2019s dice by 1",
@@ -2985,6 +3228,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Multislash",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Draw 1 Page. If Singleton , restore 2 Light as well",
@@ -2997,6 +3241,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Unlock-\u2160",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "Single-use\n On Use Add \u2019Unlock-\u2161\u2019 to hand",
@@ -3008,6 +3253,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Unlock-\u2161",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "Single-use\n On Use Add \u2019Unlock-\u2162\u2019 to hand",
@@ -3020,6 +3266,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Unlock-\u2162",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light and draw 1 page",
@@ -3032,6 +3279,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Fervid Emotions",
+        "Card Limit": 4,
         "Cost": "4",
         "Range": "melee",
         "Effect": "On Use All dice on this page gain +1 Power for every 2 Emotion Levels",
@@ -3045,6 +3293,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Fiery Waltz",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3058,6 +3307,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Violent Flame",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start When inflicting Burn using Combat Pages this Scene, inflict 1 additional stack",
@@ -3070,6 +3320,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Single-Point Stab",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use At the start of the next Scene, draw all copies of \u2019Single-Point Stab\u2019 from the deck",
@@ -3081,6 +3332,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Burning Flash",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use If \u2019Burning Flash\u2019 is in hand, discard it and draw a page, then add the Offensive dice on the discarded page to this",
@@ -3092,6 +3344,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Concentrated Fire",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "Single-use\n On Use If Speed is 6 or higher, all dice on this page gain +1 Power",
@@ -3105,6 +3358,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Pinpoint Shot",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "Single-use\n On Use If Speed is 6 or higher, all dice on this page gain +2 Power",
@@ -3116,6 +3370,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Energy Strike",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Deal 4 Stagger damage to self",
@@ -3129,6 +3384,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Bulky Impact",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 5 Charge",
@@ -3141,6 +3397,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Rapid Gashes",
+        "Card Limit": 3,
         "Cost": "5",
         "Range": "melee",
         "Effect": "This page\u2019s Cost is lowered by the number of other \u2019Rapid Gashes\u2019 in hand",
@@ -3155,6 +3412,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Quick Suppression",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 5 Charge",
@@ -3168,6 +3426,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Graze the Grass",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light and gain 3 Charge",
@@ -3180,6 +3439,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Concentration",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 8 Charge",
@@ -3193,6 +3453,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Clone",
+        "Card Limit": 3,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Single-use\n On Use Copy the most expensive page in hand and add that to hand.",
@@ -3205,6 +3466,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Serpent Sword Technique",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -3217,6 +3479,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Violet Blade",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3229,6 +3492,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Snake Slit",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Boost Slash dice Power by +2 for this Scene",
@@ -3242,6 +3506,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Snake\u2019s Prey",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Combat Start When inflicting Bleed using Combat Pages this Scene, inflict 1 additional stack",
@@ -3254,6 +3519,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Laceration",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3268,6 +3534,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Venomous Fangs",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3281,6 +3548,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Strike Down",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3293,6 +3561,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Great Serpent\u2019s Impact",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Deal 2 bonus Stagger damage on Blunt hits for this Scene",
@@ -3306,6 +3575,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Duel",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3320,6 +3590,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Serpentine Barrier",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "This page prompts no action because it has no non-Counter dice.",
@@ -3333,6 +3604,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Parry",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "This page prompts no action because it has no non-Counter dice.",
@@ -3345,6 +3617,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Identify Weakpoint",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Types of Offensive dice on this page change to the types the target is weakest to",
@@ -3358,6 +3631,7 @@
     {
         "Rank": "Star of the City",
         "Name": "B\u00ec \u00c0n",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 2 pages",
@@ -3371,6 +3645,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Ji\u0101o T\u00fa",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "This page prompts no action because it has no non-Counter dice.",
@@ -3383,6 +3658,7 @@
     {
         "Rank": "Star of the City",
         "Name": "B\u00ec X\u00ec",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3395,6 +3671,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Ch\u012b W\u011bn",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Take 10 less damage from Burn for this Scene On Use If user has Burn , recover 4 HP and gain 2 Protection next Scene",
@@ -3408,6 +3685,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Fiery Dragon Slash",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3422,6 +3700,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Coordinated Assault",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Strength , 2 Protection , and 2 Stagger Protection to a random other ally",
@@ -3435,6 +3714,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Ominous Power",
+        "Card Limit": 4,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "On Play Restore 3 Light; lose as much Light next Scene\n ",
@@ -3444,6 +3724,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Sword of Volition",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "melee",
         "Effect": "The Cost of this page equals the user\u2019s Max Light. On Use All dice on this page gain Power equal to Emotion Level; restore all Light",
@@ -3457,6 +3738,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Blind Faith",
+        "Card Limit": 5,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light; all dice on this page lose 2 Power",
@@ -3470,6 +3752,7 @@
     {
         "Rank": "Star of the City",
         "Name": "The Will of the City",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Restore 3 Light; draw 1 page",
@@ -3482,6 +3765,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Gap Attack",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Gain 1 Haste next Scene",
@@ -3494,6 +3778,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Dagger Press",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 2 Haste next Scene",
@@ -3507,6 +3792,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Feint",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -3520,6 +3806,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Seize ya Chance",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 2 Endurance next Scene",
@@ -3533,6 +3820,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Prod the Weakness",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3545,6 +3833,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Harpe",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "",
@@ -3557,6 +3846,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Sand Split",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -3569,6 +3859,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Sand Strike",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -3581,6 +3872,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Fur\u016bsiyya",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3594,6 +3886,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Jamadhar",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "If the natural roll of the Defensive die is Max, add a Pierce die (Roll: 4-5) to the dice queue",
@@ -3607,6 +3900,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Switcheroo",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "Draw a page upon discarding this page",
@@ -3619,6 +3913,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Insurance Coverage",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Restore 1 Light upon discarding this page",
@@ -3631,6 +3926,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Equivalent Exchange",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Discard a random page from hand; Restore 1 Light",
@@ -3644,6 +3940,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Final Stroke",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Boost damage by +1 for each page in hand; Discard all pages from hand",
@@ -3657,6 +3954,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Test Run",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Gain 3 Smoke",
@@ -3669,6 +3967,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Smoke Blow",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 3 Smoke",
@@ -3681,6 +3980,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Smoke Smash",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use If user has 9+ Smoke , all dice on this page gain +2 Power",
@@ -3693,6 +3993,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Smoke Prick",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Gain 2 Smoke",
@@ -3706,6 +4007,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Field Mods",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Single-use; On Use Lower Cost of all pages in hand by 1",
@@ -3717,6 +4019,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Wedging Thorn",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -3729,6 +4032,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Cleave Across",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -3741,6 +4045,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Faultless Strike",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "",
@@ -3753,6 +4058,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Knock Back",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3766,6 +4072,7 @@
     {
         "Rank": "Star of the City",
         "Name": "Great Swing",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3779,6 +4086,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Impugnatio Ultima",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "On Use Discard all pages from hand; all dice on this page gain +2 Power",
@@ -3793,6 +4101,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Double-edged Rencounter",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "",
@@ -3806,6 +4115,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Divinatory Impact",
+        "Card Limit": 3,
         "Cost": "5",
         "Range": "melee",
         "Effect": "",
@@ -3821,6 +4131,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Augury Kick",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Gain 1 Strength next Scene",
@@ -3833,6 +4144,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Celestial Spear",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Draw 1 page",
@@ -3845,6 +4157,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Godspeed",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Gain 1 Haste next Scene; If Speed is 7 or higher, all dice on this page gain +1 Power",
@@ -3857,6 +4170,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Unyielding Strike",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -3870,6 +4184,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Afterimage",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Halve the amount of status ailments on self (Rounded up)",
@@ -3882,6 +4197,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Confrontation",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Give 1 Protection to all allies next Scene",
@@ -3895,6 +4211,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Forward March",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Restore 1 Light",
@@ -3907,6 +4224,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Brace Up",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "melee",
         "Effect": "On Use Discard a random page; draw 2 pages at the start of the next Scene",
@@ -3918,6 +4236,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Mince",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3930,6 +4249,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Ever-spinning Gearwheel",
+        "Card Limit": 3,
         "Cost": "4",
         "Range": "melee",
         "Effect": "On Use Gain 7 Smoke",
@@ -3943,6 +4263,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Suspicious Contract",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Restore 1 Light upon discarding this page",
@@ -3956,6 +4277,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Let\u2019s Have Some Fun~",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use Restore 4 Light",
@@ -3968,6 +4290,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Ghghgh",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -3981,6 +4304,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Chorus",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Strength to all other allies; the page loses this ability afterwards",
@@ -3994,6 +4318,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Crimson Claws",
+        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
@@ -4007,6 +4332,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Overspeed",
+        "Card Limit": 4,
         "Cost": "5",
         "Range": "melee",
         "Effect": "On Use If Speed is higher than the target\u2019s, all dice on this page gain +6 Power",
@@ -4020,6 +4346,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Rooster\u2019s Crow",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Combat Start Give 1 Strength to two random allies",
@@ -4033,6 +4360,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Unity: Bolster",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain +1 Power for all dice (Cannot be stacked)",
@@ -4045,6 +4373,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Unity: Coordination",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain a Slash die (4-8) on the page (Cannot be stacked)",
@@ -4057,6 +4386,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Unity: Bulwark",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Unity\n Combat Start For this Scene, all other allies using a Unity page gain a Block die (6-9) that comes first (Cannot be stacked)",
@@ -4069,6 +4399,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Taste Test",
+        "Card Limit": 4,
         "Cost": "1",
         "Range": "melee",
         "Effect": "On Use Restore 2 Light",
@@ -4080,6 +4411,7 @@
     {
         "Rank": "Impuritas Civitatis",
         "Name": "Shaded Strike",
+        "Card Limit": 3,
         "Cost": "7",
         "Range": "melee",
         "Effect": "While this page is in hand, its Cost is decreased for each clash lost against an Offensive die\n Combat Start Boost Offensive dice Power by +1 for this Scene On Use Draw 1 page",
@@ -4092,6 +4424,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Armor-piercing Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust Dice clashing against user\u2019s Ranged Combat Pages lose 1 Power for this Scene",
@@ -4103,6 +4436,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Frost Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 1 Paralysis and Disarm next Scene",
@@ -4114,6 +4448,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Flame Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 2 Burn",
@@ -4125,6 +4460,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Slashing Stance",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "Instant",
         "Effect": "On Play Change to Slashing Stance and boost Slash dice Power by +1 for this Scene. Stance can be changed every 2 Scenes\n ",
@@ -4134,6 +4470,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Piercing Stance",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "Instant",
         "Effect": "On Play Change to Piercing Stance and boost Pierce dice Power by +1 for this Scene. Stance can be changed every 2 Scenes\n ",
@@ -4143,6 +4480,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Blunting Stance",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "Instant",
         "Effect": "On Play Change to Blunting Stance and boost Blunt dice Power by +1. Stance can be changed every 2 Scenes\n ",
@@ -4152,6 +4490,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Guarding Stance",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "Instant",
         "Effect": "On Play Change to Guarding Stance and boost Defensive dice Power by +1. Stance can be changed every 2 Scenes\n ",
@@ -4161,6 +4500,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Prescript-\u2160",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Give 1 Strength\n ",
@@ -4170,6 +4510,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Prescript-\u2161",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Give 1 Protection and Stagger Protection\n ",
@@ -4179,6 +4520,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Prescript-\u2162",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target draws 1 page\n ",
@@ -4188,6 +4530,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Prescript-\u2163",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only 1 Prescript page can be used per Scene On Play; Target Ally Target restores 1 Light\n ",
@@ -4197,6 +4540,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Life Insurance",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual\n Single-use",
@@ -4208,6 +4552,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Geon of Four Trigrams",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Gain 1 Strength , and deal 2 more damage and Stagger damage with attacks this Scene\n ",
@@ -4217,6 +4562,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Gon of Four Trigrams",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Gain 1 Endurance , and take 30% less damage and Stagger damage from attacks this Scene\n ",
@@ -4226,6 +4572,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Gam of Four Trigrams",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Restore 1 Light\n ",
@@ -4235,6 +4582,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Ri of Four Trigrams",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Only one of the Four Trigrams can be used per Scene. Once used, it cannot be reused until all of the Four Trigrams have been used.\n On Play Draw 1 page\n ",
@@ -4244,6 +4592,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Puppet Strings",
+        "Card Limit": 3,
         "Cost": "0",
         "Range": "instant",
         "Effect": "Single-use\n On Play; Target Ally Give \u2019Puppeteer\u2019s Strings\u2019 to target\n ",
@@ -4253,6 +4602,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Unsigned Contract: Liberty",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Contractual Obligation: Liberty\n Conditions Use a page whose Cost is modified\n Terms Randomize Costs of pages in hand; using pages with a certain Cost has a penalty\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
@@ -4262,6 +4612,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Unsigned Contract: Amplification",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Contractual Obligation: Amplification\n Conditions Have a 1-, 2-, and 3-Cost page in hand at the end of a Scene\n Terms Pages of a certain Cost gain Power; others lose Power\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
@@ -4271,6 +4622,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Unsigned Contract: Swiftness",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Contractual Obligation: Swiftness\n Conditions Win 4 clashes using Defensive dice\n Terms Gain Haste ; must engage in clashes\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
@@ -4280,6 +4632,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Unsigned Contract: Might",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Contractual Obligation: Might\n Conditions Have any amount of Strength at the end of a Scene\n Terms Gain Strength every Scene; must use pages with one Offensive die\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
@@ -4289,6 +4642,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Unsigned Contract: Light",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "Instant",
         "Effect": "Contractual Obligation: Light\n Conditions Be at Emotion Level 2 at the end of a Scene\n Terms Fully restore Light every Scene; must use all of it\n On Play Target an ally who has an Unsigned Contract to exhaust the Contracts from each other\u2019s hands, and swap Contracts at the start of the next Scene.\n ",
@@ -4298,6 +4652,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Boundary of Death",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "",
@@ -4309,6 +4664,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Trash Disposal",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "On Use All Offensive dice of this page gain \u2019 On Hit Recover 2 HP \u2019",
@@ -4323,6 +4679,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Rip Space",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Exclusive Page , On Use Spend all Charge ; has a ( Charge x 9.9)% chance to succeed. Success All dice on this page gain +8 Power; Failure Deal 20 damage to self",
@@ -4335,6 +4692,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Blazing Strike",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Exclusive Page\n Can only be used at Emotion Level 3 and above",
@@ -4346,6 +4704,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Yield My Flesh",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Exclusive Page",
@@ -4357,6 +4716,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "To Claim Their Bones",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "melee",
         "Effect": "Single-use",
@@ -4368,6 +4728,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Forming Storm",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Single-use\n On Use Remove all dice from this page. Add a Mass Attack page to hand that can only be used next Scene.",
@@ -4379,6 +4740,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Raging Storm: Harm",
+        "Card Limit": 1,
         "Cost": "1",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual\n Can only be used this Scene",
@@ -4390,6 +4752,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Ti\u011bsh\u0101nk\u00e0o",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Cecil and Mei's Exclusive Page",
@@ -4403,6 +4766,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Energy Beam",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "ranged",
         "Effect": "Nemo's Exclusive Page\n Dice abilities on this page only activate if the opponent has Offensive dice",
@@ -4414,6 +4778,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Devastating Thrash",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Bada's Exclusive Page\n On Use Spend 4 Charge to boost Power of all dice on this page by +2",
@@ -4427,6 +4792,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Uncanny Strike",
+        "Card Limit": 3,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Martina's Exclusive Page",
@@ -4439,6 +4805,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Eradication",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "Mass (summation)",
         "Effect": "Gloria's Exclusive Page\n Mass-Summation\n Only usable in the \u2019 Blade Unlocked \u2019 state",
@@ -4450,6 +4817,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Castigation",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Esther's Exclusive Page\n Only usable in the \u2019 Blade Unlocked \u2019 state Reduce Power of all opponent\u2019s dice clashing against this by 12",
@@ -4462,6 +4830,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Decapitation",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "ranged",
         "Effect": "Hubert's Exclusive Page\n Only usable in the \u2019 Blade Unlocked \u2019 state",
@@ -4473,6 +4842,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Mind Crush",
+        "Card Limit": 1,
         "Cost": "6",
         "Range": "Mass (individual)",
         "Effect": "Rudolph's Exclusive Page\n Mass-Individual\n Only usable at 20+ Charge+ .",
@@ -4486,6 +4856,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Ground Crash",
+        "Card Limit": 1,
         "Cost": "6",
         "Range": "Mass (summation)",
         "Effect": "Maxim's Exclusive Page\n Mass-Summation\n Only usable at 20+ Charge+ . On Use Spend 20 Charge+ to boost Power of all dice on this page by +10",
@@ -4497,6 +4868,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Disposal",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "melee",
         "Effect": "Nikolai's Exclusive Page\n Single-use\n Only usable at 20+ Charge+ . Upon defeating an enemy with this page, add a copy of \u2019Disposal\u2019 to hand and lower its Cost by 1. If target\u2019s HP is at 50% or lower, deal twice as much damage.",
@@ -4509,6 +4881,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Mind Whip",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "The Reindeer Team's Exclusive Page\n On Use Deal 4 Stagger damage to self",
@@ -4520,6 +4893,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Rhino Ram",
+        "Card Limit": 3,
         "Cost": "4",
         "Range": "melee",
         "Effect": "The Rhino Team's Exclusive Page\n Combat Start Gain 2 Protection this Scene",
@@ -4532,6 +4906,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Battle Command",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "melee",
         "Effect": "Nikolai's Exclusive Page\n Combat Start Give 1 Strength to 2 other allies",
@@ -4545,6 +4920,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Savage Mode",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Myo's Exclusive Page\n Single-use\n On Use Convert all Ranged pages in the deck into Melee pages. Add a copy of \u2019Feral Knives\u2019 to hand. Starting with the next Scene, all dice this character plays gain +1 Power.",
@@ -4557,6 +4933,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Feral Knives",
+        "Card Limit": 1,
         "Cost": "6",
         "Range": "Mass (individual)",
         "Effect": "Myo's Exclusive Page\n Mass-Individual\n Only usable at 20+ Charge+ . On Hit Inflict 3 Bleed next Scene",
@@ -4570,6 +4947,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Mirage Storm",
+        "Card Limit": 1,
         "Cost": "7",
         "Range": "Mass (individual)",
         "Effect": "The Purple Tear's Exclusive Page\n Mass-Individual",
@@ -4583,6 +4961,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Flaming Dragon Fist",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Chun and Miris' Exclusive Page",
@@ -4595,6 +4974,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Raging Storm: Love",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual\n Single-use",
@@ -4607,6 +4987,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "J\u012bn N\u00ed",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Xiao's Exclusive Page",
@@ -4618,6 +4999,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "P\u00fa L\u00e1o",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual",
@@ -4629,6 +5011,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Y\u00e1 Z\u00ec",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual\n On Use Gain 2 Strength and Endurance next Scene",
@@ -4641,6 +5024,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "T\u0101o Ti\u00e8",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "Mass (summation)",
         "Effect": "Mass-Summation",
@@ -4652,6 +5036,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Distorted Blade",
+        "Card Limit": 1,
         "Cost": "7",
         "Range": "Mass (summation)",
         "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page\n Mass-Summation",
@@ -4663,6 +5048,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Baleful Brand",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page",
@@ -4676,6 +5062,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Lock",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "\uc580\uc0cb\u3137\uc694\ubb34's Exclusive Page",
@@ -4688,6 +5075,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Stiletto",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Allen's Exclusive Page\n On Use Boost damage by sum of user\u2019s Haste and target\u2019s Bind",
@@ -4700,6 +5088,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "The Udjat",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "melee",
         "Effect": "The Udjat's Exclusive Page",
@@ -4713,6 +5102,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Multi-party Compensation",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Irina's Exclusive Page\n When discarded, all other allies restore 1 Light",
@@ -4725,6 +5115,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Exhale Smoke",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Yae's Exclusive Page\n On Use Gain 8 Smoke",
@@ -4738,6 +5129,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Ready Position",
+        "Card Limit": 1,
         "Cost": "3",
         "Range": "Instant",
         "Effect": "Bayard's Exclusive Page\n On Play Become Immobilized this Scene.\n Gain 3 Strength next Scene.\n Add a copy of \u2019Pinpoint Breakthrough\u2019 to hand.",
@@ -4749,6 +5141,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Pinpoint Breakthrough",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Single-use\n Only one copy of this page can be held at a time",
@@ -4761,6 +5154,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "True Trigram Formation",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Mirinae, Harold, and Olivier's Exclusive Page\n Gains additional effects depending on the Four Trigrams page (\u2019 Geon \u2019, \u2019 Gon \u2019, \u2019 Gam \u2019, and \u2019 Ri \u2019) used during the Scene",
@@ -4774,6 +5168,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Reload",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "melee",
         "Effect": "The Thumb's Exclusive Page\n On Use Add a random Ammunition to hand; draw 1 page",
@@ -4786,6 +5181,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Bayonet Combat",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "The Thumb's Exclusive Page\n On Use Add 2 random Ammunition to hand",
@@ -4799,6 +5195,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Suppressing Shot",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "The Thumb's Exclusive Page\n On Use Discard a page with the lowest Cost If an Ammunition was discarded, all Offensive dice on this page gain +1 Power",
@@ -4811,6 +5208,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Shock Round",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "The Thumb's Exclusive Page\n On Use Discard 2 pages with the lowest Cost from hand, and draw a page All dice on this page gain +1 Power for each Ammunition discarded",
@@ -4823,6 +5221,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Focus Fire",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "The Thumb's Exclusive Page\n On Use Discard up to four 0-Cost pages from hand Offensive dice on this page gain +1 Power for each Ammunition discarded this way",
@@ -4835,6 +5234,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Summary Judgment",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "melee",
         "Effect": "Kalo, Katriel, and Denis's Exclusive Page\n On Use Discard a page with the lowest Cost If an Ammunition was discarded, all Offensive dice on this page gain +1 Power",
@@ -4848,6 +5248,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Discipline",
+        "Card Limit": 1,
         "Cost": "4",
         "Range": "melee",
         "Effect": "Boris\u2019 Exclusive Page\n Dice on this page and the page clashing with it are unaffected by Power gain or loss",
@@ -4862,6 +5263,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Armor-piercing Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust Dice clashing against user\u2019s Ranged Combat Pages lose 1 Power for this Scene",
@@ -4873,6 +5275,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Frost Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 1 Paralysis and Disarm next Scene",
@@ -4884,6 +5287,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Flame Ammunition",
+        "Card Limit": 5,
         "Cost": "0",
         "Range": "ranged",
         "Effect": "Exhausts when used or discarded; On Exhaust On hit with Ranged Combat Pages this Scene, inflict 2 Burn",
@@ -4895,6 +5299,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Degraded Lock",
+        "Card Limit": 3,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "On Use Restore 1 Light",
@@ -4907,6 +5312,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Degraded Fairy",
+        "Card Limit": 5,
         "Cost": "1",
         "Range": "ranged",
         "Effect": "On Use Restore 2 Light",
@@ -4919,6 +5325,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Degraded Shockwave",
+        "Card Limit": 1,
         "Cost": "5",
         "Range": "Mass (individual)",
         "Effect": "Mass-Individual\n On Use Give 3 Protection to all allies this Scene",
@@ -4932,6 +5339,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Degraded Pillar",
+        "Card Limit": 4,
         "Cost": "3",
         "Range": "ranged",
         "Effect": "On Hit Inflict 3 Fairy to target",
@@ -4945,6 +5353,7 @@
     {
         "Rank": "Passive Ability",
         "Name": "Degraded Chain",
+        "Card Limit": 4,
         "Cost": "2",
         "Range": "ranged",
         "Effect": "",
