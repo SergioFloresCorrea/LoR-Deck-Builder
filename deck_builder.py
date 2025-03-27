@@ -128,7 +128,7 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     if debug:
         print(f"number of effects: {n_effects}\n Multiplier: {multiplier}")
     n_dice_val = norm(3.5, 7)(stats['average_dice_value'])
-    n_total_dice = norm(0, 25)(stats['average_dice_per_card'] * num_cards)
+    n_total_dice = norm(0, 30)(stats['average_dice_per_card'] * num_cards)
     n_avg_cost = norm(1, 2)(stats['average_cost'])
     skewness = calculate_normalized_entropy(stats['total_dice_types'])
 
@@ -206,7 +206,10 @@ def sample_top_cards(cards_score: List[float], decks: List[List[Dict[str, Union[
     """
     n_decks = len(decks)
     indices = np.arange(0, n_decks)
-    indices_sampled = np.random.choice(indices, p=softmax(cards_score, temp), size=B, replace=False)
+    if len(indices) > B:
+        indices_sampled = np.random.choice(indices, p=softmax(cards_score, temp), size=B, replace=False)
+    else:
+        indices_sampled = indices
     
     selected_scores = [cards_score[index] for index in indices_sampled]
     selected_decks = [deepcopy(decks[index]) for index in indices_sampled]

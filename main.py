@@ -16,8 +16,15 @@ def main():
     parser.add_argument('--prolonged', action='store_true', help="Optimize for long battles (light and draw sustainability)")
     parser.add_argument('--exclude_low_rank', action='store_true', help="Exclude lower-tier cards (Canard, Urban Myth, etc.)")
     parser.add_argument('--exclude_high_rank', action='store_true', help="Exclude lower-tier cards (Star of the City, Impuritas Civitatis)")
+    parser.add_argument('--may_keywords', nargs='+', type=str, help="Cards may include these keywords (e.g., ranks like Canard, Urban Legend)")
+    parser.add_argument('--must_include', nargs='+', type=str, help="Cards must contain these keywords")
+    parser.add_argument('--not_include', nargs='+', type=str, help="Cards must NOT contain these keywords")
+
 
     args = parser.parse_args()
+
+    may_keywords = args.may_keywords
+    print(f"may keywords: {may_keywords}")
 
     # Load and optionally filter combat pages
     combat_pages = load_json('combat_pages/combat_pages.json')
@@ -29,8 +36,12 @@ def main():
     if args.exclude_high_rank:
         exclude = ["Star of the City", "Impuritas Civitatis"]
 
+    if args.not_include:
+        exclude += args.not_include
+
     flags = {'prolonged': args.prolonged, 'short': not args.prolonged}
-    deck = build_deck(not_include=exclude, B=args.beam, combat_pages=combat_pages,
+    deck = build_deck(may_keywords=args.may_keywords, must_include=args.must_include, 
+                      not_include=exclude, B=args.beam, combat_pages=combat_pages,
                       temp=args.temperature, effect=args.effect, debug=args.debug,
                       seed=args.seed, flags=flags)
 
