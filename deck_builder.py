@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import scipy
 from copy import deepcopy
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable, Iterator
 from combat_page_getter import count_deck_attribute_statistics, apply_filters, remove_passive_cards, total_status_effects
@@ -75,10 +76,6 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
         combat_pages = [combat_pages]
     elif not isinstance(combat_pages, list):
         raise ValueError("A score can only be assigned to a list of combat pages.")
-    
-    if not isinstance(effect, str):
-        raise ValueError(f"{effect} must be a string!")
-    effect = effect.lower()
 
     if effect == "no_effects":
         multiplier = 0 # let's see what we do with this
@@ -94,7 +91,6 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     n_effects = norm(0, 5)(status_effects[effect]) # Lazy as hell
     if debug:
         print(f"number of effects: {n_effects}\n Multiplier: {multiplier}")
-    n_draw = norm(0, 6)(stats['total_drawn_cards'])
     n_dice_val = norm(2, 10)(stats['weighted_average_dice_value'])
     n_total_dice = norm(0, 30)(stats['average_dice_per_card'] * num_cards)
     skewness = calculate_normalized_entropy(stats['total_dice_types'])
@@ -104,14 +100,21 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     avg_cost = stats['average_cost']
     margin = light_regen - (6.38 * avg_cost - 6.88)
     sustain_score = (margin / (1 + abs(margin)) + 1) / 2
+    sustain_score = scipy.stats.norm.pdf(sustain_score, loc=0.55, scale=0.2) # We don't want to have a lot of light regen, but also not little of
+    sustain_score = sustain_score / sustain_score.max()
+
+    # Same for n_draw
+    draw_center, draw_spread = 4, 1.5
+    n_draw = scipy.stats.norm.pdf(stats['total_drawn_cards'], loc=draw_center, scale=draw_spread)
+    n_draw /= scipy.stats.norm.pdf(draw_center, loc=draw_center, scale=draw_spread)
 
     # Weighted score
     score = (
-        (0.20 - 1/3 * multiplier) * sustain_score +
+        (0.18 - 1/3 * multiplier) * sustain_score +
         (0.25 - 1/3 * multiplier) * n_dice_val +
         (0.20 - 1/3 * multiplier) * n_draw +
         0.15 * n_total_dice +
-        0.20 * skewness + 
+        0.22 * skewness + 
         multiplier * n_effects
     )
 
@@ -310,8 +313,8 @@ def check_deck(deck: List[Dict[str, Union[str, Dict[str, str]]]], flags: Dict[st
         return True, None
 
 
-def build_deck(may_keywords: List[str], combat_pages: List[Dict[str, Union[str, Dict[str, str]]]] = None, 
-               must_include: List[str] = None, flags: Dict[str, bool] = None, B: int = 10, temp: float = 1.0,
+def build_deck(may_keywords: Optional[List[str]] = None, combat_pages: Optional[List[Dict[str, Union[str, Dict[str, str]]]]] = None, 
+               must_include: Optional[List[str]] = None, flags: Optional[Dict[str, bool]] = None, B: int = 10, temp: float = 1.0,
                effect: str = "Strength", seed: Optional[int] = None, debug: bool = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Builds a deck according to a set of keywords.
@@ -324,6 +327,19 @@ def build_deck(may_keywords: List[str], combat_pages: List[Dict[str, Union[str, 
                   temp: A temperature parameter controlling how randomized the selecting process is.
     Returns: A list of 9 combat pages.
     """
+    valid_status_effects = ["burn", "paralysis", "bleed", "fairy", 
+                      "protection", "stagger protection", "fragile", 
+                      "strength", "feeble", "endurance", "disarm",
+                      "haste", "bind", "nullify Power", "immobilized", 
+                      "charge", "smoke", "persistence", "erosion"]
+
+    if not isinstance(effect, str):
+        raise ValueError(f"{effect} must be a string!")
+    effect = effect.lower()
+
+    if effect not in valid_status_effects and effect != "no_effect":
+        raise ValueError(f"{effect} is not a valid status effect in LoR. Please refer to https://library-of-ruina.fandom.com/wiki/Status_Effects")
+
     if not flags: # We assume it is for a prolonged battle
         flags = {'prolonged': True, 'short': False}
 
@@ -342,10 +358,10 @@ def build_deck(may_keywords: List[str], combat_pages: List[Dict[str, Union[str, 
         combat_pages = apply_filter(must_keywords, combat_pages)
     
     # if we aren't building for Charge or Smoke, let's not include them in the available cards.
-    if effect != "Charge": 
+    if effect != "charge": 
         combat_pages = apply_filters(["Charge"], combat_pages, complement=True)
     
-    if effect != "Smoke":
+    if effect != "smoke":
         combat_pages = apply_filters(["Smoke"], combat_pages, complement=True)
 
     filtered_length = len(combat_pages)
@@ -360,8 +376,17 @@ def build_deck(may_keywords: List[str], combat_pages: List[Dict[str, Union[str, 
             return None
     
     B = min(B, filtered_length - 9)
-    deck = deck_beam_search(combat_pages, B = B, flags=flags, temp=temp, debug=debug, effect=effect)
+    deck = deck_beam_search(combat_pages, B = B, flags=flags, temp=temp, debug=debug, effect=effect, seed=seed)
     if deck:
+        stats = count_deck_attribute_statistics(deck)
+        status_effects = stats['status_effects']
+        if status_effects.get(effect, 4) < 3: 
+            print(f"We found a deck, but it only contains a maximum of {status_effects[effect]} stacks of {effect} per cycle.")
+            print("Would you want to try a search again? (y/n)")
+            answer = input()
+            if answer == "y":
+                build_deck(may_keywords=may_keywords, combat_pages=combat_pages, must_include=must_include,
+                           flags=flags, B=B, temp=temp, effect=effect, seed=seed)
         return deck
     else:
         print("No good deck could be built with the conditions imposed.")
@@ -383,10 +408,16 @@ if __name__ == '__main__':
     combat_pages = load_json('combat_pages/combat_pages.json') 
     combat_pages = remove_passive_cards(combat_pages)
 
-    deck = build_deck(may_keywords = ["Canard", "Urban Myth", "Urban Legend", "Urban Plague", "Urban Nightmare", 
-             "Star of the City"], B = 5, combat_pages = combat_pages, temp = 0.4, effect = "Bleed", debug=True)
-    score = assign_score(deck, debug = True, effect="Bleed")
-    export_dict_to_json('decks/first_built_deck.json', deck)
-    stats = count_deck_attribute_statistics(deck)
-    print(f"This is the deck: \n{deck}")
-    print(f"This are the stats: \n{stats}")
+    # Initialize results
+    light_regens: List[float] = []
+    cards_drawn: List[float] = []
+
+    # Generate 10 sample decks and extract stats
+    for _ in range(10):
+        deck = build_deck(B=5, combat_pages=combat_pages, temp=0.8, effect="no_effect", debug=False)
+        stats = count_deck_attribute_statistics(deck)
+        light_regens.append(stats['total_light_regen'])
+        cards_drawn.append(stats['total_drawn_cards'])
+
+    print(f"light regen: {light_regens}")
+    print(f"cards drawn: {cards_drawn}")

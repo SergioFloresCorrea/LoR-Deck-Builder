@@ -1,121 +1,122 @@
 [
     {
-        "Rank": "Urban Myth",
-        "Name": "Nonstop Assault",
-        "Card Limit": 5,
+        "Rank": "Urban Plague",
+        "Name": "Sharpened Blade",
+        "Card Limit": 1,
+        "Cost": "2",
+        "Range": "melee",
+        "Effect": "Combat Start Boost Slash dice Power by +2 for this Scene",
+        "Dices": {
+            "Dice 1": "slash: 1~3",
+            "Dice 2": "slash: 1~3 On Hit Inflict 2 Bleednext Scene",
+            "Dice 3": "block: 4~5"
+        },
+        "Obtained": "Book of Kurokumo Clan, Book of Sayo, Book of Yang, Book of Gin"
+    },
+    {
+        "Rank": "Star of the City",
+        "Name": "Multislash",
+        "Card Limit": 1,
+        "Cost": "1",
+        "Range": "melee",
+        "Effect": "On Use Draw 1 Page. If Singleton , restore 2 Light as well",
+        "Dices": {
+            "Dice 1": "slash: 3~7",
+            "Dice 2": "blunt: 1~4"
+        },
+        "Obtained": "Book of the Index, Book of Esther, Book of Hubert, Book of Gloria"
+    },
+    {
+        "Rank": "Urban Nightmare",
+        "Name": "Will of the Prescript",
+        "Card Limit": 1,
         "Cost": "3",
+        "Range": "melee",
+        "Effect": "On Use If Singleton , draw 3 pages",
+        "Dices": {
+            "Dice 1": "evade: 3~8",
+            "Dice 2": "pierce: 4~8",
+            "Dice 3": "pierce: 4~7"
+        },
+        "Obtained": "Book of an Index Proselyte"
+    },
+    {
+        "Rank": "Urban Legend",
+        "Name": "Loosen Up",
+        "Card Limit": 1,
+        "Cost": "0",
         "Range": "melee",
         "Effect": "",
         "Dices": {
-            "Dice 0": "blunt: 1~5",
-            "Dice 1": "slash: 2~6",
-            "Dice 2": "slash: 3~6"
+            "Dice 0": "blunt: 2~6 On Hit Restore 1 Light"
         },
-        "Obtained": "Book of Mars, Book of Lulu, A Backstreets Fixer, Vol. \u2161, A Backstreets Fixer, Vol. \u2160, Streetlight Office"
+        "Obtained": "Book of the Stray Dogs, Book of Gyeong-mi, Book of Dino, Book of Zulu, Dark Alleys of the Backstreets, Vol. \u2161, A Backstreets Fixer, Vol. \u2162, A Backstreets Fixer, Vol. \u2163, Book of a Grade 8 Fixer, Book of a Grade 7 Fixer, Book of Axe Gang"
     },
     {
-        "Rank": "Star of the City",
-        "Name": "The Will of the City",
-        "Card Limit": 5,
+        "Rank": "Urban Plague",
+        "Name": "Whet",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
-        "Effect": "On Use Restore 3 Light; draw 1 page",
+        "Effect": "",
         "Dices": {
-            "Dice 1": "block: 3~7",
-            "Dice 2": "slash: 3~7"
+            "Dice 0": "blunt: 3~5 On Clash Win Restore 1 Light",
+            "Dice 1": "pierce: 2~8 On Clash Win Gain 1 Strengthnext Scene"
         },
-        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
+        "Obtained": "Book of a Workshop-affiliated Fixer"
     },
     {
         "Rank": "Star of the City",
-        "Name": "Unlock-\u2162",
-        "Card Limit": 5,
-        "Cost": "0",
+        "Name": "Fleet Edge",
+        "Card Limit": 1,
+        "Cost": "2",
         "Range": "melee",
-        "Effect": "On Use Restore 1 Light and draw 1 page",
+        "Effect": "",
         "Dices": {
-            "Dice 1": "slash: 3~7",
-            "Dice 2": "pierce: 2~4"
+            "Dice 0": "evade: 2~6",
+            "Dice 1": "pierce: 4~8 On Hit Gain 1 Hastenext Scene",
+            "Dice 2": "pierce: 3~8 On Hit Gain 1 Hastenext Scene"
         },
-        "Obtained": "Unlock-\u2161"
+        "Obtained": "Liu Association Section 2, Vol. \u2160, Liu Association Section 2, Vol. \u2161, Book of Lowell"
     },
     {
         "Rank": "Canard",
-        "Name": "Fend This Off If You Can",
-        "Card Limit": 4,
+        "Name": "Goin\u2019 First",
+        "Card Limit": 1,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
         "Dices": {
-            "Dice 0": "blunt: 3~5 On Clash Win Lower max value of opponent\u2019s next die by 3",
-            "Dice 1": "pierce: 3~4 On Hit Inflict 2 Bleednext Scene"
+            "Dice 0": "evade: 1~7",
+            "Dice 1": "pierce: 2~2 On Hit Inflict 1 Bleednext Scene",
+            "Dice 2": "pierce: 2~6 On Hit Inflict 1 Bleednext Scene"
         },
         "Obtained": "Hook Office, Vol. \u2160, Book of Taein, Book of Naoki, Book of McCullin, Hook Office, Vol. \u2161"
     },
     {
-        "Rank": "Star of the City",
-        "Name": "The Will of the City",
-        "Card Limit": 5,
-        "Cost": "2",
-        "Range": "melee",
-        "Effect": "On Use Restore 3 Light; draw 1 page",
-        "Dices": {
-            "Dice 1": "block: 3~7",
-            "Dice 2": "slash: 3~7"
-        },
-        "Obtained": "Book of \uc580\uc0cb\u3137\uc694\ubb34"
-    },
-    {
-        "Rank": "Star of the City",
-        "Name": "Unlock-\u2162",
-        "Card Limit": 5,
+        "Rank": "Urban Legend",
+        "Name": "Diversion",
+        "Card Limit": 1,
         "Cost": "0",
         "Range": "melee",
-        "Effect": "On Use Restore 1 Light and draw 1 page",
+        "Effect": "",
         "Dices": {
-            "Dice 1": "slash: 3~7",
-            "Dice 2": "pierce: 2~4"
+            "Dice 0": "slash: 1~3",
+            "Dice 1": "blunt: 1~4"
         },
-        "Obtained": "Unlock-\u2161"
+        "Obtained": "Dark Alleys of the Backstreets, Vol. \u2161"
     },
     {
-        "Rank": "Star of the City",
-        "Name": "Le Regole",
+        "Rank": "Impuritas Civitatis",
+        "Name": "Mince",
         "Card Limit": 1,
-        "Cost": "3",
-        "Range": "melee",
-        "Effect": "On Use All allies deal +2 damage with their Offensive dice next Scene",
-        "Dices": {
-            "Dice 1": "pierce: 5~11",
-            "Dice 2": "slash: 5~10",
-            "Dice 3": "blockcounter: 3~8"
-        },
-        "Obtained": "Book of Kalo"
-    },
-    {
-        "Rank": "Urban Plague",
-        "Name": "The Red Notes",
-        "Card Limit": 4,
-        "Cost": "1",
-        "Range": "melee",
-        "Effect": "Combat Start Give 1 Strength to a random ally",
-        "Dices": {
-            "Dice 1": "blunt: 1~5",
-            "Dice 2": "blunt: 1~4"
-        },
-        "Obtained": "Book of The Musicians of Bremen, Book of Meow, Book of MuMu, Book of Oink"
-    },
-    {
-        "Rank": "Urban Myth",
-        "Name": "Ingredient Hunt",
-        "Card Limit": 5,
         "Cost": "2",
         "Range": "melee",
         "Effect": "",
         "Dices": {
-            "Dice 0": "slash: 2~6 On Hit Inflict 2 Bindnext Scene",
-            "Dice 1": "blunt: 2~5"
+            "Dice 0": "slash: 5~8 On Hit Inflict 3 Bleednext Scene",
+            "Dice 1": "blunt: 4~8 On Hit Inflict 2 Bleednext Scene"
         },
-        "Obtained": "Book of Pierre, Book of Jack, A Guide to District 23, Dark Alleys of the Backstreets, Vol. \u2160"
+        "Obtained": "Greta"
     }
 ]
