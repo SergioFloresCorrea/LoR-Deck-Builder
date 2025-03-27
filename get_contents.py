@@ -159,13 +159,14 @@ def export_list_to_txt(file: str, lst: List[any]) -> bool:
         print(f"[Error] Failed to write to file: {file}\n{e}")
         return False
 
-def export_dict_to_json(file: str, dct: Dict[any, any]) -> bool:
+def export_dict_to_json(file: str, dct: Dict[any, any], overwrite=True) -> bool:
     """
     Exports a dictionary to a JSON file.
+    Args: overwrite: If False, will warn the user when it attempts to overwrite a file. 
     Returns True on success, False on failure.
     """
     try:
-        if os.path.isfile(file):
+        if os.path.isfile(file) and not overwrite:
             print("A file already exists, do you wish to overwrite it? (y/n)")
             x = input()
             if x != 'y':

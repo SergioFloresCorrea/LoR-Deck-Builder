@@ -1,6 +1,7 @@
 import math
 import numpy as np
 import scipy
+import matplotlib.pyplot as plt
 from copy import deepcopy
 from typing import List, Union, Dict, Optional, Tuple, Any, Callable, Iterator
 from combat_page_getter import count_deck_attribute_statistics, apply_filters, remove_passive_cards, total_status_effects
@@ -14,6 +15,8 @@ def softmax(x, temp):
     Compute softmax values for each sets of scores in x. 
     Courtesy of https://github.com/sascha-kirch/ML_Notebooks/blob/main/Softmax_Temperature.ipynb.
     """
+    if temp <= 0.01: # avoid NaN values
+        temp = 0.01
     return np.exp(np.divide(x,temp)) / np.sum(np.exp(np.divide(x,temp)), axis=0)
 
 def normalize_values(min_val: float, max_val: float) -> Callable[[float], float]:
@@ -24,6 +27,8 @@ def normalize_values(min_val: float, max_val: float) -> Callable[[float], float]
     Returns: A Callable object that will normalize the values.
     """
     def normalizer(x: float):
+        if x < min_val:
+            return 0
         k = 0.99 * ( 1 / (max_val - min_val) + 1) # assures normalizer(max_val) = 0.99
         try: 
             return k * (x - min_val) / (1 + x - min_val)
@@ -62,6 +67,37 @@ def calculate_normalized_entropy(attributes: Counter) -> float:
 
     return 1 - (entropy / max_entropy) if max_entropy > 0 else 1.0
 
+def plot_histogram_scores(weights: Dict[str, float], contributions: Dict[str, float]) -> None:
+    """
+    Plots a histogram of contributions to the scores. 
+    """
+    # Plot the histogram
+    _, ax = plt.subplots(figsize=(14, 6), ncols = 2, sharey=True)
+    bar_a = ax[0].bar(contributions.keys(), contributions.values(), color='skyblue')
+    ax[0].set_title("Score Contribution With weights")
+    ax[0].set_ylabel("Score Contribution")
+    ax[0].set_xticks(ax[0].get_xticks(), ax[0].get_xticklabels(), rotation=30)
+    ax[0].set_ylim((0, 0.20))
+
+    # Annotate bars
+    for bar in bar_a:
+        height = bar.get_height()
+        ax[0].text(bar.get_x() + bar.get_width()/2, height + 0.005, f'{height:.3f}', ha='center', va='bottom')
+
+    # Plot the histogram
+    contribution_no_weight = [contributions[key] / weights[key] if weights[key] != 0 else 0 for key in contributions.keys()]
+    bar_b = ax[1].bar(contributions.keys(), contribution_no_weight , color='skyblue')
+    ax[1].set_title("Score Contribution With weights")
+    ax[1].set_ylabel("Score Contribution")
+    ax[1].set_xticks(ax[1].get_xticks(), ax[1].get_xticklabels(), rotation=30)
+    ax[1].set_ylim((0, 1.1))
+
+    # Annotate bars
+    for bar in bar_b:
+        height = bar.get_height()
+        ax[1].text(bar.get_x() + bar.get_width()/2, height + 0.005, f'{height:.3f}', ha='center', va='bottom')
+
+    plt.show()
 
 def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List[Dict[str, Union[str, Dict[str, str]]]]], 
                  effect: Optional[str] = "strength", debug: bool = False) -> float:
@@ -91,8 +127,9 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     n_effects = norm(0, 5)(status_effects[effect]) # Lazy as hell
     if debug:
         print(f"number of effects: {n_effects}\n Multiplier: {multiplier}")
-    n_dice_val = norm(2, 10)(stats['weighted_average_dice_value'])
-    n_total_dice = norm(0, 30)(stats['average_dice_per_card'] * num_cards)
+    n_dice_val = norm(3.5, 7)(stats['average_dice_value'])
+    n_total_dice = norm(0, 25)(stats['average_dice_per_card'] * num_cards)
+    n_avg_cost = norm(1, 2)(stats['average_cost'])
     skewness = calculate_normalized_entropy(stats['total_dice_types'])
 
     # New sustainability metric
@@ -100,23 +137,36 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     avg_cost = stats['average_cost']
     margin = light_regen - (6.38 * avg_cost - 6.88)
     sustain_score = (margin / (1 + abs(margin)) + 1) / 2
-    sustain_score = scipy.stats.norm.pdf(sustain_score, loc=0.55, scale=0.2) # We don't want to have a lot of light regen, but also not little of
-    sustain_score = sustain_score / sustain_score.max()
+    sustain_score = scipy.stats.norm.pdf(sustain_score, loc=0.55, scale=0.15) # We don't want to have a lot of light regen, but also not little of
+    sustain_score /= scipy.stats.norm.pdf(0.55, loc=0.55, scale=0.15)
 
     # Same for n_draw
     draw_center, draw_spread = 4, 1.5
     n_draw = scipy.stats.norm.pdf(stats['total_drawn_cards'], loc=draw_center, scale=draw_spread)
     n_draw /= scipy.stats.norm.pdf(draw_center, loc=draw_center, scale=draw_spread)
 
+    weights = {"Sustain Score": (0.13 - 1/3 * multiplier), "Dice Value": (0.32 - 1/3 * multiplier),
+               "Card Draw": (0.18 - 1/3 * multiplier), "Total Dice": 0.10, "Skewness": 0.22,
+               "Effects": multiplier, "Avg Cost": 0.05
+              }
+    
+    contributions = {
+            "Sustain Score": weights["Sustain Score"] * sustain_score,
+            "Dice Value": weights["Dice Value"] * n_dice_val,
+            "Card Draw": weights["Card Draw"] * n_draw,
+            "Total Dice": weights["Total Dice"] * n_total_dice,
+            "Skewness": weights["Skewness"] * skewness,
+            "Effects": weights["Effects"] * n_effects,
+            "Avg Cost": weights["Avg Cost"] * n_avg_cost
+        }
+
     # Weighted score
-    score = (
-        (0.18 - 1/3 * multiplier) * sustain_score +
-        (0.25 - 1/3 * multiplier) * n_dice_val +
-        (0.20 - 1/3 * multiplier) * n_draw +
-        0.15 * n_total_dice +
-        0.22 * skewness + 
-        multiplier * n_effects
-    )
+    score = sum(contributions.values())
+
+    if debug:
+        stats = count_deck_attribute_statistics(deck)
+        print(f"Here are the stats:\n {stats}")
+        plot_histogram_scores(weights, contributions)
 
     return score
 
@@ -314,14 +364,15 @@ def check_deck(deck: List[Dict[str, Union[str, Dict[str, str]]]], flags: Dict[st
 
 
 def build_deck(may_keywords: Optional[List[str]] = None, combat_pages: Optional[List[Dict[str, Union[str, Dict[str, str]]]]] = None, 
-               must_include: Optional[List[str]] = None, flags: Optional[Dict[str, bool]] = None, B: int = 10, temp: float = 1.0,
+               must_include: Optional[List[str]] = None, not_include: Optional[List[str]] = None, 
+               flags: Optional[Dict[str, bool]] = None, B: int = 10, temp: float = 1.0,
                effect: str = "Strength", seed: Optional[int] = None, debug: bool = False) -> List[Dict[str, Union[str, Dict[str, str]]]]:
     """
     Builds a deck according to a set of keywords.
     Args: may_keywords: A list of keywords that the combat pages may or may not contain. For example, 
     may_include = ["Canard", "Urban Nightmare", "Urban Legend"] implies that the cards may be within any of those three ranks.
-    Keyword args: must_include: A list of keywords that the combat pages must contain.
-                  flags: a dictionary containing some flags... 
+    Keyword args: must_include: A list of keywords that all the combat pages must contain. Don't use this.
+                  flags: a dictionary containing some flags... Not tested.
                   B: The beam search parameter. Attempts to use it, if it cannot, use the maximum available according the the length of the 
                   resulting combat pages after filtering.
                   temp: A temperature parameter controlling how randomized the selecting process is.
@@ -355,8 +406,11 @@ def build_deck(may_keywords: Optional[List[str]] = None, combat_pages: Optional[
         combat_pages = apply_filters(may_keywords, combat_pages, exclusive = False)
     
     if must_include:
-        combat_pages = apply_filter(must_keywords, combat_pages)
+        combat_pages = apply_filters(must_include, combat_pages)
     
+    if not_include:
+        combat_pages = apply_filters(not_include, combat_pages, complement=True, exclusive = False)
+
     # if we aren't building for Charge or Smoke, let's not include them in the available cards.
     if effect != "charge": 
         combat_pages = apply_filters(["Charge"], combat_pages, complement=True)
@@ -407,17 +461,9 @@ def test_card_reference_integrity(deck1, deck2):
 if __name__ == '__main__':
     combat_pages = load_json('combat_pages/combat_pages.json') 
     combat_pages = remove_passive_cards(combat_pages)
-
-    # Initialize results
-    light_regens: List[float] = []
-    cards_drawn: List[float] = []
-
-    # Generate 10 sample decks and extract stats
-    for _ in range(10):
-        deck = build_deck(B=5, combat_pages=combat_pages, temp=0.8, effect="no_effect", debug=False)
-        stats = count_deck_attribute_statistics(deck)
-        light_regens.append(stats['total_light_regen'])
-        cards_drawn.append(stats['total_drawn_cards'])
-
-    print(f"light regen: {light_regens}")
-    print(f"cards drawn: {cards_drawn}")
+    
+    effect = "strength"
+    deck = build_deck(not_include=["Canard", "Urban Myth", "Urban Legend", "Urban Plague"], 
+                      B=5, combat_pages=combat_pages, temp=0.001, effect=effect, debug=False)
+    score = assign_score(deck, effect=effect, debug=True)
+    export_dict_to_json(f'decks/test_deck.json', deck)

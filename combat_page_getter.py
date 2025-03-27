@@ -296,7 +296,7 @@ def get_deck_max_cost(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]])
     
     return max_cost
 
-def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], deploy = False) -> Dict[str, Union[float, Counter[str]]]:
+def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]]) -> Dict[str, Union[float, Counter[str]]]:
     """
     Gets statistics such as: 
     - average cost
@@ -313,17 +313,14 @@ def count_deck_attribute_statistics(combat_pages: List[Dict[str, Union[str, Dict
     Returns: A dictionary containing all of the above. 
     """
     number_of_cards = len(combat_pages) 
-    max_cost = get_deck_max_cost(combat_pages)
     statistics = generate_empty_statisics_dict()
     single_point_stab_count = 0 # this will be added to the draw count as per its effects. May not fully represent what it does, but not too shabby.
-    if deploy:
-        assert number_of_cards == 9, "The deck-builder is not selecting only 9 cards, this is troubling..."
     
     for combat_page in combat_pages:
         if combat_page['Name'] == 'Single-Point Stab':
             single_point_stab_count += 1
         card_cost = int(combat_page['Cost'])
-        weight = (max_cost - card_cost + 1) / (max_cost + 1) # Cards go from cost 0 to max cost, avoid skewing. 
+        weight = (7 - card_cost + 1) / (7 + 1) # Cards go from cost 0 to 7. 
         mean_dice_values = get_mean_dice_values(combat_page)
         num_dices = get_number_of_dice(combat_page)
         statistics['average_cost'] += card_cost / number_of_cards
