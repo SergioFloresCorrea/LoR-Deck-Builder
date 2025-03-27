@@ -164,7 +164,7 @@ def assign_score(combat_pages: Union[Dict[str, Union[str, Dict[str, str]]], List
     score = sum(contributions.values())
 
     if debug:
-        stats = count_deck_attribute_statistics(deck)
+        stats = count_deck_attribute_statistics(combat_pages)
         print(f"Here are the stats:\n {stats}")
         plot_histogram_scores(weights, contributions)
 
@@ -253,8 +253,8 @@ def deck_beam_search(combat_pages: List[Dict[str, Union[str, Dict[str, str]]]], 
 
     checkpoints = [6, 7, 8]
 
+    print("Creating the deck...")
     for current_card in range(1, max_deck_size):
-        print(f"We are looking for the {current_card + 1}-th card.")
         new_beam = []
         for score, deck, counter in beam:
             if isinstance(deck, dict): # This is the first pass
@@ -401,7 +401,8 @@ def build_deck(may_keywords: Optional[List[str]] = None, combat_pages: Optional[
         except FileNotFoundError:
             print("No json file in 'combat_pages/combat_pages.json' was found. We couldn't build a deck.")
             return None
-
+        
+    combat_pages = remove_passive_cards(combat_pages)
     if may_keywords: # Only apply the filters if it is not an empty list
         combat_pages = apply_filters(may_keywords, combat_pages, exclusive = False)
     
@@ -460,7 +461,6 @@ def test_card_reference_integrity(deck1, deck2):
 
 if __name__ == '__main__':
     combat_pages = load_json('combat_pages/combat_pages.json') 
-    combat_pages = remove_passive_cards(combat_pages)
     
     effect = "strength"
     deck = build_deck(not_include=["Canard", "Urban Myth", "Urban Legend", "Urban Plague"], 
